@@ -24,54 +24,49 @@
  */
 
 #include "rc.hpp"
-#include <WiFi.h>
-#include <esp_now.h>
-#include <esp_wifi.h>
+#include <BLEDevice.h>
+#include <BLEServer.h>
+#include <BLEUtils.h>
+#include <BLE2902.h>
 #include "flight_control.hpp"
 
 // esp_now_peer_info_t slave;
 
 volatile uint16_t Connect_flag = 0;
 
-// Telemetry相手のMAC ADDRESS 4C:75:25:AD:B6:6C
-// ATOM Lite (C): 4C:75:25:AE:27:FC
-// 4C:75:25:AD:8B:20
-// 4C:75:25:AF:4E:84
-// 4C:75:25:AD:8B:20
-// 4C:75:25:AD:8B:20 赤水玉テープ　ATOM lite
+
+// BLE Service and Characteristic UUIDs
+#define SERVICE_UUID        "12345678-1234-5678-1234-56789abcdef0"  // Custom Service UUID
+#define CHARACTERISTIC_UUID "abcd1234-5678-1234-5678-abcdef123456"  // Custom Characteristic UUID
+
+#define FRAME_BUFFER_LEN 25
+
+// Buffer to store received data (uint8_t array)
+uint8_t receivedData[100];      // Adjust the size if needed
+size_t receivedDataLength = 0;  // Track the length of received data
+
+uint8_t sentData[100];      // Adjust the size if needed
+size_t sentDataLength = 0;  // Track the length of received data
+
+
 uint8_t TelemAddr[6] = {0};
-// uint8_t TelemAddr[6] = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
 volatile uint8_t MyMacAddr[6];
 volatile uint8_t peer_command[4] = {0xaa, 0x55, 0x16, 0x88};
 volatile uint8_t Rc_err_flag     = 0;
-esp_now_peer_info_t peerInfo;
 
 // RC
 volatile float Stick[16];
 volatile uint8_t Recv_MAC[3];
 
-void on_esp_now_sent(const uint8_t *mac_addr, esp_now_send_status_t status);
+volatile uint8_t ble_send_status;
 
 // 受信コールバック
-void OnDataRecv(const uint8_t *mac_addr, const uint8_t *recv_data, int data_len) {
+void OnDataRecv(const uint8_t *recv_data, int data_len) {
     Connect_flag = 0;
 
     uint8_t *d_int;
     // int16_t d_short;
     float d_float;
-
-    if (!TelemAddr[0] && !TelemAddr[1] && !TelemAddr[2] && !TelemAddr[3] && !TelemAddr[4] && !TelemAddr[5]) {
-        memcpy(TelemAddr, mac_addr, 6);
-        memcpy(peerInfo.peer_addr, TelemAddr, 6);
-        peerInfo.channel = CHANNEL;
-        peerInfo.encrypt = false;
-        if (esp_now_add_peer(&peerInfo) != ESP_OK) {
-            USBSerial.println("Failed to add peer2");
-            memset(TelemAddr, 0, 6);
-        } else {
-            esp_now_register_send_cb(on_esp_now_sent);
-        }
-    }
 
     Recv_MAC[0] = recv_data[0];
     Recv_MAC[1] = recv_data[1];
@@ -128,8 +123,8 @@ void OnDataRecv(const uint8_t *mac_addr, const uint8_t *recv_data, int data_len)
     Stick[LOG] = 0.0;
     // if (check_sum!=recv_data[23])USBSerial.printf("checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
 
-#if 0
-  USBSerial.printf("%6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f  %6.3f\n\r", 
+
+    USBSerial.printf("%6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f  %6.3f\n\r", 
                                             Stick[THROTTLE],
                                             Stick[AILERON],
                                             Stick[ELEVATOR],
@@ -139,73 +134,61 @@ void OnDataRecv(const uint8_t *mac_addr, const uint8_t *recv_data, int data_len)
                                             Stick[CONTROLMODE],
                                             Stick[ALTCONTROLMODE],
                                             Stick[LOG]);
-#endif
+
 }
 
-// 送信コールバック
-uint8_t esp_now_send_status;
-void on_esp_now_sent(const uint8_t *mac_addr, esp_now_send_status_t status) {
-    esp_now_send_status = status;
-}
+class MyCallbacks : public BLECharacteristicCallbacks {
+    void onWrite(BLECharacteristic *pCharacteristic) {
+        uint8_t *value = pCharacteristic->getData();
+        size_t length  = pCharacteristic->getLength();
+
+        // Store the received data into the buffer
+        if (length > 0) {
+            memcpy(receivedData + receivedDataLength, value, length);  // Copy data into receivedData buffer
+            receivedDataLength += length;
+        }
+
+        if (receivedDataLength == FRAME_BUFFER_LEN)
+        {
+            OnDataRecv(receivedData,receivedDataLength);
+            memset(receivedData,0,sizeof(receivedData));
+            receivedDataLength = 0;
+        }
+    }
+
+    void onRead(BLECharacteristic *pCharacteristic) {
+        // Send the received data back to the client if available
+        if (receivedDataLength > 0) {
+            pCharacteristic->setValue(sentData, sentDataLength);  // Set the value to send back
+        }
+    }
+};
 
 void rc_init(void) {
     // Initialize Stick list
     for (uint8_t i = 0; i < 16; i++) Stick[i] = 0.0;
 
-    // ESP-NOW初期化
-    WiFi.mode(WIFI_STA);
-    WiFi.disconnect();
-
-    WiFi.macAddress((uint8_t *)MyMacAddr);
-    USBSerial.printf("MAC ADDRESS: %02X:%02X:%02X:%02X:%02X:%02X\r\n", MyMacAddr[0], MyMacAddr[1], MyMacAddr[2],
-                     MyMacAddr[3], MyMacAddr[4], MyMacAddr[5]);
-
-    if (esp_now_init() == ESP_OK) {
-        USBSerial.println("ESPNow Init Success");
-    } else {
-        USBSerial.println("ESPNow Init Failed");
-        ESP.restart();
-    }
-
-    // MACアドレスブロードキャスト
-    uint8_t addr[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
-    memcpy(peerInfo.peer_addr, addr, 6);
-    peerInfo.channel = CHANNEL;
-    peerInfo.encrypt = false;
-    if (esp_now_add_peer(&peerInfo) != ESP_OK) {
-        USBSerial.println("Failed to add peer");
-        return;
-    }
-    esp_wifi_set_channel(CHANNEL, WIFI_SECOND_CHAN_NONE);
-
-    // Send my MAC address
-    for (uint16_t i = 0; i < 50; i++) {
-        send_peer_info();
-        delay(50);
-        USBSerial.printf("%d\n", i);
-    }
-
-    // ESP-NOW再初期化
-    WiFi.mode(WIFI_STA);
-    WiFi.disconnect();
-    if (esp_now_init() == ESP_OK) {
-        USBSerial.println("ESPNow Init Success2");
-    } else {
-        USBSerial.println("ESPNow Init Failed2");
-        ESP.restart();
-    }
-
-    // ESP-NOWコールバック登録
-    esp_now_register_recv_cb(OnDataRecv);
-    USBSerial.println("ESP-NOW Ready.");
+    BLEDevice::init("STAMP-FLY-DRONE");
+    BLEServer *pServer = BLEDevice::createServer();
+    BLEService *pService = pServer->createService(SERVICE_UUID);
+    BLECharacteristic *pCharacteristic = pService->createCharacteristic(
+    CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_WRITE | BLECharacteristic::PROPERTY_READ);
+    pCharacteristic->setCallbacks(new MyCallbacks());
+    pService->start();
+    BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
+    pAdvertising->addServiceUUID(SERVICE_UUID);
+    pAdvertising->setScanResponse(true);
+    pAdvertising->setMinPreferred(0x06);  // Helps with iPhone connections
+    pAdvertising->setMaxPreferred(0x12);
+    BLEDevice::startAdvertising();
+    USBSerial.println("ESP-BLE Ready.");
 }
 
 void send_peer_info(void) {
     uint8_t data[11];
     data[0] = CHANNEL;
     memcpy(&data[1], (uint8_t *)MyMacAddr, 6);
-    memcpy(&data[1 + 6], (uint8_t *)peer_command, 4);
-    esp_now_send(peerInfo.peer_addr, data, 11);
+    // memcpy(&data[1 + 6], (uint8_t *)peer_command, 4);
 }
 
 uint8_t telemetry_send(uint8_t *data, uint16_t datalen) {
@@ -216,12 +199,12 @@ uint8_t telemetry_send(uint8_t *data, uint16_t datalen) {
     esp_err_t result;
 
     if ((error_flag == 0) && (state == 0)) {
-        result = esp_now_send(peerInfo.peer_addr, data, datalen);
+        // result = esp_now_send(peerInfo.peer_addr, data, datalen);
         cnt    = 0;
     } else
         cnt++;
 
-    if (esp_now_send_status == 0) {
+    if (ble_send_status == 0) {
         error_flag = 0;
         // state = 0;
     } else {

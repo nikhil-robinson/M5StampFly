@@ -32,6 +32,7 @@
 // BMP280_ADDRESS            0x76
 
 void setup() {
+    delay(1000 * 10);
     init_copter();
     delay(100);
 }
