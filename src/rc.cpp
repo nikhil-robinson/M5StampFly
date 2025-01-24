@@ -58,7 +58,8 @@ volatile uint8_t Rc_err_flag     = 0;
 volatile float Stick[16];
 volatile uint8_t Recv_MAC[3];
 
-volatile uint8_t ble_send_status;
+volatile uint8_t ble_send_status = 0;
+
 
 // 受信コールバック
 void OnDataRecv(const uint8_t *recv_data, int data_len) {
@@ -68,22 +69,23 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
     // int16_t d_short;
     float d_float;
 
-    Recv_MAC[0] = recv_data[0];
-    Recv_MAC[1] = recv_data[1];
-    Recv_MAC[2] = recv_data[2];
+    // Recv_MAC[0] = recv_data[0];
+    // Recv_MAC[1] = recv_data[1];
+    // Recv_MAC[2] = recv_data[2];
 
-    if ((recv_data[0] == MyMacAddr[3]) && (recv_data[1] == MyMacAddr[4]) && (recv_data[2] == MyMacAddr[5])) {
+    // if ((recv_data[0] == MyMacAddr[3]) && (recv_data[1] == MyMacAddr[4]) && (recv_data[2] == MyMacAddr[5])) {
         Rc_err_flag = 0;
-    } else {
-        Rc_err_flag = 1;
-        return;
-    }
+    // } else {
+    //     Rc_err_flag = 1;
+    //     return;
+    // }
 
     // checksum
     uint8_t check_sum = 0;
     for (uint8_t i = 0; i < 24; i++) check_sum = check_sum + recv_data[i];
     // if (check_sum!=recv_data[23])USBSerial.printf("checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
     if (check_sum != recv_data[24]) {
+        // USBSerial.printf("ERROR checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
         Rc_err_flag = 1;
         return;
     }
@@ -124,7 +126,8 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
     // if (check_sum!=recv_data[23])USBSerial.printf("checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
 
 
-    USBSerial.printf("%6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f  %6.3f\n\r", 
+    USBSerial.printf("%ld %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %d %d\n\r", 
+                                            millis(),
                                             Stick[THROTTLE],
                                             Stick[AILERON],
                                             Stick[ELEVATOR],
@@ -133,6 +136,7 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
                                             Stick[BUTTON_FLIP],
                                             Stick[CONTROLMODE],
                                             Stick[ALTCONTROLMODE],
+                                            ahrs_reset_flag,
                                             Stick[LOG]);
 
 }
@@ -148,10 +152,12 @@ class MyCallbacks : public BLECharacteristicCallbacks {
             receivedDataLength += length;
         }
 
+        // USBSerial.printf("GOT BLE data of size %d\n\r",receivedDataLength); 
+
         if (receivedDataLength == FRAME_BUFFER_LEN)
         {
             OnDataRecv(receivedData,receivedDataLength);
-            memset(receivedData,0,sizeof(receivedData));
+            // memset(receivedData,0,sizeof(receivedData));
             receivedDataLength = 0;
         }
     }
@@ -181,7 +187,7 @@ void rc_init(void) {
     pAdvertising->setMinPreferred(0x06);  // Helps with iPhone connections
     pAdvertising->setMaxPreferred(0x12);
     BLEDevice::startAdvertising();
-    USBSerial.println("ESP-BLE Ready.");
+    // USBSerial.println("ESP-BLE Ready.");
 }
 
 void send_peer_info(void) {
@@ -202,7 +208,9 @@ uint8_t telemetry_send(uint8_t *data, uint16_t datalen) {
         // result = esp_now_send(peerInfo.peer_addr, data, datalen);
         cnt    = 0;
     } else
+    {
         cnt++;
+    }
 
     if (ble_send_status == 0) {
         error_flag = 0;
@@ -227,12 +235,12 @@ void rc_end(void) {
 }
 
 uint8_t rc_isconnected(void) {
-    bool status;
-    Connect_flag++;
-    if (Connect_flag < 40)
-        status = 1;
-    else
-        status = 0;
+    bool status =1;
+    // Connect_flag++;
+    // if (Connect_flag < 40)
+    //     status = 1;
+    // else
+    //     status = 0;
     // USBSerial.printf("%d \n\r", Connect_flag);
     return status;
 }
