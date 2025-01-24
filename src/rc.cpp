@@ -24,15 +24,22 @@
  */
 
 #include "rc.hpp"
-#include <BLEDevice.h>
-#include <BLEServer.h>
-#include <BLEUtils.h>
-#include <BLE2902.h>
 #include "flight_control.hpp"
+#include <WiFi.h>
+#include <WiFiUdp.h>
 
 // esp_now_peer_info_t slave;
 
 volatile uint16_t Connect_flag = 0;
+
+const char* ssid = "STAMP-FLY";
+const char* password = "12345678";
+
+WiFiUDP udp;
+unsigned int localPort = 12345;
+
+// Task handle for the UDP server task
+TaskHandle_t udpServerTaskHandle;
 
 
 // BLE Service and Characteristic UUIDs
@@ -141,53 +148,54 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
 
 }
 
-class MyCallbacks : public BLECharacteristicCallbacks {
-    void onWrite(BLECharacteristic *pCharacteristic) {
-        uint8_t *value = pCharacteristic->getData();
-        size_t length  = pCharacteristic->getLength();
+void udpServerTask(void *pvParameters) {
+  while (true) {
+    // Check for incoming UDP packets
+    int packetSize = udp.parsePacket();
+    if (packetSize) {
+      // Make sure we receive exactly 25 bytes
+      if (packetSize == 25) {
+        // Read the incoming 25-byte packet
+        udp.read(receivedData, 25);
 
-        // Store the received data into the buffer
-        if (length > 0) {
-            memcpy(receivedData + receivedDataLength, value, length);  // Copy data into receivedData buffer
-            receivedDataLength += length;
+        // Print the received data frame
+        USBSerial.println("Received 25-byte packet:");
+        for (int i = 0; i < 25; i++) {
+          USBSerial.print(receivedData[i], HEX);
+          USBSerial.print(" ");
         }
+        USBSerial.println();
 
-        // USBSerial.printf("GOT BLE data of size %d\n\r",receivedDataLength); 
-
-        if (receivedDataLength == FRAME_BUFFER_LEN)
-        {
-            OnDataRecv(receivedData,receivedDataLength);
-            // memset(receivedData,0,sizeof(receivedData));
-            receivedDataLength = 0;
-        }
+        // // Optionally, send a response back to the sender
+        // udp.beginPacket(udp.remoteIP(), udp.remotePort());
+        // udp.write("Message received");
+        // udp.endPacket();
+        OnDataRecv(receivedData,packetSize);
+      } else {
+        USBSerial.println("Received packet size is not 25 bytes. Ignoring.");
+      }
     }
 
-    void onRead(BLECharacteristic *pCharacteristic) {
-        // Send the received data back to the client if available
-        if (receivedDataLength > 0) {
-            pCharacteristic->setValue(sentData, sentDataLength);  // Set the value to send back
-        }
-    }
-};
+    // Short delay to yield control to other tasks (optional)
+    vTaskDelay(1);  // Delay for 10ms
+  }
+}
 
 void rc_init(void) {
     // Initialize Stick list
-    for (uint8_t i = 0; i < 16; i++) Stick[i] = 0.0;
+    USBSerial.println("Setting up the Hotspot...");
+    WiFi.softAP(ssid, password);
 
-    BLEDevice::init("STAMP-FLY-DRONE");
-    BLEServer *pServer = BLEDevice::createServer();
-    BLEService *pService = pServer->createService(SERVICE_UUID);
-    BLECharacteristic *pCharacteristic = pService->createCharacteristic(
-    CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_WRITE | BLECharacteristic::PROPERTY_READ);
-    pCharacteristic->setCallbacks(new MyCallbacks());
-    pService->start();
-    BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
-    pAdvertising->addServiceUUID(SERVICE_UUID);
-    pAdvertising->setScanResponse(true);
-    pAdvertising->setMinPreferred(0x06);  // Helps with iPhone connections
-    pAdvertising->setMaxPreferred(0x12);
-    BLEDevice::startAdvertising();
-    // USBSerial.println("ESP-BLE Ready.");
+    USBSerial.println("WiFi AP Created");
+    USBSerial.print("IP Address: ");
+    USBSerial.println(WiFi.softAPIP());
+
+  // Start the UDP server
+    udp.begin(localPort);
+    USBSerial.println("UDP server started on port " + String(localPort));
+
+  // Create the task to handle UDP packet reception
+  xTaskCreate(udpServerTask, "UDP Server Task", 8192, NULL, 10, &udpServerTaskHandle);
 }
 
 void send_peer_info(void) {
