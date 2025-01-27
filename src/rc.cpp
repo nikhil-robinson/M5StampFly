@@ -49,7 +49,7 @@ TaskHandle_t udpServerTaskHandle;
 #define FRAME_BUFFER_LEN 25
 
 // Buffer to store received data (uint8_t array)
-uint8_t receivedData[100];      // Adjust the size if needed
+uint8_t receivedData[25];      // Adjust the size if needed
 size_t receivedDataLength = 0;  // Track the length of received data
 
 uint8_t sentData[100];      // Adjust the size if needed
@@ -92,7 +92,7 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
     for (uint8_t i = 0; i < 24; i++) check_sum = check_sum + recv_data[i];
     // if (check_sum!=recv_data[23])USBSerial.printf("checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
     if (check_sum != recv_data[24]) {
-        // USBSerial.printf("ERROR checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
+        USBSerial.printf("ERROR checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
         Rc_err_flag = 1;
         return;
     }
@@ -154,30 +154,29 @@ void udpServerTask(void *pvParameters) {
     int packetSize = udp.parsePacket();
     if (packetSize) {
       // Make sure we receive exactly 25 bytes
-      if (packetSize == 25) {
+      if (packetSize == 25) 
+      {
         // Read the incoming 25-byte packet
         udp.read(receivedData, 25);
 
         // Print the received data frame
         USBSerial.println("Received 25-byte packet:");
         for (int i = 0; i < 25; i++) {
-          USBSerial.print(receivedData[i], HEX);
-          USBSerial.print(" ");
+          USBSerial.printf("%d ",receivedData[i]);
         }
-        USBSerial.println();
+        USBSerial.printf("\n\r");
 
         // // Optionally, send a response back to the sender
         // udp.beginPacket(udp.remoteIP(), udp.remotePort());
         // udp.write("Message received");
         // udp.endPacket();
         OnDataRecv(receivedData,packetSize);
-      } else {
+      } 
+      else 
+      {
         USBSerial.println("Received packet size is not 25 bytes. Ignoring.");
       }
     }
-
-    // Short delay to yield control to other tasks (optional)
-    vTaskDelay(1);  // Delay for 10ms
   }
 }
 
@@ -196,6 +195,7 @@ void rc_init(void) {
 
   // Create the task to handle UDP packet reception
   xTaskCreate(udpServerTask, "UDP Server Task", 8192, NULL, 10, &udpServerTaskHandle);
+  // xTaskCreatePinnedToCore(udpServerTask, "UDP Server Task", 8192, NULL, 10, &udpServerTaskHandle,1);
 }
 
 void send_peer_info(void) {

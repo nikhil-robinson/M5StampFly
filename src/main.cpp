@@ -26,6 +26,9 @@
 #include <Arduino.h>
 #include <FastLED.h>
 #include "flight_control.hpp"
+#include "esp_task_wdt.h"    // Task Watchdog Timer
+#include "esp_int_wdt.h"     // Interrupt Watchdog Timer
+#include "esp_system.h"      // Core Watchdog Disabling Functions
 
 // VL53L0X_ADDRESS           0x29
 // MPU6886_ADDRESS           0x68
@@ -33,10 +36,19 @@
 
 void setup() {
     // delay(1000 * 10);
+     esp_task_wdt_deinit();
+
+    // Disable Main System Watchdog Timer for Core 0 and Core 1
+    disableCore0WDT();
+    disableCore1WDT();
     init_copter();
     delay(100);
+    //  xTaskCreatePinnedToCore((TaskFunction_t)loop_400Hz, "loop_400Hz", 8192, NULL, 20, NULL,1);
 }
 
 void loop() {
     loop_400Hz();
+    // xTaskCreatePinnedToCore(loop_400Hz, "loop_400Hz", 8192, NULL, 20, NULL,1);
+    // return;
+
 }
