@@ -93,7 +93,7 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
     // if (check_sum!=recv_data[23])USBSerial.printf("checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
     if (check_sum != recv_data[24]) {
         USBSerial.printf("ERROR checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
-        Rc_err_flag = 1;
+        // Rc_err_flag = 1;
         return;
     }
 
@@ -133,7 +133,7 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
     // if (check_sum!=recv_data[23])USBSerial.printf("checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
 
 
-    USBSerial.printf("%ld %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %d %d\n\r", 
+    USBSerial.printf("%ld %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %d\n\r", 
                                             millis(),
                                             Stick[THROTTLE],
                                             Stick[AILERON],
@@ -143,16 +143,17 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
                                             Stick[BUTTON_FLIP],
                                             Stick[CONTROLMODE],
                                             Stick[ALTCONTROLMODE],
-                                            ahrs_reset_flag,
-                                            Stick[LOG]);
+                                            ahrs_reset_flag);
 
 }
 
 void udpServerTask(void *pvParameters) {
-  while (true) {
+  while (true) 
+  {
     // Check for incoming UDP packets
     int packetSize = udp.parsePacket();
-    if (packetSize) {
+    if (packetSize) 
+    {
       // Make sure we receive exactly 25 bytes
       if (packetSize == 25) 
       {
@@ -160,23 +161,19 @@ void udpServerTask(void *pvParameters) {
         udp.read(receivedData, 25);
 
         // Print the received data frame
-        USBSerial.println("Received 25-byte packet:");
-        for (int i = 0; i < 25; i++) {
-          USBSerial.printf("%d ",receivedData[i]);
-        }
-        USBSerial.printf("\n\r");
-
-        // // Optionally, send a response back to the sender
-        // udp.beginPacket(udp.remoteIP(), udp.remotePort());
-        // udp.write("Message received");
-        // udp.endPacket();
+        // USBSerial.println("Received 25-byte packet:");
+        // for (int i = 0; i < 25; i++) {
+        //   USBSerial.printf("%d ",receivedData[i]);
+        // }
+        // USBSerial.printf("\n\r");
         OnDataRecv(receivedData,packetSize);
-      } 
+      }
       else 
       {
         USBSerial.println("Received packet size is not 25 bytes. Ignoring.");
       }
     }
+    vTaskDelay(1);
   }
 }
 
@@ -194,8 +191,8 @@ void rc_init(void) {
     USBSerial.println("UDP server started on port " + String(localPort));
 
   // Create the task to handle UDP packet reception
-  xTaskCreate(udpServerTask, "UDP Server Task", 8192, NULL, 10, &udpServerTaskHandle);
-  // xTaskCreatePinnedToCore(udpServerTask, "UDP Server Task", 8192, NULL, 10, &udpServerTaskHandle,1);
+  // xTaskCreate(udpServerTask, "UDP Server Task", 8192, NULL, 10, &udpServerTaskHandle);
+  xTaskCreatePinnedToCore(udpServerTask, "UDP Server Task", 8192, NULL, 10, &udpServerTaskHandle,0);
 }
 
 void send_peer_info(void) {

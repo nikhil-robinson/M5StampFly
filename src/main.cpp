@@ -34,21 +34,22 @@
 // MPU6886_ADDRESS           0x68
 // BMP280_ADDRESS            0x76
 
+void loop_task(void *pvParameters);
+
 void setup() {
     // delay(1000 * 10);
-     esp_task_wdt_deinit();
-
-    // Disable Main System Watchdog Timer for Core 0 and Core 1
-    disableCore0WDT();
-    disableCore1WDT();
     init_copter();
     delay(100);
-    //  xTaskCreatePinnedToCore((TaskFunction_t)loop_400Hz, "loop_400Hz", 8192, NULL, 20, NULL,1);
+    // xTaskCreatePinnedToCore(loop_task, "loop_400Hz", 8192, NULL, 20, NULL,1);
+}
+
+void loop_task(void *pvParameters)
+{
+    loop_400Hz();
 }
 
 void loop() {
+    
     loop_400Hz();
-    // xTaskCreatePinnedToCore(loop_400Hz, "loop_400Hz", 8192, NULL, 20, NULL,1);
-    // return;
 
 }

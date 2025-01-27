@@ -306,6 +306,7 @@ void loop_400Hz(void) {
 
     // LED Drive
     led_drive();
+    // USBSerial.printf("%9.6f\n\r", Interval_time);
     // if (Interval_time>0.006)USBSerial.printf("%9.6f\n\r", Interval_time);
     // USBSerial.printf("Mode=%d OverG=%d\n\r", Mode, OverG_flag);
     // Begin Mode select
