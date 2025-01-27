@@ -4,20 +4,21 @@ This is a port of the official stampfly to support BLE and WIFI control using an
 
 The following are the Bytes to be sent.
 
-Byte    Data                Description
-0       MAC Addr[3]         MAC address byte 3 (used for filtering).
-1       MAC Addr[4]         MAC address byte 4.
-2       MAC Addr[5]         MAC address byte 5.
-3–6     RUDDER              Noramlized Rudder value ad 4-byte float. -1 to 1.
-7–10    Throttle            Normalized Throttle value as 4-byte float -1  to 1.
-11–14   AILERON             Normalized Roll value as 4-byte float -1 to 1.
-15–18   ELEVATOR            Normalized ELEVATOR value as 4-byte float -1 to 1. 
-19      ARM                 Boolean (0 or 1) for arming the drone.
-20      Flip Button Status  Boolean (e.g., for flip commands).
-21      CONTROLMODE         Drone mode value (e.g., 0 = Stable mode, 1 = Sports mode.).
-22      ALTCONTROLMODE      Alternate mode flag to switch between manula and auto (5 for manual, 4 for auto).
-23      Proactive Flag      Additional proactive control flag.
-24      Checksum            Sum of bytes 0–23 to validate data.
+| Byte   |  Data               |  Description                                                                      |
+|--------|---------------------|-----------------------------------------------------------------------------------|
+|0       | MAC Addr[3]         |MAC address byte 3 (used for filtering).                                           |
+|1       | MAC Addr[4]         |MAC address byte 4.                                                                |
+|2       | MAC Addr[5]         |MAC address byte 5.                                                                |
+|3–6     | RUDDER              |Noramlized Rudder value ad 4-byte float. -1 to 1.                                  |
+|7–10    | Throttle            |Normalized Throttle value as 4-byte float -1  to 1.                                |
+|11–14   | AILERON             |Normalized Roll value as 4-byte float -1 to 1.                                     |
+|15–18   | ELEVATOR            |Normalized ELEVATOR value as 4-byte float -1 to 1.                                 |
+|19      | ARM                 |Boolean (0 or 1) for arming the drone.                                             |
+|20      | Flip Button Status  |Boolean (e.g., for flip commands).                                                 |
+|21      | CONTROLMODE         |Drone mode value (e.g., 0 = Stable mode, 1 = Sports mode.).                        |
+|22      | ALTCONTROLMODE      |Alternate mode flag to switch between manula and auto (5 for manual, 4 for auto).  |
+|23      | Proactive Flag      |Additional proactive control flag.                                                 |
+|24      | Checksum            |Sum of bytes 0–23 to validate data.                                                |
 
 
 
