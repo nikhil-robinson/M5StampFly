@@ -21,6 +21,7 @@
  */
 
 #include "Bitcraze_PMW3901.h"
+#include "common.h"
 
 #include <SPI.h>
 
@@ -30,9 +31,10 @@ Bitcraze_PMW3901::Bitcraze_PMW3901(uint8_t cspin)
 
 boolean Bitcraze_PMW3901::begin(void) {
   // Setup SPI port
+#if 0
   SPI.begin(44,43,14,12);
-  pinMode(_cs, OUTPUT);
   SPI.beginTransaction(SPISettings(4000000, MSBFIRST, SPI_MODE3));
+  pinMode(_cs, OUTPUT);
 
   // Make sure the SPI bus is reset
   digitalWrite(_cs, HIGH);
@@ -43,6 +45,7 @@ boolean Bitcraze_PMW3901::begin(void) {
   delay(1);
 
   SPI.endTransaction();
+#endif
 
   // Power on reset
   registerWrite(0x3A, 0x5A);
@@ -144,6 +147,7 @@ void Bitcraze_PMW3901::readFrameBuffer(char *FBuffer)
   }  
 }
 
+#if 0
 // Low level register access
 void Bitcraze_PMW3901::registerWrite(uint8_t reg, uint8_t value) {
   reg |= 0x80u;
@@ -185,6 +189,22 @@ uint8_t Bitcraze_PMW3901::registerRead(uint8_t reg) {
 
   return value;
 }
+
+#endif
+
+void Bitcraze_PMW3901::registerWrite(uint8_t reg, uint8_t value) {
+    // digitalWrite(_cs, LOW);
+    pmw_spi_reg_write(reg,value);
+    // digitalWrite(_cs, HIGH);
+}
+
+uint8_t Bitcraze_PMW3901::registerRead(uint8_t reg) {
+    // digitalWrite(_cs, LOW);
+    uint8_t reg_data = pmw_spi_reg_read(reg);
+    // digitalWrite(_cs, HIGH);
+    return reg_data; // The second byte is the register value
+}
+
 
 // Performance optimisation registers
 void Bitcraze_PMW3901::initRegisters()

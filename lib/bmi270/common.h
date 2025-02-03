@@ -218,8 +218,9 @@ void bmi2_coines_deinit(void);
 
 
 
+uint8_t pmw_spi_reg_read(uint8_t reg_addr);
 
-
+esp_err_t pmw_spi_reg_write(uint8_t reg, uint8_t value);
 
 #ifdef __cplusplus
 }

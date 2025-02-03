@@ -44,6 +44,8 @@ i2c_cmd_handle_t i2chandle;
 // SPIデバイスハンドラーを使って通信する
 spi_device_handle_t spidev;
 
+spi_device_handle_t pwm_spidev;
+
 
 
 i2c_port_t i2c_port=1;
@@ -174,6 +176,21 @@ spi_device_interface_config_t devcfg = {
     .post_cb = NULL,// transactionが完了した後に呼ばれる関数をセットできる
 };
 
+spi_device_interface_config_t pmw_devcfg = {
+    .command_bits = 0,
+    .address_bits = 0,
+    .dummy_bits = 0,
+    .mode = 3,
+    .duty_cycle_pos = 128,  // default 128 = 50%/50% duty
+    .cs_ena_pretrans = 0, // 0 not used
+    .cs_ena_posttrans = 0,  // 0 not used
+    .clock_speed_hz = SPI_MASTER_FREQ_8M/2,// 8,9,10,11,13,16,20,26,40,80
+    .spics_io_num = 12,
+    .flags = 0,  // 0 not used
+    .queue_size = 10,// transactionのキュー数。1以上の値を入れておく。
+    .pre_cb = NULL,// transactionが始まる前に呼ばれる関数をセットできる
+    .post_cb = NULL,// transactionが完了した後に呼ばれる関数をセットできる
+};
 
 esp_err_t spi_init(void)
 {
@@ -184,6 +201,47 @@ esp_err_t spi_init(void)
     if(ret != ESP_OK) return ret;
 
     ret = spi_bus_add_device(SPI2_HOST, &devcfg, &spidev);
+    ret = spi_bus_add_device(SPI2_HOST, &pmw_devcfg, &pwm_spidev);
+    return ret;
+}
+
+uint8_t pmw_spi_reg_read(uint8_t reg_addr)
+{  
+    reg_addr &= ~0x80u;
+    
+    uint8_t tx_data[2] = {reg_addr, 0};
+    uint8_t rx_data[2] = {0};
+    
+    spi_transaction_t trans = {};
+    trans.flags = 0;
+    trans.cmd = 0;
+    trans.addr = 0;
+    trans.length = 16; // 2 bytes (8 bits each)
+    trans.tx_buffer = tx_data;
+    trans.rx_buffer = rx_data;
+    spi_device_polling_transmit(pwm_spidev, &trans);
+    return rx_data[1]; // The second byte is the register value
+}
+
+esp_err_t pmw_spi_reg_write(uint8_t reg, uint8_t value)
+{  esp_err_t ret=0;
+    reg |= 0x80u;
+    
+    spi_transaction_t trans = {};
+    trans.flags = 0;
+    trans.cmd = 0;
+    trans.addr = 0;
+    trans.length = 16; // 2 bytes (8 bits each)
+    trans.tx_buffer = NULL;
+    uint8_t data[2] = {reg, value};
+    trans.tx_buffer = data;
+
+    //書き込み
+    ret = spi_device_polling_transmit(pwm_spidev, &trans);
+    assert(ret==ESP_OK);
+    
+    //spi_device_release_bus(spidev);
+
     return ret;
 }
 
