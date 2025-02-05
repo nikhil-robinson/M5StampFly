@@ -34,7 +34,6 @@
 
 volatile uint16_t Connect_flag = 0;
 
-
 // BLE Service and Characteristic UUIDs
 #define SERVICE_UUID        "12345678-1234-5678-1234-56789abcdef0"  // Custom Service UUID
 #define CHARACTERISTIC_UUID "abcd1234-5678-1234-5678-abcdef123456"  // Custom Characteristic UUID
@@ -48,7 +47,6 @@ size_t receivedDataLength = 0;  // Track the length of received data
 uint8_t sentData[100];      // Adjust the size if needed
 size_t sentDataLength = 0;  // Track the length of received data
 
-
 uint8_t TelemAddr[6] = {0};
 volatile uint8_t MyMacAddr[6];
 volatile uint8_t peer_command[4] = {0xaa, 0x55, 0x16, 0x88};
@@ -59,7 +57,6 @@ volatile float Stick[16];
 volatile uint8_t Recv_MAC[3];
 
 volatile uint8_t ble_send_status = 0;
-
 
 // 受信コールバック
 void OnDataRecv(const uint8_t *recv_data, int data_len) {
@@ -74,7 +71,7 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
     // Recv_MAC[2] = recv_data[2];
 
     // if ((recv_data[0] == MyMacAddr[3]) && (recv_data[1] == MyMacAddr[4]) && (recv_data[2] == MyMacAddr[5])) {
-        Rc_err_flag = 0;
+    Rc_err_flag = 0;
     // } else {
     //     Rc_err_flag = 1;
     //     return;
@@ -125,21 +122,14 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
     Stick[LOG] = 0.0;
     // if (check_sum!=recv_data[23])USBSerial.printf("checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
 
-
-    USBSerial.printf("%ld %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %d %d\n\r", 
-                                            millis(),
-                                            Stick[THROTTLE],
-                                            Stick[AILERON],
-                                            Stick[ELEVATOR],
-                                            Stick[RUDDER],
-                                            Stick[BUTTON_ARM],
-                                            Stick[BUTTON_FLIP],
-                                            Stick[CONTROLMODE],
-                                            Stick[ALTCONTROLMODE],
-                                            ahrs_reset_flag,
-                                            Stick[LOG]);
-
+    USBSerial.printf("%ld %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %d %d\n\r", millis(), Stick[THROTTLE],
+                     Stick[AILERON], Stick[ELEVATOR], Stick[RUDDER], Stick[BUTTON_ARM], Stick[BUTTON_FLIP],
+                     Stick[CONTROLMODE], Stick[ALTCONTROLMODE], ahrs_reset_flag, Stick[LOG]);
 }
+
+volatile bool data_task_running = false;
+
+void data_sender(void *pvParameters);
 
 class MyCallbacks : public BLECharacteristicCallbacks {
     void onWrite(BLECharacteristic *pCharacteristic) {
@@ -147,19 +137,24 @@ class MyCallbacks : public BLECharacteristicCallbacks {
         size_t length  = pCharacteristic->getLength();
 
         // Store the received data into the buffer
-        if (length > 0) {
-            memcpy(receivedData + receivedDataLength, value, length);  // Copy data into receivedData buffer
-            receivedDataLength += length;
-        }
+        // if (length > 0) {
+        //     memcpy(receivedData + receivedDataLength, value, length);  // Copy data into receivedData buffer
+        //     receivedDataLength += length;
+        // }
 
-        // USBSerial.printf("GOT BLE data of size %d\n\r",receivedDataLength); 
+        // // USBSerial.printf("GOT BLE data of size %d\n\r",receivedDataLength);
 
-        if (receivedDataLength == FRAME_BUFFER_LEN)
+        // if (receivedDataLength == FRAME_BUFFER_LEN) {
+        //     OnDataRecv(receivedData, receivedDataLength);
+        //     // memset(receivedData,0,sizeof(receivedData));
+        //     receivedDataLength = 0;
+        // }
+
+        if ((value[0] == 'S') && (value[1] == 'T') && !data_task_running)
         {
-            OnDataRecv(receivedData,receivedDataLength);
-            // memset(receivedData,0,sizeof(receivedData));
-            receivedDataLength = 0;
+            xTaskCreatePinnedToCore(data_sender,"data",4096,NULL,20,NULL,0);
         }
+        
     }
 
     void onRead(BLECharacteristic *pCharacteristic) {
@@ -170,15 +165,100 @@ class MyCallbacks : public BLECharacteristicCallbacks {
     }
 };
 
+void data_sender(void *pvParameters) {
+
+    data_task_running = true;
+    // vTaskDelay(pdMS_TO_TICKS(5000));
+    USBSerial.printf("SET DEFAULT VALUE\r\n");
+    Stick[THROTTLE]       = 0.0;
+    Stick[AILERON]        = 0.0;
+    Stick[ELEVATOR]       = 0.0;
+    Stick[RUDDER]         = 0.0;
+    Stick[BUTTON_ARM]     = 0.0;
+    Stick[BUTTON_FLIP]    = 0.0;
+    Stick[CONTROLMODE]    = 1.0;
+    Stick[ALTCONTROLMODE] = 4.0;
+    ahrs_reset_flag       = 0.0;
+    Stick[LOG]            = 0.0;
+
+    vTaskDelay(pdMS_TO_TICKS(200));
+
+    USBSerial.printf("AHRS RESET\r\n");
+
+    ahrs_reset_flag     = 1.0;
+    vTaskDelay(pdMS_TO_TICKS(200));
+    ahrs_reset_flag     = 0.0;
+
+    USBSerial.printf("ARM\r\n");
+    Stick[BUTTON_ARM]     = 1.0;
+    vTaskDelay(pdMS_TO_TICKS(200));
+    Stick[BUTTON_ARM]     = 0.0;
+
+    USBSerial.printf("LIFT OFF\r\n");
+    vTaskDelay(pdMS_TO_TICKS(3000));
+    for (float i = 0.0; i > -0.1; i-=0.001)
+    {
+        Stick[ELEVATOR] = i;
+        USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+        vTaskDelay(pdMS_TO_TICKS(10));
+    }
+    Stick[ELEVATOR] = -0.1;
+    USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+    vTaskDelay(pdMS_TO_TICKS(3000));
+    for (float i = -0.1; i < 0.0; i+=0.001)
+    {
+        Stick[ELEVATOR] = i;
+        USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+        vTaskDelay(pdMS_TO_TICKS(10));
+    }
+    Stick[ELEVATOR] = 0.0;
+    USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+    vTaskDelay(pdMS_TO_TICKS(3000));
+    for (float i = 0.0; i < 0.1; i+=0.001)
+    {
+        Stick[ELEVATOR] = i;
+        USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+        vTaskDelay(pdMS_TO_TICKS(10));
+    }
+    Stick[ELEVATOR] = 0.1;
+    USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+    vTaskDelay(pdMS_TO_TICKS(3000));
+
+    for (float i = 0.1; i > 0.0; i-=0.001)
+    {
+        Stick[ELEVATOR] = i;
+        USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+        vTaskDelay(pdMS_TO_TICKS(10));
+    }
+    Stick[ELEVATOR] = 0.0;
+    USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+    vTaskDelay(pdMS_TO_TICKS(3000));
+
+    Stick[CONTROLMODE]    = 0.0;
+    Stick[ALTCONTROLMODE] = 0.0;
+
+    USBSerial.printf("DISARM\r\n");
+    Stick[BUTTON_ARM]     = 1.0;
+    vTaskDelay(pdMS_TO_TICKS(200));
+    Stick[BUTTON_ARM]     = 0.0;
+
+    Stick[CONTROLMODE]    = 0.0;
+    Stick[ALTCONTROLMODE] = 0.0;
+
+    data_task_running = false;
+    vTaskDelete(NULL);
+
+}
+
 void rc_init(void) {
     // Initialize Stick list
     for (uint8_t i = 0; i < 16; i++) Stick[i] = 0.0;
 
     BLEDevice::init("STAMP-FLY-DRONE");
-    BLEServer *pServer = BLEDevice::createServer();
-    BLEService *pService = pServer->createService(SERVICE_UUID);
+    BLEServer *pServer                 = BLEDevice::createServer();
+    BLEService *pService               = pServer->createService(SERVICE_UUID);
     BLECharacteristic *pCharacteristic = pService->createCharacteristic(
-    CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_WRITE | BLECharacteristic::PROPERTY_READ);
+        CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_WRITE | BLECharacteristic::PROPERTY_READ);
     pCharacteristic->setCallbacks(new MyCallbacks());
     pService->start();
     BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
@@ -187,7 +267,7 @@ void rc_init(void) {
     pAdvertising->setMinPreferred(0x06);  // Helps with iPhone connections
     pAdvertising->setMaxPreferred(0x12);
     BLEDevice::startAdvertising();
-    // USBSerial.println("ESP-BLE Ready.");
+    USBSerial.println("ESP-BLE Ready.");
 }
 
 void send_peer_info(void) {
@@ -206,9 +286,8 @@ uint8_t telemetry_send(uint8_t *data, uint16_t datalen) {
 
     if ((error_flag == 0) && (state == 0)) {
         // result = esp_now_send(peerInfo.peer_addr, data, datalen);
-        cnt    = 0;
-    } else
-    {
+        cnt = 0;
+    } else {
         cnt++;
     }
 
@@ -235,7 +314,7 @@ void rc_end(void) {
 }
 
 uint8_t rc_isconnected(void) {
-    bool status =1;
+    bool status = 1;
     // Connect_flag++;
     // if (Connect_flag < 40)
     //     status = 1;

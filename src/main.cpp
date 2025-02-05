@@ -36,6 +36,20 @@
 // MPU6886_ADDRESS           0x68
 // BMP280_ADDRESS            0x76
 
+
+#if 1
+void setup() {
+    init_copter();
+    delay(100);
+}
+
+void loop() {
+    loop_400Hz();
+}
+
+
+#else
+
 Bitcraze_PMW3901 flow(12);
 
 
@@ -75,3 +89,5 @@ void loop()
     delay(100);
 
 }
+
+#endif
