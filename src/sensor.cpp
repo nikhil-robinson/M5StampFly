@@ -26,6 +26,7 @@
 #include "sensor.hpp"
 #include "imu.hpp"
 #include "tof.hpp"
+#include "optical_flow.hpp"
 #include "flight_control.hpp"
 
 Madgwick Drone_ahrs;
@@ -138,6 +139,7 @@ void sensor_init() {
 
     tof_init();
     imu_init();
+    optical_flow_init();
     Drone_ahrs.begin(400.0);
     ina3221.begin(&Wire1);
     ina3221.reset();
