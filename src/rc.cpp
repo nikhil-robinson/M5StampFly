@@ -29,6 +29,8 @@
 #include <BLEUtils.h>
 #include <BLE2902.h>
 #include "flight_control.hpp"
+#include "pid.hpp"
+#include "optical_flow.hpp"
 
 // esp_now_peer_info_t slave;
 
@@ -130,6 +132,7 @@ void OnDataRecv(const uint8_t *recv_data, int data_len) {
 volatile bool data_task_running = false;
 
 void data_sender(void *pvParameters);
+void positionHold(void *pvParameters);
 
 class MyCallbacks : public BLECharacteristicCallbacks {
     void onWrite(BLECharacteristic *pCharacteristic) {
@@ -150,11 +153,9 @@ class MyCallbacks : public BLECharacteristicCallbacks {
         //     receivedDataLength = 0;
         // }
 
-        if ((value[0] == 'S') && (value[1] == 'T') && !data_task_running)
-        {
-            xTaskCreatePinnedToCore(data_sender,"data",4096,NULL,20,NULL,0);
+        if ((value[0] == 'S') && (value[1] == 'T') && !data_task_running) {
+            xTaskCreatePinnedToCore(positionHold, "positionHold", 4096, NULL, 20, NULL, 0);
         }
-        
     }
 
     void onRead(BLECharacteristic *pCharacteristic) {
@@ -165,8 +166,73 @@ class MyCallbacks : public BLECharacteristicCallbacks {
     }
 };
 
-void data_sender(void *pvParameters) {
 
+void positionHold(void *pvParameters) {
+    PID pidX, pidY;
+    const float loopInterval = 0.0025f;  // 400Hz
+    pidX.set_parameter(1.0, 0.02, 0.5, 0.01, loopInterval);
+    pidY.set_parameter(1.0, 0.02, 0.5, 0.01, loopInterval);
+
+    USBSerial.printf("SET DEFAULT VALUE\r\n");
+    Stick[THROTTLE]       = 0.0;
+    Stick[AILERON]        = 0.0;
+    Stick[ELEVATOR]       = 0.0;
+    Stick[RUDDER]         = 0.0;
+    Stick[BUTTON_ARM]     = 0.0;
+    Stick[BUTTON_FLIP]    = 0.0;
+    Stick[CONTROLMODE]    = 1.0;
+    Stick[ALTCONTROLMODE] = 4.0;
+    ahrs_reset_flag       = 0.0;
+    Stick[LOG]            = 0.0;
+
+    vTaskDelay(pdMS_TO_TICKS(200));
+
+    USBSerial.printf("AHRS RESET\r\n");
+
+    ahrs_reset_flag = 1.0;
+    vTaskDelay(pdMS_TO_TICKS(200));
+    ahrs_reset_flag = 0.0;
+
+    USBSerial.printf("ARM\r\n");
+    Stick[BUTTON_ARM] = 1.0;
+    vTaskDelay(pdMS_TO_TICKS(200));
+    Stick[BUTTON_ARM] = 0.0;
+
+    USBSerial.printf("LIFT OFF\r\n");
+    vTaskDelay(pdMS_TO_TICKS(3000));
+
+    while (true) {
+        static unsigned long lastTime = 0;
+        unsigned long now = millis();
+        if (now - lastTime < loopInterval * 1000) 
+        {
+            // USBSerial.printf("ERROR\r\n");
+            continue;
+        }
+        lastTime = now;
+      
+        int16_t opticalFlowX;
+        int16_t opticalFlowY;
+
+        read_optical_flow(&opticalFlowX,&opticalFlowY);
+
+        // USBSerial.printf("OF X%d Y%d\r\n",opticalFlowX,opticalFlowY);
+      
+        float correctionX = pidX.update(-((float)opticalFlowX / 255.0), loopInterval);
+        float correctionY = pidY.update(-((float)opticalFlowY / 255.0), loopInterval);
+        
+        // USBSerial.printf("X: %d, PIDX: %.2f, Y: %d, PIDY: %.2f\n", opticalFlowX, correctionX, opticalFlowY, correctionY);
+        Stick[AILERON] = constrain(correctionX, -1, 1);
+        Stick[ELEVATOR] = constrain(correctionY, -1, 1);
+
+        USBSerial.printf("AILERON %6.3f ELEVATOR %6.3f\r\n",Stick[AILERON],Stick[ELEVATOR]);
+
+        vTaskDelay(1);
+    }
+    vTaskDelete(NULL);
+}
+
+void data_sender(void *pvParameters) {
     data_task_running = true;
     // vTaskDelay(pdMS_TO_TICKS(5000));
     USBSerial.printf("SET DEFAULT VALUE\r\n");
@@ -185,69 +251,64 @@ void data_sender(void *pvParameters) {
 
     USBSerial.printf("AHRS RESET\r\n");
 
-    ahrs_reset_flag     = 1.0;
+    ahrs_reset_flag = 1.0;
     vTaskDelay(pdMS_TO_TICKS(200));
-    ahrs_reset_flag     = 0.0;
+    ahrs_reset_flag = 0.0;
 
     USBSerial.printf("ARM\r\n");
-    Stick[BUTTON_ARM]     = 1.0;
+    Stick[BUTTON_ARM] = 1.0;
     vTaskDelay(pdMS_TO_TICKS(200));
-    Stick[BUTTON_ARM]     = 0.0;
+    Stick[BUTTON_ARM] = 0.0;
 
     USBSerial.printf("LIFT OFF\r\n");
     vTaskDelay(pdMS_TO_TICKS(3000));
-    for (float i = 0.0; i > -0.1; i-=0.001)
-    {
+    for (float i = 0.0; i > -0.1; i -= 0.001) {
         Stick[ELEVATOR] = i;
-        USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+        USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
         vTaskDelay(pdMS_TO_TICKS(10));
     }
     Stick[ELEVATOR] = -0.1;
-    USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+    USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
     vTaskDelay(pdMS_TO_TICKS(3000));
-    for (float i = -0.1; i < 0.0; i+=0.001)
-    {
+    for (float i = -0.1; i < 0.0; i += 0.001) {
         Stick[ELEVATOR] = i;
-        USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+        USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
         vTaskDelay(pdMS_TO_TICKS(10));
     }
     Stick[ELEVATOR] = 0.0;
-    USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+    USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
     vTaskDelay(pdMS_TO_TICKS(3000));
-    for (float i = 0.0; i < 0.1; i+=0.001)
-    {
+    for (float i = 0.0; i < 0.1; i += 0.001) {
         Stick[ELEVATOR] = i;
-        USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+        USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
         vTaskDelay(pdMS_TO_TICKS(10));
     }
     Stick[ELEVATOR] = 0.1;
-    USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+    USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
     vTaskDelay(pdMS_TO_TICKS(3000));
 
-    for (float i = 0.1; i > 0.0; i-=0.001)
-    {
+    for (float i = 0.1; i > 0.0; i -= 0.001) {
         Stick[ELEVATOR] = i;
-        USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+        USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
         vTaskDelay(pdMS_TO_TICKS(10));
     }
     Stick[ELEVATOR] = 0.0;
-    USBSerial.printf("ELEVETOR %6.3f\r\n",Stick[ELEVATOR]);
+    USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
     vTaskDelay(pdMS_TO_TICKS(3000));
 
     Stick[CONTROLMODE]    = 0.0;
     Stick[ALTCONTROLMODE] = 0.0;
 
     USBSerial.printf("DISARM\r\n");
-    Stick[BUTTON_ARM]     = 1.0;
+    Stick[BUTTON_ARM] = 1.0;
     vTaskDelay(pdMS_TO_TICKS(200));
-    Stick[BUTTON_ARM]     = 0.0;
+    Stick[BUTTON_ARM] = 0.0;
 
     Stick[CONTROLMODE]    = 0.0;
     Stick[ALTCONTROLMODE] = 0.0;
 
     data_task_running = false;
     vTaskDelete(NULL);
-
 }
 
 void rc_init(void) {
