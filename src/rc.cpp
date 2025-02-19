@@ -168,10 +168,7 @@ class MyCallbacks : public BLECharacteristicCallbacks {
 
 
 void positionHold(void *pvParameters) {
-    PID pidX, pidY;
     const float loopInterval = 0.0025f;  // 400Hz
-    pidX.set_parameter(1.0, 0.02, 0.5, 0.01, loopInterval);
-    pidY.set_parameter(1.0, 0.02, 0.5, 0.01, loopInterval);
 
     USBSerial.printf("SET DEFAULT VALUE\r\n");
     Stick[THROTTLE]       = 0.0;
@@ -201,12 +198,15 @@ void positionHold(void *pvParameters) {
     USBSerial.printf("LIFT OFF\r\n");
     vTaskDelay(pdMS_TO_TICKS(3000));
 
+    // Proportional control constants for X and Y axes
+    const float KpX = 1.0;  // Adjust this gain as needed
+    const float KpY = 1.0;  // Adjust this gain as needed
+
     while (true) {
         static unsigned long lastTime = 0;
         unsigned long now = millis();
         if (now - lastTime < loopInterval * 1000) 
         {
-            // USBSerial.printf("ERROR\r\n");
             continue;
         }
         lastTime = now;
@@ -214,23 +214,22 @@ void positionHold(void *pvParameters) {
         int16_t opticalFlowX;
         int16_t opticalFlowY;
 
-        read_optical_flow(&opticalFlowX,&opticalFlowY);
+        read_optical_flow(&opticalFlowX, &opticalFlowY);
 
-        // USBSerial.printf("OF X%d Y%d\r\n",opticalFlowX,opticalFlowY);
-      
-        float correctionX = pidX.update(-((float)opticalFlowX / 255.0), loopInterval);
-        float correctionY = pidY.update(-((float)opticalFlowY / 255.0), loopInterval);
+        // Apply proportional control to correct the position
+        float correctionX = -(float)opticalFlowX / 512.0 * KpX;
+        float correctionY = -(float)opticalFlowY / 512.0 * KpY;
         
-        // USBSerial.printf("X: %d, PIDX: %.2f, Y: %d, PIDY: %.2f\n", opticalFlowX, correctionX, opticalFlowY, correctionY);
         Stick[AILERON] = constrain(correctionX, -1, 1);
         Stick[ELEVATOR] = constrain(correctionY, -1, 1);
 
-        USBSerial.printf("AILERON %6.3f ELEVATOR %6.3f\r\n",Stick[AILERON],Stick[ELEVATOR]);
+        USBSerial.printf("AILERON %6.3f ELEVATOR %6.3f\r\n", Stick[AILERON], Stick[ELEVATOR]);
 
         vTaskDelay(1);
     }
     vTaskDelete(NULL);
 }
+
 
 void data_sender(void *pvParameters) {
     data_task_running = true;
