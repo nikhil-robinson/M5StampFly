@@ -31,6 +31,7 @@
 #include "flight_control.hpp"
 #include "pid.hpp"
 #include "optical_flow.hpp"
+#include "tof.hpp"
 
 // esp_now_peer_info_t slave;
 
@@ -166,6 +167,26 @@ class MyCallbacks : public BLECharacteristicCallbacks {
     }
 };
 
+enum MovementState { MOVE_FORWARD, STOP_FORWARD, MOVE_BACKWARD, STOP_BACKWARD };
+
+MovementState moveState = MOVE_FORWARD;
+
+float focal_length = 35.0; 
+
+float calculateDistance(int deltaX, int deltaY, uint16_t height_mm) {
+    float height_m = height_mm / 1000.0;  // Convert mm to meters
+
+    float dx = (deltaX * height_m) / focal_length;
+    float dy = (deltaY * height_m) / focal_length;
+    float distance = sqrt(dx * dx + dy * dy);
+
+    Serial.print("Height (mm): "); Serial.print(height_mm);
+    Serial.print("\tDelta X (m): "); Serial.print(dx);
+    Serial.print("\tDelta Y (m): "); Serial.print(dy);
+    Serial.print("\tTotal Distance (m): "); Serial.println(distance);
+
+    return distance;
+}
 
 void positionHold(void *pvParameters) {
     const float loopInterval = 0.0025f;  // 400Hz
@@ -196,40 +217,84 @@ void positionHold(void *pvParameters) {
     Stick[BUTTON_ARM] = 0.0;
 
     USBSerial.printf("LIFT OFF\r\n");
-    vTaskDelay(pdMS_TO_TICKS(3000));
+    vTaskDelay(pdMS_TO_TICKS(2000));
 
     // Proportional control constants for X and Y axes
     const float KpX = 1.0;  // Adjust this gain as needed
     const float KpY = 1.0;  // Adjust this gain as needed
 
+    float target_distance  = 20.0;  // Target distance in cm
+    float current_distance = 0.0;   // Current traveled distance
+    float elevator_command = 0.0;   // Elevator stick control (-1 to 1)
+
     while (true) {
-        static unsigned long lastTime = 0;
-        unsigned long now = millis();
-        if (now - lastTime < loopInterval * 1000) 
-        {
-            continue;
+
+        int16_t deltaX, deltaY,heigth;
+        read_optical_flow(&deltaX, &deltaY);
+        heigth = tof_bottom_get_range();
+
+        current_distance += calculateDistance(deltaX, deltaY,heigth);
+        USBSerial.print("Distance: ");
+        USBSerial.print(current_distance);
+        USBSerial.print("\n");
+        continue;
+
+
+
+        // Convert motion to cm (adjust scaling factor based on sensor calibration)
+        current_distance += deltaY * 0.1;  // Example scaling factor
+
+        // Finite state machine (FSM) for movement control
+        switch (moveState) {
+            case MOVE_FORWARD: {
+                USBSerial.println("MOVE_FORWARD");
+                if (current_distance < target_distance) {
+                    elevator_command = 0.1;  // Move forward
+                } else {
+                    elevator_command = 0.0;  // Stop
+                    moveState        = STOP_FORWARD;
+                }
+                break;
+            }
+
+            case STOP_FORWARD: {
+                USBSerial.println("STOP_FORWARD");
+                vTaskDelay(pdMS_TO_TICKS(1000));  // Small pause
+                moveState = MOVE_BACKWARD;
+                break;
+            }
+
+            case MOVE_BACKWARD: {
+                USBSerial.println("Move backward Position");
+                if (current_distance > 0) {
+                    elevator_command = -0.1;  // Move backward
+                } else {
+                    elevator_command = 0.0;  // Stop
+                    moveState        = STOP_BACKWARD;
+                }
+                break;
+            }
+
+            case STOP_BACKWARD: {
+                USBSerial.println("Reached Start Position");
+                vTaskDelay(portMAX_DELAY);
+            }
+            break;
         }
-        lastTime = now;
-      
-        int16_t opticalFlowX;
-        int16_t opticalFlowY;
 
-        read_optical_flow(&opticalFlowX, &opticalFlowY);
+        // Update stick inputs
+        Stick[ELEVATOR] = elevator_command;
 
-        // Apply proportional control to correct the position
-        float correctionX = -(float)opticalFlowX / 512.0 * KpX;
-        float correctionY = -(float)opticalFlowY / 512.0 * KpY;
-        
-        Stick[AILERON] = constrain(correctionX, -1, 1);
-        Stick[ELEVATOR] = constrain(correctionY, -1, 1);
-
-        USBSerial.printf("AILERON %6.3f ELEVATOR %6.3f\r\n", Stick[AILERON], Stick[ELEVATOR]);
+        // Debugging
+        USBSerial.print("Distance: ");
+        USBSerial.print(current_distance);
+        USBSerial.print(" cm, Elevator Command: ");
+        USBSerial.println(Stick[ELEVATOR]);
 
         vTaskDelay(1);
     }
     vTaskDelete(NULL);
 }
-
 
 void data_sender(void *pvParameters) {
     data_task_running = true;
