@@ -173,19 +173,19 @@ MovementState moveState = MOVE_FORWARD;
 
 float focal_length = 35.0; 
 
-float calculateDistance(int deltaX, int deltaY, uint16_t height_mm) {
-    float height_m = height_mm / 1000.0;  // Convert mm to meters
+float calculateDistanceCM(int16_t deltaX, int16_t deltaY, int16_t height_mm) {
+    float height_cm = height_mm / 10.0;  // Convert mm to cm
 
-    float dx = (deltaX * height_m) / focal_length;
-    float dy = (deltaY * height_m) / focal_length;
-    float distance = sqrt(dx * dx + dy * dy);
+    float dx = (deltaX * height_cm) / focal_length;
+    float dy = (deltaY * height_cm) / focal_length;
+    float distance_cm = sqrt(dx * dx + dy * dy);  // Total distance in cm
 
     Serial.print("Height (mm): "); Serial.print(height_mm);
-    Serial.print("\tDelta X (m): "); Serial.print(dx);
-    Serial.print("\tDelta Y (m): "); Serial.print(dy);
-    Serial.print("\tTotal Distance (m): "); Serial.println(distance);
+    Serial.print("\tDelta X (cm): "); Serial.print(dx);
+    Serial.print("\tDelta Y (cm): "); Serial.print(dy);
+    Serial.print("\tTotal Distance (cm): "); Serial.println(distance_cm);
 
-    return distance;
+    return distance_cm;
 }
 
 void positionHold(void *pvParameters) {
@@ -233,7 +233,7 @@ void positionHold(void *pvParameters) {
         read_optical_flow(&deltaX, &deltaY);
         heigth = tof_bottom_get_range();
 
-        current_distance += calculateDistance(deltaX, deltaY,heigth);
+        current_distance += calculateDistanceCM(deltaX, deltaY,heigth);
         USBSerial.print("Distance: ");
         USBSerial.print(current_distance);
         USBSerial.print("\n");
