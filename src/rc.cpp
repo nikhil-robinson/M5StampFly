@@ -222,8 +222,7 @@ void positionHold(void *pvParameters) {
     ahrs_reset_flag       = 0.0;
     Stick[LOG]            = 0.0;
 
-#if 0
-    vTaskDelay(pdMS_TO_TICKS(200));
+    vTaskDelay(pdMS_TO_TICKS(5000));
 
     USBSerial.printf("AHRS RESET\r\n");
 
@@ -238,102 +237,14 @@ void positionHold(void *pvParameters) {
 
     USBSerial.printf("LIFT OFF\r\n");
     vTaskDelay(pdMS_TO_TICKS(2000));
-#endif
-
-    // Proportional control constants for X and Y axes
-    const float KpX = 1.0;  // Adjust this gain as needed
-    const float KpY = 1.0;  // Adjust this gain as needed
-
-    float target_distance  = 20.0;  // Target distance in cm
-    float current_distance = 0.0;   // Current traveled distance
-    float elevator_command = 0.0;   // Elevator stick control (-1 to 1)
-
-    while (true) {
-        int16_t deltaX, deltaY, heigth;
-        while (true) {
-            read_optical_flow(&deltaX, &deltaY);
-            heigth = tof_bottom_get_range();
-
-            current_distance += calculateDistanceCM(deltaX, deltaY, heigth);
-            USBSerial.print("Distance: ");
-            USBSerial.print(current_distance);
-            USBSerial.print("\n");
-
-            if (deviceConnected) {
-                uint8_t *dx_int = (uint8_t *)&deltaX;
-                uint8_t *dy_int = (uint8_t *)&deltaY;
-                uint8_t *dh_int = (uint8_t *)&heigth;
-                uint8_t *dd_int = (uint8_t *)&current_distance;
-
-                uint8_t data[] = {dx_int[0], dx_int[1], dx_int[2], dx_int[3], dy_int[0], dy_int[1],
-                                  dy_int[2], dy_int[3], dh_int[0], dh_int[1], dh_int[2], dh_int[3],
-                                  dd_int[0], dd_int[1], dd_int[2], dd_int[3]};
-                // Send notification
-                pCharacteristic->setValue(data, sizeof(data));
-                pCharacteristic->notify();
-
-                USBSerial.println("Notification sent: ");
-                for (size_t i = 0; i < sizeof(data); i++) {
-                    USBSerial.printf("%d ", data[i]);
-                }
-                USBSerial.printf("\n");
-                // delay(20);
-            }
-            vTaskDelay(1);
-            // continue;
-        }
-
-        // Convert motion to cm (adjust scaling factor based on sensor calibration)
-        current_distance += deltaY * 0.1;  // Example scaling factor
-
-        // Finite state machine (FSM) for movement control
-        switch (moveState) {
-            case MOVE_FORWARD: {
-                USBSerial.println("MOVE_FORWARD");
-                if (current_distance < target_distance) {
-                    elevator_command = 0.1;  // Move forward
-                } else {
-                    elevator_command = 0.0;  // Stop
-                    moveState        = STOP_FORWARD;
-                }
-                break;
-            }
-
-            case STOP_FORWARD: {
-                USBSerial.println("STOP_FORWARD");
-                vTaskDelay(pdMS_TO_TICKS(1000));  // Small pause
-                moveState = MOVE_BACKWARD;
-                break;
-            }
-
-            case MOVE_BACKWARD: {
-                USBSerial.println("Move backward Position");
-                if (current_distance > 0) {
-                    elevator_command = -0.1;  // Move backward
-                } else {
-                    elevator_command = 0.0;  // Stop
-                    moveState        = STOP_BACKWARD;
-                }
-                break;
-            }
-
-            case STOP_BACKWARD: {
-                USBSerial.println("Reached Start Position");
-                vTaskDelay(portMAX_DELAY);
-            } break;
-        }
-
-        // Update stick inputs
-        Stick[ELEVATOR] = elevator_command;
-
-        // Debugging
-        USBSerial.print("Distance: ");
-        USBSerial.print(current_distance);
-        USBSerial.print(" cm, Elevator Command: ");
-        USBSerial.println(Stick[ELEVATOR]);
-
-        vTaskDelay(1);
-    }
+    Stick[ELEVATOR] =0.1;
+    vTaskDelay(pdMS_TO_TICKS(5000));
+    Stick[ELEVATOR] =0.00;
+    vTaskDelay(pdMS_TO_TICKS(5000));
+    Stick[ELEVATOR] =-0.1;
+    vTaskDelay(pdMS_TO_TICKS(5000));
+    Stick[ELEVATOR] =0.00;
+    vTaskDelay(pdMS_TO_TICKS(5000));
     vTaskDelete(NULL);
 }
 
