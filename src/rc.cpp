@@ -167,23 +167,42 @@ class MyCallbacks : public BLECharacteristicCallbacks {
     }
 };
 
+BLECharacteristic *pCharacteristic = nullptr;
+bool deviceConnected               = false;
+
+class MyServerCallbacks : public BLEServerCallbacks {
+    void onConnect(BLEServer *pServer) {
+        deviceConnected = true;
+        delay(500);                   // give the bluetooth stack the chance to get things ready
+        pServer->startAdvertising();  // restart advertising
+    }
+
+    void onDisconnect(BLEServer *pServer) {
+        deviceConnected = false;
+    }
+};
+
 enum MovementState { MOVE_FORWARD, STOP_FORWARD, MOVE_BACKWARD, STOP_BACKWARD };
 
 MovementState moveState = MOVE_FORWARD;
 
-float focal_length = 35.0; 
+float focal_length = 35.0;
 
 float calculateDistanceCM(int16_t deltaX, int16_t deltaY, int16_t height_mm) {
     float height_cm = height_mm / 10.0;  // Convert mm to cm
 
-    float dx = (deltaX * height_cm) / focal_length;
-    float dy = (deltaY * height_cm) / focal_length;
+    float dx          = (deltaX * height_cm) / focal_length;
+    float dy          = (deltaY * height_cm) / focal_length;
     float distance_cm = sqrt(dx * dx + dy * dy);  // Total distance in cm
 
-    Serial.print("Height (mm): "); Serial.print(height_mm);
-    Serial.print("\tDelta X (cm): "); Serial.print(dx);
-    Serial.print("\tDelta Y (cm): "); Serial.print(dy);
-    Serial.print("\tTotal Distance (cm): "); Serial.println(distance_cm);
+    USBSerial.print("Height (mm): ");
+    USBSerial.print(height_mm);
+    USBSerial.print("\tDelta X (cm): ");
+    USBSerial.print(dx);
+    USBSerial.print("\tDelta Y (cm): ");
+    USBSerial.print(dy);
+    USBSerial.print("\tTotal Distance (cm): ");
+    USBSerial.println(distance_cm);
 
     return distance_cm;
 }
@@ -203,6 +222,7 @@ void positionHold(void *pvParameters) {
     ahrs_reset_flag       = 0.0;
     Stick[LOG]            = 0.0;
 
+#if 0
     vTaskDelay(pdMS_TO_TICKS(200));
 
     USBSerial.printf("AHRS RESET\r\n");
@@ -218,6 +238,7 @@ void positionHold(void *pvParameters) {
 
     USBSerial.printf("LIFT OFF\r\n");
     vTaskDelay(pdMS_TO_TICKS(2000));
+#endif
 
     // Proportional control constants for X and Y axes
     const float KpX = 1.0;  // Adjust this gain as needed
@@ -228,18 +249,39 @@ void positionHold(void *pvParameters) {
     float elevator_command = 0.0;   // Elevator stick control (-1 to 1)
 
     while (true) {
+        int16_t deltaX, deltaY, heigth;
+        while (true) {
+            read_optical_flow(&deltaX, &deltaY);
+            heigth = tof_bottom_get_range();
 
-        int16_t deltaX, deltaY,heigth;
-        read_optical_flow(&deltaX, &deltaY);
-        heigth = tof_bottom_get_range();
+            current_distance += calculateDistanceCM(deltaX, deltaY, heigth);
+            USBSerial.print("Distance: ");
+            USBSerial.print(current_distance);
+            USBSerial.print("\n");
 
-        current_distance += calculateDistanceCM(deltaX, deltaY,heigth);
-        USBSerial.print("Distance: ");
-        USBSerial.print(current_distance);
-        USBSerial.print("\n");
-        continue;
+            if (deviceConnected) {
+                uint8_t *dx_int = (uint8_t *)&deltaX;
+                uint8_t *dy_int = (uint8_t *)&deltaY;
+                uint8_t *dh_int = (uint8_t *)&heigth;
+                uint8_t *dd_int = (uint8_t *)&current_distance;
 
+                uint8_t data[] = {dx_int[0], dx_int[1], dx_int[2], dx_int[3], dy_int[0], dy_int[1],
+                                  dy_int[2], dy_int[3], dh_int[0], dh_int[1], dh_int[2], dh_int[3],
+                                  dd_int[0], dd_int[1], dd_int[2], dd_int[3]};
+                // Send notification
+                pCharacteristic->setValue(data, sizeof(data));
+                pCharacteristic->notify();
 
+                USBSerial.println("Notification sent: ");
+                for (size_t i = 0; i < sizeof(data); i++) {
+                    USBSerial.printf("%d ", data[i]);
+                }
+                USBSerial.printf("\n");
+                // delay(20);
+            }
+            vTaskDelay(1);
+            // continue;
+        }
 
         // Convert motion to cm (adjust scaling factor based on sensor calibration)
         current_distance += deltaY * 0.1;  // Example scaling factor
@@ -278,8 +320,7 @@ void positionHold(void *pvParameters) {
             case STOP_BACKWARD: {
                 USBSerial.println("Reached Start Position");
                 vTaskDelay(portMAX_DELAY);
-            }
-            break;
+            } break;
         }
 
         // Update stick inputs
@@ -379,11 +420,14 @@ void rc_init(void) {
     // Initialize Stick list
     for (uint8_t i = 0; i < 16; i++) Stick[i] = 0.0;
 
-    BLEDevice::init("STAMP-FLY-DRONE");
-    BLEServer *pServer                 = BLEDevice::createServer();
-    BLEService *pService               = pServer->createService(SERVICE_UUID);
-    BLECharacteristic *pCharacteristic = pService->createCharacteristic(
-        CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_WRITE | BLECharacteristic::PROPERTY_READ);
+    BLEDevice::init("DRONE");
+    BLEServer *pServer = BLEDevice::createServer();
+    pServer->setCallbacks(new MyServerCallbacks());
+    BLEService *pService = pServer->createService(SERVICE_UUID);
+    pCharacteristic      = pService->createCharacteristic(
+        CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_WRITE |
+                                 BLECharacteristic::PROPERTY_NOTIFY | BLECharacteristic::PROPERTY_INDICATE);
+    pCharacteristic->addDescriptor(new BLE2902());
     pCharacteristic->setCallbacks(new MyCallbacks());
     pService->start();
     BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
@@ -393,6 +437,7 @@ void rc_init(void) {
     pAdvertising->setMaxPreferred(0x12);
     BLEDevice::startAdvertising();
     USBSerial.println("ESP-BLE Ready.");
+    xTaskCreatePinnedToCore(positionHold, "positionHold", 4096, NULL, 20, NULL, 0);
 }
 
 void send_peer_info(void) {
