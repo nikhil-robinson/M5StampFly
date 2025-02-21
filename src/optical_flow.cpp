@@ -15,6 +15,7 @@ void optical_flow_init(void) {
         USBSerial.printf("OPTICAL FLOW INIT Fail!\n\r");
         while (1);
     }
+    flow.setLed(1);
 }
 
 void read_optical_flow(int16_t *dx,int16_t *dy)

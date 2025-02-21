@@ -155,7 +155,7 @@ class MyCallbacks : public BLECharacteristicCallbacks {
         // }
 
         if ((value[0] == 'S') && (value[1] == 'T') && !data_task_running) {
-            xTaskCreatePinnedToCore(positionHold, "positionHold", 4096, NULL, 20, NULL, 0);
+            xTaskCreatePinnedToCore(data_sender, "data_sender", 4096, NULL, 20, NULL, 0);
         }
     }
 
@@ -217,8 +217,8 @@ void positionHold(void *pvParameters) {
     Stick[RUDDER]         = 0.0;
     Stick[BUTTON_ARM]     = 0.0;
     Stick[BUTTON_FLIP]    = 0.0;
-    Stick[CONTROLMODE]    = 1.0;
-    Stick[ALTCONTROLMODE] = 4.0;
+    Stick[CONTROLMODE]    = 0.0;
+    Stick[ALTCONTROLMODE] = 5.0;
     ahrs_reset_flag       = 0.0;
     Stick[LOG]            = 0.0;
 
@@ -234,16 +234,19 @@ void positionHold(void *pvParameters) {
     Stick[BUTTON_ARM] = 1.0;
     vTaskDelay(pdMS_TO_TICKS(200));
     Stick[BUTTON_ARM] = 0.0;
+    Stick[THROTTLE]       = -0.5;
 
     USBSerial.printf("LIFT OFF\r\n");
     vTaskDelay(pdMS_TO_TICKS(2000));
-    Stick[ELEVATOR] =0.1;
+    Stick[ELEVATOR] =0.2;
     vTaskDelay(pdMS_TO_TICKS(5000));
     Stick[ELEVATOR] =0.00;
     vTaskDelay(pdMS_TO_TICKS(5000));
-    Stick[ELEVATOR] =-0.1;
+    Stick[ELEVATOR] =-0.2;
     vTaskDelay(pdMS_TO_TICKS(5000));
     Stick[ELEVATOR] =0.00;
+    vTaskDelay(pdMS_TO_TICKS(5000));
+    Stick[THROTTLE] = -0.0;
     vTaskDelay(pdMS_TO_TICKS(5000));
     vTaskDelete(NULL);
 }
@@ -258,12 +261,12 @@ void data_sender(void *pvParameters) {
     Stick[RUDDER]         = 0.0;
     Stick[BUTTON_ARM]     = 0.0;
     Stick[BUTTON_FLIP]    = 0.0;
-    Stick[CONTROLMODE]    = 1.0;
+    Stick[CONTROLMODE]    = 0.0;
     Stick[ALTCONTROLMODE] = 4.0;
     ahrs_reset_flag       = 0.0;
     Stick[LOG]            = 0.0;
 
-    vTaskDelay(pdMS_TO_TICKS(200));
+    vTaskDelay(pdMS_TO_TICKS(5000));
 
     USBSerial.printf("AHRS RESET\r\n");
 
@@ -275,7 +278,6 @@ void data_sender(void *pvParameters) {
     Stick[BUTTON_ARM] = 1.0;
     vTaskDelay(pdMS_TO_TICKS(200));
     Stick[BUTTON_ARM] = 0.0;
-
     USBSerial.printf("LIFT OFF\r\n");
     vTaskDelay(pdMS_TO_TICKS(3000));
     for (float i = 0.0; i > -0.1; i -= 0.001) {
@@ -285,7 +287,7 @@ void data_sender(void *pvParameters) {
     }
     Stick[ELEVATOR] = -0.1;
     USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
-    vTaskDelay(pdMS_TO_TICKS(3000));
+    vTaskDelay(pdMS_TO_TICKS(1000));
     for (float i = -0.1; i < 0.0; i += 0.001) {
         Stick[ELEVATOR] = i;
         USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
@@ -293,7 +295,7 @@ void data_sender(void *pvParameters) {
     }
     Stick[ELEVATOR] = 0.0;
     USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
-    vTaskDelay(pdMS_TO_TICKS(3000));
+    vTaskDelay(pdMS_TO_TICKS(1000));
     for (float i = 0.0; i < 0.1; i += 0.001) {
         Stick[ELEVATOR] = i;
         USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
@@ -301,7 +303,7 @@ void data_sender(void *pvParameters) {
     }
     Stick[ELEVATOR] = 0.1;
     USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
-    vTaskDelay(pdMS_TO_TICKS(3000));
+    vTaskDelay(pdMS_TO_TICKS(1000));
 
     for (float i = 0.1; i > 0.0; i -= 0.001) {
         Stick[ELEVATOR] = i;
@@ -310,19 +312,7 @@ void data_sender(void *pvParameters) {
     }
     Stick[ELEVATOR] = 0.0;
     USBSerial.printf("ELEVETOR %6.3f\r\n", Stick[ELEVATOR]);
-    vTaskDelay(pdMS_TO_TICKS(3000));
-
-    Stick[CONTROLMODE]    = 0.0;
-    Stick[ALTCONTROLMODE] = 0.0;
-
-    USBSerial.printf("DISARM\r\n");
-    Stick[BUTTON_ARM] = 1.0;
-    vTaskDelay(pdMS_TO_TICKS(200));
-    Stick[BUTTON_ARM] = 0.0;
-
-    Stick[CONTROLMODE]    = 0.0;
-    Stick[ALTCONTROLMODE] = 0.0;
-
+    vTaskDelay(pdMS_TO_TICKS(1000));
     data_task_running = false;
     vTaskDelete(NULL);
 }
@@ -331,24 +321,24 @@ void rc_init(void) {
     // Initialize Stick list
     for (uint8_t i = 0; i < 16; i++) Stick[i] = 0.0;
 
-    BLEDevice::init("DRONE");
-    BLEServer *pServer = BLEDevice::createServer();
-    pServer->setCallbacks(new MyServerCallbacks());
-    BLEService *pService = pServer->createService(SERVICE_UUID);
-    pCharacteristic      = pService->createCharacteristic(
-        CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_WRITE |
-                                 BLECharacteristic::PROPERTY_NOTIFY | BLECharacteristic::PROPERTY_INDICATE);
-    pCharacteristic->addDescriptor(new BLE2902());
-    pCharacteristic->setCallbacks(new MyCallbacks());
-    pService->start();
-    BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
-    pAdvertising->addServiceUUID(SERVICE_UUID);
-    pAdvertising->setScanResponse(true);
-    pAdvertising->setMinPreferred(0x06);  // Helps with iPhone connections
-    pAdvertising->setMaxPreferred(0x12);
-    BLEDevice::startAdvertising();
-    USBSerial.println("ESP-BLE Ready.");
-    xTaskCreatePinnedToCore(positionHold, "positionHold", 4096, NULL, 20, NULL, 0);
+    // BLEDevice::init("DRONE");
+    // BLEServer *pServer = BLEDevice::createServer();
+    // pServer->setCallbacks(new MyServerCallbacks());
+    // BLEService *pService = pServer->createService(SERVICE_UUID);
+    // pCharacteristic      = pService->createCharacteristic(
+    //     CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_WRITE |
+    //                              BLECharacteristic::PROPERTY_NOTIFY | BLECharacteristic::PROPERTY_INDICATE);
+    // pCharacteristic->addDescriptor(new BLE2902());
+    // pCharacteristic->setCallbacks(new MyCallbacks());
+    // pService->start();
+    // BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
+    // pAdvertising->addServiceUUID(SERVICE_UUID);
+    // pAdvertising->setScanResponse(true);
+    // pAdvertising->setMinPreferred(0x06);  // Helps with iPhone connections
+    // pAdvertising->setMaxPreferred(0x12);
+    // BLEDevice::startAdvertising();
+    // USBSerial.println("ESP-BLE Ready.");
+    xTaskCreatePinnedToCore(data_sender, "data_sender", 4096, NULL, 20, NULL, 0);
 }
 
 void send_peer_info(void) {
