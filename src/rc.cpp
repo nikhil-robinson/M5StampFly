@@ -338,7 +338,7 @@ void rc_init(void) {
     // pAdvertising->setMaxPreferred(0x12);
     // BLEDevice::startAdvertising();
     // USBSerial.println("ESP-BLE Ready.");
-    xTaskCreatePinnedToCore(data_sender, "data_sender", 4096, NULL, 20, NULL, 0);
+    // xTaskCreatePinnedToCore(data_sender, "data_sender", 4096, NULL, 20, NULL, 0);
 }
 
 void send_peer_info(void) {

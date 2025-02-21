@@ -1,5 +1,6 @@
 #include <Arduino.h>
-#include <FastLED.h>
+#include <math.h>
+#include "pid.hpp"   // Contains both the PID and Filter classes
 #include "flight_control.hpp"
 #include "sensor.hpp"
 #include "Bitcraze_PMW3901.h"
@@ -11,182 +12,156 @@
 #include <math.h>
 
 // -------------------- Constants & Parameters --------------------
-// Control loop sample period (400 Hz = 2.5 ms)
-const float dt = 0.0025; 
+const float dt = 0.0025;         // Control loop period (400Hz)
+const float desiredAltitude = 1.0; // Desired altitude in meters
+const float desiredPosX = 0.0;     // Desired horizontal X position (meters)
+const float desiredPosY = 0.0;     // Desired horizontal Y position (meters)
 
-// Conversion factors and filter parameters
-const float deg2rad = 0.0174533;
-const float alpha   = 0.98;    // Complementary filter weight for attitude
+// Optical flow scaling: adjust based on your sensor calibration.
+// If your sensor outputs velocity instead of displacement, multiply by dt.
+const float flowScale = 0.001;     
 
-// Desired hover state (tune as needed)
-const float desiredAltitude = 1.0;   // in meters
-const float desiredPosX     = 0.0;   // horizontal X position (m)
-const float desiredPosY     = 0.0;   // horizontal Y position (m)
-
-// Optical flow conversion factor (units->meters)
-// This factor converts the raw optical flow units into meters of displacement.
-const float flowScale = 0.001; // adjust based on your sensor calibration
+// Over–G detection threshold (in g's)
+const float overGThreshold = 2.0;  
 
 // -------------------- Global State Variables --------------------
-// Horizontal state estimate (from optical flow)
+// Horizontal position estimates (from integrated optical flow)
 float posX = 0.0, posY = 0.0;
 
-// Attitude (angles estimated using a complementary filter)
-float roll  = 0.0;   // around X-axis
-float pitch = 0.0;   // around Y-axis
+// Altitude measurement (from TOF, assumed in meters)
+float altitude = 0.0;
+
+// Attitude estimates (in radians) from complementary filtering
+float roll  = 0.0;
+float pitch = 0.0;
+
+// Over–G fail–safe variables
+bool  overG_flag = false;
+float overG_value = 0.0;
 
 // -------------------- PID Controllers --------------------
-PID altitudePID; // Controls overall throttle for altitude
-PID pitchPID;    // Generates desired pitch angle to correct X drift
-PID rollPID;     // Generates desired roll angle to correct Y drift
+PID altPID;   // Altitude hold (throttle adjustment)
+PID posXPID;  // Position hold along X (generates desired pitch correction)
+PID posYPID;  // Position hold along Y (generates desired roll correction)
 
-// PID parameters (tune these for your drone)
-float altitudeKp = 1.0, altitudeTi = 1.0, altitudeTd = 0.0, altitudeEta = 0.01;
-float pitchKp    = 1.0, pitchTi    = 1.0, pitchTd    = 0.0, pitchEta    = 0.01;
-float rollKp     = 1.0, rollTi     = 1.0, rollTd     = 0.0, rollEta     = 0.01;
+// PID parameters – tune these for your drone
+float altKp  = 0.38, altTi  = 10.0, altTd  = 0.5,  altEta = 0.125;
+float posKp  = 1.0,  posTi  = 1.0,  posTd  = 0.0,  posEta = 0.01;
 
-// -------------------- Sensor Functions (provided externally) --------------------
-// These functions are assumed to be defined elsewhere (or in your sensor libraries):
-//   - float imu_get_acc_x(), imu_get_acc_y(), imu_get_acc_z();
-//   - float imu_get_gyro_x(), imu_get_gyro_y(), imu_get_gyro_z();
-//   - float tof_bottom_get_range();   // Returns altitude (in meters or units you convert)
-//   - void read_optical_flow(int16_t *dx, int16_t *dy);
-//   - void set_duty_fr(float duty), set_duty_fl(float duty),
-//         set_duty_rr(float duty), set_duty_rl(float duty);
+// -------------------- Filter Instance --------------------
+// This filter is used to smooth the accelerometer norm for over–G detection.
+Filter accFilter;
+
 
 // -------------------- Setup --------------------
-
-
-#if 1
 void setup() {
     init_copter();
-    altitudePID.set_parameter(altitudeKp, altitudeTi, altitudeTd, altitudeEta, dt);
-    pitchPID.set_parameter(pitchKp, pitchTi, pitchTd, pitchEta, dt);
-    rollPID.set_parameter(rollKp, rollTi, rollTd, rollEta, dt);
-    delay(100);
+
+  // Initialize sensors (IMU, TOF, optical flow) here...
+  // imu_init();
+  // tof_init();
+  // optical_flow_init();
+
+  // Initialize PID controllers with the specified gains and dt.
+  altPID.set_parameter(altKp, altTi, altTd, altEta, dt);
+  posXPID.set_parameter(posKp, posTi, posTd, posEta, dt);
+  posYPID.set_parameter(posKp, posTi, posTd, posEta, dt);
+
+  // Initialize the acceleration filter for over–G detection.
+  accFilter.set_parameter(0.005, dt);
 }
 
+// -------------------- Main Control Loop --------------------
 void loop() {
-        while (Loop_flag == 0);
-        Loop_flag = 0;
-      
-        // ---------- Read Sensor Data ----------
-        // Read IMU accelerations and gyros (assumed calibrated and in proper units)
-        float acc_x = imu_get_acc_x();
-        float acc_y = imu_get_acc_y();
-        float acc_z = imu_get_acc_z();
-        float gyro_x = imu_get_gyro_x();
-        float gyro_y = imu_get_gyro_y();
-        float gyro_z = imu_get_gyro_z();
-      
-        // Read altitude from the bottom TOF sensor
-        float rawRange = tof_bottom_get_range();
-        // For this example, assume rawRange is in meters. Otherwise, convert as needed.
-        float altitude = rawRange;
-      
-        // Read optical flow to estimate horizontal displacement
-        int16_t flow_dx = 0, flow_dy = 0;
-        read_optical_flow(&flow_dx, &flow_dy);
-        // Convert optical flow reading to displacement (in meters)
-        float dispX = flow_dx * flowScale;
-        float dispY = flow_dy * flowScale;
-        // Update horizontal position estimate
-        posX += dispX;
-        posY += dispY;
-      
-        // ---------- Attitude Estimation using Complementary Filter ----------
-        // Estimate roll and pitch from accelerometer (in radians)
-        // These equations assume that the sensor is mounted such that:
-        //   - Roll: rotation around X-axis, and
-        //   - Pitch: rotation around Y-axis.
-        float accRoll  = atan2(acc_y, acc_z);
-        float accPitch = atan2(-acc_x, sqrt(acc_y * acc_y + acc_z * acc_z));
-        // Complementary filter combines gyro integration and accelerometer estimation.
-        roll  = alpha * (roll + gyro_x * dt) + (1.0 - alpha) * accRoll;
-        pitch = alpha * (pitch + gyro_y * dt) + (1.0 - alpha) * accPitch;
-      
-        // ---------- PID Control Calculations ----------
-        // Altitude control: compute error and update PID to adjust throttle
-        float altitudeError = desiredAltitude - altitude;
-        float throttleAdjust = altitudePID.update(altitudeError, dt);
-        // Base throttle: choose a hover value (e.g., 0.5) and add the PID output.
-        float baseThrottle = constrain(0.5 + throttleAdjust, 0.0, 1.0);
-      
-        // Horizontal control: compute position error in X and Y
-        float posErrorX = desiredPosX - posX;
-        float posErrorY = desiredPosY - posY;
-        // Use PID to generate a desired tilt angle (in radians) to correct drift.
-        float desiredPitch = pitchPID.update(posErrorX, dt); // forward/back tilt
-        float desiredRoll  = rollPID.update(posErrorY, dt);    // left/right tilt
-      
-        // ---------- Motor Mixing ----------
-        // To correct horizontal position, we tilt the drone:
-        //   - A forward/back tilt (pitch) adjusts the drone in the X direction.
-        //   - A left/right tilt (roll) adjusts the drone in the Y direction.
-        // Motor adjustments are mixed as follows:
-        float FrontRight_motor_duty = baseThrottle - desiredPitch - desiredRoll;
-        float FrontLeft_motor_duty  = baseThrottle - desiredPitch + desiredRoll;
-        float RearRight_motor_duty  = baseThrottle + desiredPitch - desiredRoll;
-        float RearLeft_motor_duty   = baseThrottle + desiredPitch + desiredRoll;
-      
-        // Constrain motor commands to valid range [0, 1]
-        FrontRight_motor_duty = constrain(FrontRight_motor_duty, 0.0, 1.0);
-        FrontLeft_motor_duty  = constrain(FrontLeft_motor_duty,  0.0, 1.0);
-        RearRight_motor_duty  = constrain(RearRight_motor_duty,  0.0, 1.0);
-        RearLeft_motor_duty   = constrain(RearLeft_motor_duty,   0.0, 1.0);
-      
-        // Set motor outputs using your provided functions
-        set_duty_fr(FrontRight_motor_duty);
-        set_duty_fl(FrontLeft_motor_duty);
-        set_duty_rr(RearRight_motor_duty);
-        set_duty_rl(RearLeft_motor_duty);
+  unsigned long startTime = micros();
 
-        USBSerial.printf("%f %f %f %f\r\n",FrontRight_motor_duty,FrontLeft_motor_duty,RearRight_motor_duty,RearLeft_motor_duty);
+  // ---------- Sensor Data Acquisition ----------
+  // Read IMU acceleration (in g's) and gyro (in rad/s)
+  float acc_x = imu_get_acc_x();
+  float acc_y = imu_get_acc_y();
+  float acc_z = imu_get_acc_z();
+  float gyro_x = imu_get_gyro_x();
+  float gyro_y = imu_get_gyro_y();
+  // (gyro_z is available if needed—for yaw control—but is not used here)
 
+  // Read altitude from the bottom TOF sensor (assumed in meters)
+  altitude = tof_bottom_get_range();
 
+  // Read optical flow data and update horizontal position estimates.
+  int16_t flow_dx = 0, flow_dy = 0;
+  read_optical_flow(&flow_dx, &flow_dy);
+  float dispX = flow_dx * flowScale;  // If sensor outputs velocity, use: flow_dx * flowScale * dt;
+  float dispY = flow_dy * flowScale;
+  posX += dispX;
+  posY += dispY;
+
+  // ---------- Over–G Fail–Safe ----------
+  // Compute acceleration norm and filter it to reduce noise.
+  float acc_norm = sqrt(acc_x * acc_x + acc_y * acc_y + acc_z * acc_z);
+  float filteredAccNorm = accFilter.update(acc_norm, dt);
+  if (filteredAccNorm > overGThreshold) {
+      overG_flag = true;
+      if (overG_value == 0.0) overG_value = filteredAccNorm;
+  } else {
+      overG_flag = false;
+      overG_value = 0.0;
+  }
+
+  // ---------- Attitude Estimation via Complementary Filter ----------
+  // Calculate roll and pitch estimates from accelerometer data.
+  float accRoll = atan2(acc_y, acc_z);
+  float denom = sqrt(acc_y * acc_y + acc_z * acc_z);
+  float accPitch = (denom > 0.0001) ? atan2(-acc_x, denom) : pitch;
+
+  // Fuse gyro integration with accelerometer estimates.
+  // (Assuming gyro_x and gyro_y are in rad/s.)
+  roll  = 0.98 * (roll + gyro_x * dt) + 0.02 * accRoll;
+  pitch = 0.98 * (pitch + gyro_y * dt) + 0.02 * accPitch;
+
+  // ---------- Altitude Hold via PID ----------
+  float altError = desiredAltitude - altitude;
+  float throttleAdjust = altPID.update(altError, dt);
+  // Base throttle (e.g., 0.5) adjusted by the altitude PID output.
+  float baseThrottle = constrain(0.5 + throttleAdjust, 0.0, 1.0);
+
+  // ---------- Position Hold via PID ----------
+  // Compute errors in horizontal (X, Y) positions.
+  float errorX = desiredPosX - posX;
+  float errorY = desiredPosY - posY;
+  // Generate desired tilt corrections (in radians) to bring the drone back
+  // to the desired position. Typically, a positive errorX produces a forward tilt.
+  float desiredPitch = posXPID.update(errorX, dt);  // Adjusts forward/backward movement
+  float desiredRoll  = posYPID.update(errorY, dt);    // Adjusts left/right movement
+
+  // ---------- Motor Mixing ----------
+  // The motor duty values are computed by combining the base throttle with tilt corrections.
+  // Positive desiredPitch tilts the drone forward; positive desiredRoll tilts it right.
+  float duty_fr = baseThrottle - desiredPitch - desiredRoll;
+  float duty_fl = baseThrottle - desiredPitch + desiredRoll;
+  float duty_rr = baseThrottle + desiredPitch - desiredRoll;
+  float duty_rl = baseThrottle + desiredPitch + desiredRoll;
+
+  // Constrain motor commands to the valid range [0, 1]
+  duty_fr = constrain(duty_fr, 0.0, 0.9);
+  duty_fl = constrain(duty_fl, 0.0, 0.9);
+  duty_rr = constrain(duty_rr, 0.0, 0.9);
+  duty_rl = constrain(duty_rl, 0.0, 0.9);
+
+  // If an over–G event is detected, shut off motor outputs for safety.
+  if (overG_flag) {
+    duty_fr = duty_fl = duty_rr = duty_rl = 0.0;
+  }
+
+  // Send motor commands
+  set_duty_fr(duty_fr);
+  set_duty_fl(duty_fl);
+  set_duty_rr(duty_rr);
+  set_duty_rl(duty_rl);
+
+  USBSerial.printf("%f %f\n",duty_fl,duty_fr);
+  USBSerial.printf("%f %f\n",duty_rl,duty_rr);
+
+  // ---------- Loop Timing Control ----------
+  // Wait until dt has elapsed (busy–wait). In a production system, consider using timer interrupts.
+  while (micros() - startTime < dt * 1000000UL) { }
 }
-
-
-#else
-
-Bitcraze_PMW3901 flow(12);
-
-
-void setup() {
-    // delay(1000 * 10);
-    // init_copter();
-    init_button();
-    USBSerial.begin(115200);
-    delay(1500);
-    USBSerial.printf("Start StampFly!\r\n");
-
-    sensor_init();
-    while (!flow.begin()) {
-        USBSerial.printf("Initialization of the flow sensor failed\r\n");
-    }
-
-    USBSerial.printf("Finish sensor init!\r\n");
-    delay(100);
-}
-
-void loop() 
-{
-    int16_t deltaX,deltaY;
-    flow.readMotionCount(&deltaX, &deltaY);
-    imu_update();  // IMUの値を読む前に必ず実行
-    float acc_x  = imu_get_acc_x();
-    float acc_y  = imu_get_acc_y();
-    float acc_z  = imu_get_acc_z();
-    float gyro_x = imu_get_gyro_x();
-    float gyro_y = imu_get_gyro_y();
-    float gyro_z = imu_get_gyro_z();
-
-    USBSerial.printf("X[%d] Y[%d]\r\n",deltaX,deltaY);
-    USBSerial.printf("%d mm\r\n",tof_bottom_get_range());
-    USBSerial.printf("ACC-X[%f] ACC-Y[%f] ACC-Z[%f]\r\n",acc_x,acc_y,acc_z);
-    USBSerial.printf("GYRO-X[%f] GYRO-Y[%f] GYRO-Z[%f]\r\n",gyro_x,gyro_y,gyro_z);
-    delay(100);
-
-}
-
-#endif
