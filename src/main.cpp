@@ -1,3 +1,4 @@
+
 #include <Arduino.h>
 #include <math.h>
 #include "pid.hpp"   // Contains both the PID and Filter classes
@@ -11,157 +12,145 @@
 #include "pid.hpp"
 #include <math.h>
 
-// -------------------- Constants & Parameters --------------------
-const float dt = 0.0025;         // Control loop period (400Hz)
-const float desiredAltitude = 1.0; // Desired altitude in meters
-const float desiredPosX = 0.0;     // Desired horizontal X position (meters)
-const float desiredPosY = 0.0;     // Desired horizontal Y position (meters)
+// Pseudocode for Arduino sensor fusion with Kalman filter
 
-// Optical flow scaling: adjust based on your sensor calibration.
-// If your sensor outputs velocity instead of displacement, multiply by dt.
-const float flowScale = 0.001;     
+// ----- Global Variables & Structures -----
+struct State {
+  float x;    // horizontal position x (meters)
+  float y;    // horizontal position y (meters)
+  float vx;   // horizontal velocity in x (m/s)
+  float vy;   // horizontal velocity in y (m/s)
+};
 
-// Over–G detection threshold (in g's)
-const float overGThreshold = 2.0;  
+State state = {0, 0, 0, 0};
+float totalDistance = 0.0;
 
-// -------------------- Global State Variables --------------------
-// Horizontal position estimates (from integrated optical flow)
-float posX = 0.0, posY = 0.0;
+// Kalman filter parameters (for simplicity, these are placeholders)
+float P[4][4];         // Error covariance matrix
+float Q[4][4];         // Process noise covariance matrix
+float R[2][2];         // Measurement noise covariance matrix
 
-// Altitude measurement (from TOF, assumed in meters)
-float altitude = 0.0;
+// Assume these are declared elsewhere as sensor objects
+// OpticalFlow opticalFlow;
+// TOFSensor tof;
+// Accelerometer accel;
+// Gyroscope gyro;
 
-// Attitude estimates (in radians) from complementary filtering
-float roll  = 0.0;
-float pitch = 0.0;
+// Constant for converting optical flow pixels to angle (depends on sensor characteristics)
+const float focalLength = 200.0;  // example value (in pixels)
 
-// Over–G fail–safe variables
-bool  overG_flag = false;
-float overG_value = 0.0;
+// Timing
+unsigned long prevTime = 0;
 
-// -------------------- PID Controllers --------------------
-PID altPID;   // Altitude hold (throttle adjustment)
-PID posXPID;  // Position hold along X (generates desired pitch correction)
-PID posYPID;  // Position hold along Y (generates desired roll correction)
-
-// PID parameters – tune these for your drone
-float altKp  = 0.38, altTi  = 10.0, altTd  = 0.5,  altEta = 0.125;
-float posKp  = 1.0,  posTi  = 1.0,  posTd  = 0.0,  posEta = 0.01;
-
-// -------------------- Filter Instance --------------------
-// This filter is used to smooth the accelerometer norm for over–G detection.
-Filter accFilter;
-
-
-// -------------------- Setup --------------------
-void setup() {
-    init_copter();
-
-  // Initialize sensors (IMU, TOF, optical flow) here...
-  // imu_init();
-  // tof_init();
-  // optical_flow_init();
-
-  // Initialize PID controllers with the specified gains and dt.
-  altPID.set_parameter(altKp, altTi, altTd, altEta, dt);
-  posXPID.set_parameter(posKp, posTi, posTd, posEta, dt);
-  posYPID.set_parameter(posKp, posTi, posTd, posEta, dt);
-
-  // Initialize the acceleration filter for over–G detection.
-  accFilter.set_parameter(0.005, dt);
+// ----- Kalman Filter Functions -----
+void kalmanPredict(float ax, float ay, float dt) {
+  // Predict new state using simple kinematics:
+  // x_new = x + vx*dt + 0.5*ax*dt^2, and vx_new = vx + ax*dt (similar for y)
+  state.x  = state.x  + state.vx * dt + 0.5 * ax * dt * dt;
+  state.y  = state.y  + state.vy * dt + 0.5 * ay * dt * dt;
+  state.vx = state.vx + ax * dt;
+  state.vy = state.vy + ay * dt;
+  
+  // Update the error covariance P (this is a placeholder update)
+  // In practice, you would update P using the state transition model and Q.
 }
 
-// -------------------- Main Control Loop --------------------
+void kalmanUpdate(float meas_dx, float meas_dy) {
+  // Measurement vector: optical flow displacement in x and y (meters)
+  float z[2] = { meas_dx, meas_dy };
+
+  // Measurement model: assume we directly measure the position increments
+  // Innovation: (z - H*x) where H is the measurement matrix.
+  // For simplicity, assume H is identity for position increments.
+  float y_innov[2];
+  y_innov[0] = z[0] - 0; // difference between measured displacement and predicted displacement (assumed 0 here)
+  y_innov[1] = z[1] - 0;
+  
+  // Compute Kalman gain K (this is simplified; in practice, use full matrix math)
+  float K[4][2]; // Kalman gain matrix (state dimension x measurement dimension)
+  // ... compute K based on P, H, and R ...
+  
+  // Update state estimate: state = state + K * innovation
+  // For pseudocode, we'll assume a simple proportional correction:
+  state.x  = state.x  + K[0][0] * y_innov[0] + K[0][1] * y_innov[1];
+  state.y  = state.y  + K[1][0] * y_innov[0] + K[1][1] * y_innov[1];
+  state.vx = state.vx + K[2][0] * y_innov[0] + K[2][1] * y_innov[1];
+  state.vy = state.vy + K[3][0] * y_innov[0] + K[3][1] * y_innov[1];
+
+  // Update covariance matrix P accordingly.
+}
+
+void setup() {
+  init_copter();
+  delay(100);
+
+  prevTime = millis();
+}
+
 void loop() {
-  unsigned long startTime = micros();
+  unsigned long currentTime = millis();
+  float dt = (currentTime - prevTime) / 1000.0;  // time difference in seconds
+  if (dt <= 0) return;  // ensure dt is positive
+  prevTime = currentTime;
+  
+  // ----- Sensor Readings -----
+  
+  // 1. Read optical flow sensor (pixel displacements)
+  int16_t pixel_dx = 0, pixel_dy = 0;
+  read_optical_flow(&pixel_dx,&pixel_dy);
+  
+  // 2. Read altitude from TOF sensor (in meters)
+  float altitude = tof_bottom_get_range();
+  
+  // 3. Convert pixel displacement to real-world displacement:
+  //    Scale factor: distance (altitude) divided by focal length.
+  float disp_x = pixel_dx * (altitude / focalLength);
+  float disp_y = pixel_dy * (altitude / focalLength);
+  
+  // 4. Read accelerometer data (linear acceleration in m/s^2)
+  float ax = 0, ay = 0, az = 0;
+  // accel.read(&ax, &ay, &az);
+  
+  // 5. Read gyroscope data (angular rates in deg/s or rad/s)
+  float gx = 0, gy = 0, gz = 0;
+  // gyro.read(&gx, &gy, &gz);
 
-  // ---------- Sensor Data Acquisition ----------
-  // Read IMU acceleration (in g's) and gyro (in rad/s)
-  float acc_x = imu_get_acc_x();
-  float acc_y = imu_get_acc_y();
-  float acc_z = imu_get_acc_z();
-  float gyro_x = imu_get_gyro_x();
-  float gyro_y = imu_get_gyro_y();
-  // (gyro_z is available if needed—for yaw control—but is not used here)
-
-  // Read altitude from the bottom TOF sensor (assumed in meters)
-  altitude = tof_bottom_get_range();
-
-  // Read optical flow data and update horizontal position estimates.
-  int16_t flow_dx = 0, flow_dy = 0;
-  read_optical_flow(&flow_dx, &flow_dy);
-  float dispX = flow_dx * flowScale;  // If sensor outputs velocity, use: flow_dx * flowScale * dt;
-  float dispY = flow_dy * flowScale;
-  posX += dispX;
-  posY += dispY;
-
-  // ---------- Over–G Fail–Safe ----------
-  // Compute acceleration norm and filter it to reduce noise.
-  float acc_norm = sqrt(acc_x * acc_x + acc_y * acc_y + acc_z * acc_z);
-  float filteredAccNorm = accFilter.update(acc_norm, dt);
-  if (filteredAccNorm > overGThreshold) {
-      overG_flag = true;
-      if (overG_value == 0.0) overG_value = filteredAccNorm;
-  } else {
-      overG_flag = false;
-      overG_value = 0.0;
-  }
-
-  // ---------- Attitude Estimation via Complementary Filter ----------
-  // Calculate roll and pitch estimates from accelerometer data.
-  float accRoll = atan2(acc_y, acc_z);
-  float denom = sqrt(acc_y * acc_y + acc_z * acc_z);
-  float accPitch = (denom > 0.0001) ? atan2(-acc_x, denom) : pitch;
-
-  // Fuse gyro integration with accelerometer estimates.
-  // (Assuming gyro_x and gyro_y are in rad/s.)
-  roll  = 0.98 * (roll + gyro_x * dt) + 0.02 * accRoll;
-  pitch = 0.98 * (pitch + gyro_y * dt) + 0.02 * accPitch;
-
-  // ---------- Altitude Hold via PID ----------
-  float altError = desiredAltitude - altitude;
-  float throttleAdjust = altPID.update(altError, dt);
-  // Base throttle (e.g., 0.5) adjusted by the altitude PID output.
-  float baseThrottle = constrain(0.5 + throttleAdjust, 0.0, 1.0);
-
-  // ---------- Position Hold via PID ----------
-  // Compute errors in horizontal (X, Y) positions.
-  float errorX = desiredPosX - posX;
-  float errorY = desiredPosY - posY;
-  // Generate desired tilt corrections (in radians) to bring the drone back
-  // to the desired position. Typically, a positive errorX produces a forward tilt.
-  float desiredPitch = posXPID.update(errorX, dt);  // Adjusts forward/backward movement
-  float desiredRoll  = posYPID.update(errorY, dt);    // Adjusts left/right movement
-
-  // ---------- Motor Mixing ----------
-  // The motor duty values are computed by combining the base throttle with tilt corrections.
-  // Positive desiredPitch tilts the drone forward; positive desiredRoll tilts it right.
-  float duty_fr = baseThrottle - desiredPitch - desiredRoll;
-  float duty_fl = baseThrottle - desiredPitch + desiredRoll;
-  float duty_rr = baseThrottle + desiredPitch - desiredRoll;
-  float duty_rl = baseThrottle + desiredPitch + desiredRoll;
-
-  // Constrain motor commands to the valid range [0, 1]
-  duty_fr = constrain(duty_fr, 0.0, 0.9);
-  duty_fl = constrain(duty_fl, 0.0, 0.9);
-  duty_rr = constrain(duty_rr, 0.0, 0.9);
-  duty_rl = constrain(duty_rl, 0.0, 0.9);
-
-  // If an over–G event is detected, shut off motor outputs for safety.
-  if (overG_flag) {
-    duty_fr = duty_fl = duty_rr = duty_rl = 0.0;
-  }
-
-  // Send motor commands
-  set_duty_fr(duty_fr);
-  set_duty_fl(duty_fl);
-  set_duty_rr(duty_rr);
-  set_duty_rl(duty_rl);
-
-  USBSerial.printf("%f %f\n",duty_fl,duty_fr);
-  USBSerial.printf("%f %f\n",duty_rl,duty_rr);
-
-  // ---------- Loop Timing Control ----------
-  // Wait until dt has elapsed (busy–wait). In a production system, consider using timer interrupts.
-  while (micros() - startTime < dt * 1000000UL) { }
+  imu_update();
+  ax  = imu_get_acc_x();
+  ay  = imu_get_acc_y();
+  az  = imu_get_acc_z();
+  gx =  imu_get_gyro_x();
+  gy =  imu_get_gyro_y();
+  gz =  imu_get_gyro_z();
+  
+  // Optionally: use gyro data to adjust or rotate optical flow vector if sensor is not aligned with world frame.
+  
+  // ----- Kalman Filter Prediction -----
+  // Use accelerometer data (after any necessary filtering and coordinate transforms)
+  kalmanPredict(ax, ay, dt);
+  
+  // ----- Kalman Filter Update -----
+  // Update the filter with the displacement measurement from the optical flow sensor
+  kalmanUpdate(disp_x, disp_y);
+  
+  // ----- Distance Calculation -----
+  // Here, we integrate the position estimate changes to compute cumulative distance.
+  static float prev_x = state.x;
+  static float prev_y = state.y;
+  
+  float dx = state.x - prev_x;
+  float dy = state.y - prev_y;
+  float incrementalDistance = sqrt(dx * dx + dy * dy);
+  totalDistance += incrementalDistance;
+  
+  // Update previous state positions
+  prev_x = state.x;
+  prev_y = state.y;
+  
+  // ----- Output Results -----
+  USBSerial.print("Total Distance (m): ");
+  USBSerial.println(totalDistance);
+  
+  // Add an appropriate delay for your sensor update rate
+  delay(10);
 }
