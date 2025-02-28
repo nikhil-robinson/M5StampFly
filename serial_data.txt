@@ -1,0 +1,5092 @@
+Tof Data D[846.000000 mm]
+Acc Data X[-0.009277] Y[0.017090] Z[0.988037]
+GYRO Data X[0.002131] Y[-0.033023] Z[-0.051133]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[1]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.002197] Y[0.020264] Z[0.992188]
+GYRO Data X[-0.009587] Y[-0.024501] Z[-0.050067]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[843.000000 mm]
+Acc Data X[0.004639] Y[0.017822] Z[0.989746]
+GYRO Data X[-0.010653] Y[-0.042611] Z[-0.047937]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[817.000000 mm]
+Acc Data X[-0.002197] Y[0.029297] Z[0.988281]
+GYRO Data X[-0.017044] Y[-0.056459] Z[-0.050067]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[-0.015381] Y[0.018311] Z[0.987549]
+GYRO Data X[0.009587] Y[-0.042611] Z[-0.047937]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[848.000000 mm]
+Acc Data X[-0.001221] Y[0.022949] Z[0.999268]
+GYRO Data X[0.012783] Y[-0.014914] Z[-0.039415]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[851.000000 mm]
+Acc Data X[0.010010] Y[0.020264] Z[0.997803]
+GYRO Data X[-0.013848] Y[0.020240] Z[-0.035154]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[0.012207] Y[0.026123] Z[0.994873]
+GYRO Data X[-0.008522] Y[-0.014914] Z[-0.061785]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[813.000000 mm]
+Acc Data X[0.004150] Y[0.018066] Z[0.994141]
+GYRO Data X[0.005326] Y[-0.053263] Z[-0.066046]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[823.000000 mm]
+Acc Data X[-0.006836] Y[0.017334] Z[0.992920]
+GYRO Data X[0.017044] Y[-0.028762] Z[-0.019175]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[836.000000 mm]
+Acc Data X[-0.006592] Y[0.015137] Z[0.984131]
+GYRO Data X[0.007457] Y[0.031958] Z[0.036219]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[837.000000 mm]
+Acc Data X[0.005371] Y[0.031494] Z[0.983398]
+GYRO Data X[-0.036219] Y[0.018109] Z[-0.033023]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[827.000000 mm]
+Acc Data X[0.014648] Y[0.024658] Z[1.000488]
+GYRO Data X[-0.030893] Y[-0.042611] Z[-0.100135]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[0.008789] Y[0.021484] Z[1.002686]
+GYRO Data X[-0.017044] Y[-0.024501] Z[-0.067112]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[839.000000 mm]
+Acc Data X[-0.001465] Y[0.028320] Z[1.002197]
+GYRO Data X[0.010653] Y[0.006392] Z[-0.013848]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[831.000000 mm]
+Acc Data X[0.002930] Y[0.035889] Z[0.992920]
+GYRO Data X[0.024501] Y[-0.003196] Z[-0.018109]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[0.011475] Y[0.037598] Z[0.991211]
+GYRO Data X[0.044741] Y[-0.023436] Z[-0.058590]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.001709] Y[0.027588] Z[0.989502]
+GYRO Data X[0.064981] Y[-0.035154] Z[-0.079895]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[0.000000] Y[0.011719] Z[0.984131]
+GYRO Data X[0.094809] Y[-0.026632] Z[-0.077764]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-1]
+Tof Data D[831.000000 mm]
+Acc Data X[0.004150] Y[0.018799] Z[0.988525]
+GYRO Data X[0.084156] Y[-0.013848] Z[-0.102265]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[835.000000 mm]
+Acc Data X[0.039551] Y[0.028564] Z[0.987305]
+GYRO Data X[0.073503] Y[0.014914] Z[-0.204531]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[841.000000 mm]
+Acc Data X[0.005371] Y[0.026611] Z[0.992676]
+GYRO Data X[0.105461] Y[-0.066046] Z[-0.350472]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.010742] Y[0.024414] Z[1.000732]
+GYRO Data X[0.089482] Y[-0.069242] Z[-0.291882]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.029541] Y[0.019043] Z[0.996582]
+GYRO Data X[0.073503] Y[-0.002131] Z[-0.151268]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[839.000000 mm]
+Acc Data X[-0.025879] Y[0.012451] Z[1.000488]
+GYRO Data X[0.074569] Y[0.043676] Z[-0.040480]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Y[0.064981] Z[0.039415]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Acc Data X[-0.010742] Y[0.017578] Z[0.997070]
+GYRO Data X[-0.039415] Y[0.079895] Z[0.060720]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[822.000000 mm]
+Acc Data X[-0.000977] Y[0.017822] Z[0.994141]
+GYRO Data X[-0.002131] Y[0.073503] Z[0.066046]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.009766] Y[0.013672] Z[1.002197]
+GYRO Data X[0.035154] Y[0.046872] Z[0.052198]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[843.000000 mm]
+Acc Data X[-0.008301] Y[0.008301] Z[1.004639]
+GYRO Data X[0.052198] Y[0.028762] Z[0.050067]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[840.000000 mm]
+Acc Data X[-0.018555] Y[0.003662] Z[1.001709]
+GYRO Data X[0.053263] Y[0.012783] Z[0.045806]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[823.000000 mm]
+Acc Data X[-0.029297] Y[0.004395] Z[0.999512]
+GYRO Data X[0.050067] Y[-0.003196] Z[0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[836.000000 mm]
+Acc Data X[-0.028320] Y[-0.000244] Z[1.003418]
+GYRO Data X[0.036219] Y[0.000000] Z[0.008522]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[840.000000 mm]
+Acc Data X[-0.019775] Y[0.000732] Z[1.003906]
+GYRO Data X[0.013848] Y[0.013848] Z[0.013848]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.022461] Y[0.001953] Z[0.998779]
+GYRO Data X[0.013848] Y[0.020240] Z[0.022371]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[831.000000 mm]
+Acc Data X[-0.023438] Y[0.006592] Z[0.993408]
+GYRO Data X[0.019175] Y[0.017044] Z[0.015979]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[842.000000 mm]
+Acc Data X[-0.021240] Y[0.004883] Z[0.992920]
+GYRO Data X[0.012783] Y[0.004261] Z[-0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.010498] Y[-0.000977] Z[1.001709]
+GYRO Data X[0.021305] Y[-0.007457] Z[0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.016602] Y[-0.000488] Z[0.995605]
+GYRO Data X[0.014914] Y[-0.015979] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[831.000000 mm]
+Acc Data X[-0.033691] Y[0.000732] Z[0.989746]
+GYRO Data X[-0.011718] Y[-0.011718] Z[-0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.034424] Y[0.002441] Z[0.988037]
+GYRO Data X[-0.035154] Y[0.013848] Z[0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.026611] Y[0.008545] Z[0.989502]
+GYRO Data X[-0.041545] Y[0.034088] Z[0.009587]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[839.000000 mm]
+Acc Data X[-0.021484] Y[0.014893] Z[0.990723]
+GYRO Data X[-0.036219] Y[0.025566] Z[-0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.025879] Y[0.012939] Z[0.999023]
+GYRO Data X[-0.035154] Y[0.027697] Z[-0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[834.000000 mm]
+Acc Data X[-0.019775] Y[0.012451] Z[1.005859]
+GYRO Data X[-0.017044] Y[0.020240] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[834.000000 mm]
+Acc Data X[-0.018311] Y[0.014893] Z[1.008789]
+GYRO Data X[-0.005326] Y[0.010653] Z[-0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.021973] Y[0.011475] Z[1.007324]
+GYRO Data X[0.013848] Y[-0.002131] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[824.000000 mm]
+Acc Data X[-0.024658] Y[0.009277] Z[1.010986]
+GYRO Data X[0.042611] Y[-0.015979] Z[-0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.025879] Y[0.005127] Z[1.005371]
+GYRO Data X[0.039415] Y[-0.030893] Z[-0.014914]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[843.000000 mm]
+Acc Data X[-0.033691] Y[0.004150] Z[0.999512]
+GYRO Data X[0.043676] Y[-0.012783] Z[-0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[828.000000 mm]
+Acc Data X[-0.036621] Y[-0.000488] Z[0.992188]
+GYRO Data X[0.027697] Y[-0.004261] Z[0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[822.000000 mm]
+Acc Data X[-0.029053] Y[0.002197] Z[1.002441]
+GYRO Data X[0.015979] Y[0.010653] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[841.000000 mm]
+Acc Data X[-0.018799] Y[-0.000244] Z[1.004150]
+GYRO Data X[0.008522] Y[0.003196] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.013672] Y[0.008057] Z[0.997070]
+GYRO Data X[0.014914] Y[-0.008522] Z[-0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[820.000000 mm]
+Acc Data X[-0.020508] Y[0.008545] Z[0.989502]
+GYRO Data X[0.014914] Y[-0.024501] Z[-0.010653]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[824.000000 mm]
+Acc Data X[-0.013916] Y[0.009277] Z[0.990723]
+GYRO Data X[0.026632] Y[-0.030893] Z[-0.015979]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.020264] Y[0.000244] Z[0.992432]
+GYRO Data X[0.012783] Y[-0.024501] Z[-0.013848]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[841.000000 mm]
+Acc Data X[-0.024902] Y[0.003418] Z[0.984619]
+GYRO Data X[-0.001065] Y[-0.006392] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[821.000000 mm]
+Acc Data X[-0.024170] Y[0.008789] Z[0.983643]
+GYRO Data X[-0.019175] Y[0.015979] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[825.000000 mm]
+Acc Data X[-0.012451] Y[0.013916] Z[0.997314]
+GYRO Data X[-0.031958] Y[0.008522] Z[0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.010986] Y[0.015381] Z[1.007568]
+GYRO Data X[-0.010653] Y[-0.007457] Z[-0.009587]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.017334] Y[0.016357] Z[0.999023]
+GYRO Data X[0.007457] Y[-0.023436] Z[-0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[824.000000 mm]
+Acc Data X[-0.029785] Y[0.017334] Z[0.983643]
+GYRO Data X[0.024501] Y[-0.017044] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[-0.033936] Y[0.016602] Z[0.985107]
+GYRO Data X[0.025566] Y[-0.002131] Z[-0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.020996] Y[0.008057] Z[1.001709]
+GYRO Data X[0.028762] Y[0.012783] Z[0.011718]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[816.000000 mm]
+Acc Data X[-0.009766] Y[0.005615] Z[1.008301]
+GYRO Data X[0.033023] Y[-0.004261] Z[-0.004261]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[819.000000 mm]
+Acc Data X[-0.006104] Y[0.005615] Z[1.006592]
+GYRO Data X[0.025566] Y[-0.028762] Z[-0.008522]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[822.000000 mm]
+Acc Data X[-0.015137] Y[0.009033] Z[0.991455]
+GYRO Data X[0.031958] Y[-0.046872] Z[-0.013848]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.031738] Y[0.005615] Z[0.982666]
+GYRO Data X[0.022371] Y[-0.057524] Z[-0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.026611] Y[0.008301] Z[0.981201]
+GYRO Data X[-0.018109] Y[-0.019175] Z[-0.010653]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.010986] Y[0.013672] Z[0.992676]
+GYRO Data X[-0.021305] Y[0.005326] Z[-0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[836.000000 mm]
+Acc Data X[0.011719] Y[0.014404] Z[0.993652]
+GYRO Data X[-0.006392] Y[-0.002131] Z[0.008522]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[831.000000 mm]
+Acc Data X[-0.000244] Y[0.027588] Z[0.978516]
+GYRO Data X[0.020240] Y[-0.029827] Z[0.008522]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[837.000000 mm]
+Acc Data X[-0.016113] Y[0.020508] Z[0.975586]
+GYRO Data X[0.041545] Y[-0.053263] Z[0.003196]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[1]
+Tof Data D[842.000000 mm]
+Acc Data X[-0.022949] Y[0.005615] Z[0.985840]
+GYRO Data X[0.058590] Y[-0.030893] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.013672] Y[-0.002197] Z[1.004150]
+GYRO Data X[0.039415] Y[-0.023436] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.018311] Y[-0.007080] Z[1.019287]
+GYRO Data X[-0.002131] Y[-0.034088] Z[-0.015979]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[828.000000 mm]
+Acc Data X[-0.012939] Y[-0.003662] Z[1.021729]
+GYRO Data X[-0.033023] Y[-0.027697] Z[-0.008522]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[831.000000 mm]
+Acc Data X[-0.012939] Y[0.012939] Z[1.015381]
+GYRO Data X[-0.049002] Y[-0.034088] Z[-0.012783]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.012207] Y[0.025391] Z[1.007812]
+GYRO Data X[-0.018109] Y[-0.066046] Z[-0.030893]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.009033] Y[0.027100] Z[1.000977]
+GYRO Data X[0.023436] Y[-0.089482] Z[-0.033023]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[-0.019287] Y[0.020264] Z[1.007324]
+GYRO Data X[0.060720] Y[-0.091613] Z[-0.030893]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[-0.016846] Y[0.009766] Z[1.009277]
+GYRO Data X[0.076699] Y[-0.093743] Z[-0.028762]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[841.000000 mm]
+Acc Data X[-0.014893] Y[-0.001465] Z[1.011475]
+GYRO Data X[0.059655] Y[-0.094809] Z[-0.031958]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-1]
+Tof Data D[831.000000 mm]
+Acc Data X[-0.014160] Y[0.003662] Z[1.005859]
+GYRO Data X[0.011718] Y[-0.087352] Z[-0.031958]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[0]
+Tof Data D[822.000000 mm]
+Acc Data X[-0.006836] Y[0.013916] Z[0.996338]
+GYRO Data X[-0.009587] Y[-0.075634] Z[-0.040480]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[0.000000] Y[0.027588] Z[0.989746]
+GYRO Data X[-0.019175] Y[-0.064981] Z[-0.036219]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[843.000000 mm]
+Acc Data X[0.004395] Y[0.031738] Z[0.980713]
+GYRO Data X[0.009587] Y[-0.054328] Z[-0.020240]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[833.000000 mm]
+Acc Data X[0.004883] Y[0.026367] Z[0.974854]
+GYRO Data X[0.042611] Y[-0.043676] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[821.000000 mm]
+Acc Data X[0.002686] Y[0.023926] Z[0.971436]
+GYRO Data X[0.051133] Y[-0.041545] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.007324] Y[0.011230] Z[0.976318]
+GYRO Data X[0.054328] Y[-0.035154] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[843.000000 mm]
+Acc Data X[-0.000488] Y[-0.000977] Z[0.985840]
+GYRO Data X[0.034088] Y[-0.008522] Z[-0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[836.000000 mm]
+Acc Data X[0.002441] Y[-0.000732] Z[0.992676]
+GYRO Data X[-0.008522] Y[0.011718] Z[-0.006392]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[822.000000 mm]
+Acc Data X[0.001221] Y[0.008789] Z[0.991211]
+GYRO Data X[-0.037284] Y[0.021305] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[828.000000 mm]
+Acc Data X[0.003174] Y[0.019775] Z[0.985840]
+GYRO Data X[-0.027697] Y[0.028762] Z[0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[839.000000 mm]
+Acc Data X[0.003662] Y[0.028320] Z[0.991455]
+GYRO Data X[-0.007457] Y[0.023436] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[834.000000 mm]
+Acc Data X[0.001221] Y[0.025391] Z[1.000732]
+GYRO Data X[0.017044] Y[0.012783] Z[0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[824.000000 mm]
+Acc Data X[-0.000244] Y[0.011230] Z[1.006836]
+GYRO Data X[0.049002] Y[0.009587] Z[0.011718]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.004150] Y[0.004150] Z[1.009033]
+GYRO Data X[0.042611] Y[0.009587] Z[0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[834.000000 mm]
+Acc Data X[-0.005371] Y[0.003174] Z[1.010742]
+GYRO Data X[0.019175] Y[0.001065] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[832.000000 mm]
+Acc Data X[0.001221] Y[0.010010] Z[1.013672]
+GYRO Data X[-0.004261] Y[-0.003196] Z[-0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[825.000000 mm]
+Acc Data X[0.005127] Y[0.014648] Z[1.003174]
+GYRO Data X[-0.006392] Y[-0.011718] Z[-0.015979]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[832.000000 mm]
+Acc Data X[-0.000977] Y[0.025635] Z[0.981689]
+GYRO Data X[-0.004261] Y[-0.022371] Z[-0.014914]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.006104] Y[0.031494] Z[0.978027]
+GYRO Data X[0.023436] Y[-0.034088] Z[-0.018109]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[832.000000 mm]
+Acc Data X[0.002930] Y[0.018799] Z[0.980713]
+GYRO Data X[0.026632] Y[-0.028762] Z[-0.013848]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[822.000000 mm]
+Acc Data X[0.006348] Y[0.011719] Z[0.988281]
+GYRO Data X[0.024501] Y[-0.039415] Z[-0.027697]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[833.000000 mm]
+Acc Data X[0.000732] Y[0.000977] Z[0.992188]
+GYRO Data X[0.019175] Y[-0.027697] Z[-0.027697]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[825.000000 mm]
+Acc Data X[0.004395] Y[0.004883] Z[0.992432]
+GYRO Data X[-0.012783] Y[-0.029827] Z[-0.023436]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[833.000000 mm]
+Acc Data X[0.009521] Y[0.011719] Z[0.991943]
+GYRO Data X[-0.031958] Y[-0.012783] Z[-0.017044]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[825.000000 mm]
+Acc Data X[0.011963] Y[0.011719] Z[0.981445]
+GYRO Data X[-0.023436] Y[-0.006392] Z[-0.025566]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.002930] Y[0.023438] Z[0.984619]
+GYRO Data X[-0.026632] Y[-0.003196] Z[-0.013848]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[833.000000 mm]
+Acc Data X[0.010010] Y[0.017578] Z[0.986572]
+GYRO Data X[-0.017044] Y[-0.005326] Z[-0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[833.000000 mm]
+Acc Data X[0.010010] Y[0.018311] Z[0.996094]
+GYRO Data X[0.002131] Y[-0.009587] Z[-0.004261]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[829.000000 mm]
+Acc Data X[0.002930] Y[0.013428] Z[0.999023]
+GYRO Data X[0.004261] Y[-0.004261] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[837.000000 mm]
+Acc Data X[-0.005127] Y[0.015381] Z[0.994385]
+GYRO Data X[-0.012783] Y[-0.009587] Z[0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.005371] Y[0.021729] Z[0.999512]
+GYRO Data X[-0.012783] Y[-0.005326] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[832.000000 mm]
+Acc Data X[-0.005859] Y[0.020508] Z[1.003418]
+GYRO Data X[0.006392] Y[0.008522] Z[0.013848]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.010498] Y[0.014893] Z[1.008057]
+GYRO Data X[0.021305] Y[0.004261] Z[0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[837.000000 mm]
+Acc Data X[-0.001221] Y[0.009277] Z[1.017822]
+GYRO Data X[0.013848] Y[0.002131] Z[0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[0.006592] Y[0.010254] Z[1.021729]
+GYRO Data X[0.009587] Y[-0.005326] Z[0.004261]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[820.000000 mm]
+Acc Data X[0.008057] Y[0.010742] Z[1.007568]
+GYRO Data X[0.010653] Y[-0.028762] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[824.000000 mm]
+Acc Data X[-0.003906] Y[0.015137] Z[1.001221]
+GYRO Data X[0.018109] Y[-0.043676] Z[-0.014914]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[839.000000 mm]
+Acc Data X[-0.002197] Y[0.009766] Z[0.997803]
+GYRO Data X[0.005326] Y[-0.036219] Z[-0.014914]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[0.001709] Y[0.015381] Z[0.999023]
+GYRO Data X[0.002131] Y[-0.015979] Z[-0.009587]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[813.000000 mm]
+Acc Data X[0.005859] Y[0.020996] Z[0.993164]
+GYRO Data X[0.015979] Y[-0.003196] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[823.000000 mm]
+Acc Data X[0.019531] Y[0.020508] Z[0.985107]
+GYRO Data X[0.011718] Y[-0.003196] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[840.000000 mm]
+Acc Data X[0.010742] Y[0.023193] Z[0.983643]
+GYRO Data X[0.030893] Y[-0.015979] Z[-0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[810.000000 mm]
+Acc Data X[0.008301] Y[0.018066] Z[0.976562]
+GYRO Data X[0.037284] Y[-0.003196] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[842.000000 mm]
+Acc Data X[0.003906] Y[0.014404] Z[0.982178]
+GYRO Data X[0.025566] Y[0.002131] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[849.000000 mm]
+Acc Data X[0.010010] Y[0.010498] Z[0.993896]
+GYRO Data X[0.018109] Y[0.023436] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[839.000000 mm]
+Acc Data X[0.004883] Y[0.014404] Z[0.994629]
+GYRO Data X[-0.012783] Y[0.029827] Z[0.014914]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[824.000000 mm]
+Acc Data X[0.004639] Y[0.015625] Z[0.994385]
+GYRO Data X[-0.009587] Y[0.017044] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[0.004395] Y[0.017334] Z[0.997559]
+GYRO Data X[-0.013848] Y[0.000000] Z[-0.013848]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[832.000000 mm]
+Acc Data X[-0.004395] Y[0.020508] Z[1.000977]
+GYRO Data X[-0.008522] Y[0.018109] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[843.000000 mm]
+Acc Data X[-0.000244] Y[0.020020] Z[1.005127]
+GYRO Data X[-0.004261] Y[0.020240] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[825.000000 mm]
+Acc Data X[0.011230] Y[0.015625] Z[1.020020]
+GYRO Data X[-0.005326] Y[0.006392] Z[-0.009587]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[827.000000 mm]
+Acc Data X[0.014404] Y[0.022217] Z[1.016113]
+GYRO Data X[0.014914] Y[-0.019175] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[836.000000 mm]
+Acc Data X[0.007568] Y[0.017822] Z[1.000732]
+GYRO Data X[0.026632] Y[-0.028762] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.013428] Y[0.014893] Z[0.985352]
+GYRO Data X[0.022371] Y[-0.027697] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.012695] Y[0.011475] Z[0.985840]
+GYRO Data X[0.005326] Y[-0.008522] Z[-0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[0.006836] Y[0.018311] Z[0.994385]
+GYRO Data X[-0.024501] Y[0.001065] Z[-0.015979]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[837.000000 mm]
+Acc Data X[0.017334] Y[0.021729] Z[0.991943]
+GYRO Data X[-0.019175] Y[0.021305] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[839.000000 mm]
+Acc Data X[0.018066] Y[0.030029] Z[0.986084]
+GYRO Data X[0.008522] Y[0.001065] Z[0.004261]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[0.013916] Y[0.024658] Z[0.985352]
+GYRO Data X[0.040480] Y[-0.006392] Z[0.013848]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[825.000000 mm]
+Acc Data X[0.003174] Y[0.016602] Z[0.984863]
+GYRO Data X[0.050067] Y[-0.008522] Z[0.009587]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.000732] Y[0.004639] Z[0.985596]
+GYRO Data X[0.037284] Y[0.001065] Z[0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[839.000000 mm]
+Acc Data X[0.004395] Y[0.004639] Z[0.990723]
+GYRO Data X[-0.003196] Y[0.012783] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[828.000000 mm]
+Acc Data X[0.001709] Y[0.011475] Z[0.990967]
+GYRO Data X[-0.024501] Y[0.027697] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[0.003662] Y[0.020264] Z[0.993896]
+GYRO Data X[-0.023436] Y[0.025566] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[833.000000 mm]
+Acc Data X[0.009766] Y[0.023682] Z[0.996094]
+GYRO Data X[-0.007457] Y[0.022371] Z[0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[0.009277] Y[0.022461] Z[1.005615]
+GYRO Data X[0.018109] Y[0.018109] Z[0.015979]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[825.000000 mm]
+Acc Data X[0.003906] Y[0.012451] Z[1.004150]
+GYRO Data X[0.031958] Y[-0.011718] Z[0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[-0.002197] Y[0.006592] Z[1.009766]
+GYRO Data X[0.011718] Y[-0.012783] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[832.000000 mm]
+Acc Data X[-0.004395] Y[0.009033] Z[0.993896]
+GYRO Data X[-0.006392] Y[0.006392] Z[0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.002930] Y[0.018555] Z[0.996094]
+GYRO Data X[-0.033023] Y[0.014914] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[827.000000 mm]
+Acc Data X[0.000488] Y[0.024170] Z[0.993408]
+GYRO Data X[-0.030893] Y[0.019175] Z[0.009587]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[850.000000 mm]
+Acc Data X[0.012207] Y[0.031738] Z[0.995361]
+GYRO Data X[-0.011718] Y[0.015979] Z[0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[831.000000 mm]
+Acc Data X[0.014404] Y[0.028564] Z[0.990234]
+GYRO Data X[-0.005326] Y[0.001065] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[842.000000 mm]
+Acc Data X[0.014404] Y[0.027832] Z[0.986816]
+GYRO Data X[0.018109] Y[0.007457] Z[0.014914]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[0.005127] Y[0.019531] Z[0.989258]
+GYRO Data X[0.047937] Y[0.006392] Z[0.017044]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[0.000000] Y[0.015381] Z[0.990478]
+GYRO Data X[0.024501] Y[0.008522] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[-0.002930] Y[0.011230] Z[0.995117]
+GYRO Data X[0.012783] Y[0.025566] Z[0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[839.000000 mm]
+Acc Data X[0.002197] Y[0.017578] Z[0.997314]
+GYRO Data X[0.012783] Y[0.027697] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[826.000000 mm]
+Acc Data X[0.001465] Y[0.012939] Z[1.000000]
+GYRO Data X[0.009587] Y[0.014914] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[836.000000 mm]
+Acc Data X[0.001221] Y[0.013184] Z[1.002930]
+GYRO Data X[0.020240] Y[0.023436] Z[0.011718]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.000244] Y[0.015625] Z[1.005127]
+GYRO Data X[0.026632] Y[0.014914] Z[-0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[0.011230] Y[0.019287] Z[1.007324]
+GYRO Data X[0.021305] Y[0.003196] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[825.000000 mm]
+Acc Data X[0.007568] Y[0.010986] Z[1.000732]
+GYRO Data X[0.027697] Y[-0.002131] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[834.000000 mm]
+Acc Data X[-0.001953] Y[0.013916] Z[0.991699]
+GYRO Data X[0.012783] Y[-0.021305] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.014404] Y[0.014160] Z[0.988037]
+GYRO Data X[-0.001065] Y[-0.025566] Z[-0.004261]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[837.000000 mm]
+Acc Data X[-0.011963] Y[0.016113] Z[0.991943]
+GYRO Data X[-0.022371] Y[-0.008522] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.000488] Y[0.021484] Z[0.989746]
+GYRO Data X[-0.036219] Y[0.015979] Z[0.008522]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[0.010742] Y[0.027344] Z[0.991455]
+GYRO Data X[-0.033023] Y[0.012783] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[837.000000 mm]
+Acc Data X[0.007324] Y[0.030518] Z[0.999512]
+GYRO Data X[-0.009587] Y[0.001065] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[0.008789] Y[0.024902] Z[1.002686]
+GYRO Data X[0.012783] Y[-0.002131] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[828.000000 mm]
+Acc Data X[0.005371] Y[0.017822] Z[1.002930]
+GYRO Data X[0.027697] Y[-0.012783] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.003662] Y[0.011475] Z[0.991455]
+GYRO Data X[0.036219] Y[-0.022371] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.012207] Y[0.015381] Z[0.986328]
+GYRO Data X[0.014914] Y[-0.001065] Z[0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[843.000000 mm]
+Acc Data X[-0.013916] Y[0.017090] Z[0.985107]
+GYRO Data X[0.005326] Y[0.025566] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[0.006836] Y[0.021484] Z[0.997314]
+GYRO Data X[0.010653] Y[0.027697] Z[0.004261]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[837.000000 mm]
+Acc Data X[0.014893] Y[0.014648] Z[1.000977]
+GYRO Data X[0.029827] Y[0.020240] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[839.000000 mm]
+Acc Data X[0.006592] Y[0.019287] Z[0.999268]
+GYRO Data X[0.039415] Y[0.003196] Z[0.018109]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[852.000000 mm]
+Acc Data X[-0.008057] Y[0.011963] Z[0.993164]
+GYRO Data X[0.035154] Y[-0.017044] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[833.000000 mm]
+Acc Data X[-0.011475] Y[0.015625] Z[0.989990]
+GYRO Data X[0.006392] Y[-0.001065] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[836.000000 mm]
+Acc Data X[-0.013428] Y[0.011230] Z[0.987549]
+GYRO Data X[-0.007457] Y[0.023436] Z[0.015979]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[0.013184] Y[0.031250] Z[0.989014]
+GYRO Data X[-0.026632] Y[0.012783] Z[0.025566]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[851.000000 mm]
+Acc Data X[0.009033] Y[0.028076] Z[0.987060]
+GYRO Data X[-0.002131] Y[-0.028762] Z[0.023436]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[832.000000 mm]
+Acc Data X[0.047363] Y[0.034424] Z[0.998047]
+GYRO Data X[0.031958] Y[-0.272708] Z[-0.022371]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[841.000000 mm]
+Acc Data X[0.135986] Y[0.049561] Z[1.098633]
+GYRO Data X[0.096939] Y[-0.709466] Z[-0.186421]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[0]
+Tof Data D[840.000000 mm]
+Acc Data X[0.160889] Y[0.029297] Z[1.130127]
+GYRO Data X[0.246076] Y[-1.234642] Z[-0.316384]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[-1]
+Tof Data D[853.000000 mm]
+Acc Data X[0.166504] Y[-0.006348] Z[1.087646]
+GYRO Data X[0.334493] Y[-1.409345] Z[-0.251402]
+Total Distance (m): nan
+Optical FLow Data X[9] Y[-1]
+Tof Data D[837.000000 mm]
+Acc Data X[0.160889] Y[0.023438] Z[1.041992]
+GYRO Data X[0.452737] Y[-1.504153] Z[-0.148072]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[-4]
+Tof Data D[839.000000 mm]
+Acc Data X[0.222168] Y[0.023682] Z[1.039551]
+GYRO Data X[0.594418] Y[-1.840777] Z[-0.318514]
+Total Distance (m): nan
+Optical FLow Data X[12] Y[-4]
+Tof Data D[838.000000 mm]
+Acc Data X[0.306152] Y[0.022949] Z[1.050537]
+GYRO Data X[0.714792] Y[-2.322277] Z[-0.599744]
+Total Distance (m): nan
+Optical FLow Data X[23] Y[-6]
+Tof Data D[854.000000 mm]
+Acc Data X[0.296143] Y[0.019043] Z[1.059326]
+GYRO Data X[0.643420] Y[-2.844256] Z[-0.875647]
+Total Distance (m): nan
+Optical FLow Data X[20] Y[-4]
+Tof Data D[840.000000 mm]
+Acc Data X[0.287598] Y[0.026611] Z[1.032471]
+GYRO Data X[0.748881] Y[-2.971023] Z[-0.887365]
+Total Distance (m): nan
+Optical FLow Data X[21] Y[-4]
+Tof Data D[849.000000 mm]
+Acc Data X[0.223389] Y[0.051758] Z[0.979736]
+GYRO Data X[0.736098] Y[-2.899650] Z[-0.759534]
+Total Distance (m): nan
+Optical FLow Data X[33] Y[-7]
+Tof Data D[844.000000 mm]
+Acc Data X[0.200195] Y[0.034668] Z[0.915283]
+GYRO Data X[0.627441] Y[-2.707902] Z[-0.599744]
+Total Distance (m): nan
+Optical FLow Data X[22] Y[-5]
+Tof Data D[861.000000 mm]
+Acc Data X[0.268066] Y[0.075439] Z[0.864502]
+GYRO Data X[0.390952] Y[-2.509763] Z[-0.564590]
+Total Distance (m): nan
+Optical FLow Data X[27] Y[-5]
+Tof Data D[852.000000 mm]
+Acc Data X[0.320068] Y[0.122559] Z[0.862793]
+GYRO Data X[0.245011] Y[-2.504437] Z[-0.719054]
+Total Distance (m): nan
+Optical FLow Data X[17] Y[-2]
+Tof Data D[863.000000 mm]
+Acc Data X[0.329102] Y[0.145264] Z[0.859131]
+GYRO Data X[0.387756] Y[-2.382997] Z[-0.740359]
+Total Distance (m): nan
+Optical FLow Data X[26] Y[-2]
+Tof Data D[856.000000 mm]
+Acc Data X[0.327881] Y[0.148926] Z[0.824951]
+GYRO Data X[0.389887] Y[-2.055960] Z[-0.583765]
+Total Distance (m): nan
+Optical FLow Data X[17] Y[-1]
+Tof Data D[878.000000 mm]
+Acc Data X[0.347900] Y[0.170654] Z[0.820068]
+GYRO Data X[0.264186] Y[-1.737446] Z[-0.490022]
+Total Distance (m): nan
+Optical FLow Data X[22] Y[-2]
+Tof Data D[872.000000 mm]
+Acc Data X[0.388916] Y[0.167969] Z[0.821777]
+GYRO Data X[0.129962] Y[-1.519067] Z[-0.491087]
+Total Distance (m): nan
+Optical FLow Data X[13] Y[0]
+Tof Data D[870.000000 mm]
+Acc Data X[0.452637] Y[0.198486] Z[0.837402]
+GYRO Data X[0.262055] Y[-1.357147] Z[-0.422910]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[-1]
+Tof Data D[862.000000 mm]
+Acc Data X[0.462646] Y[0.210205] Z[0.843262]
+GYRO Data X[0.117179] Y[-1.171791] Z[-0.409062]
+Total Distance (m): nan
+Optical FLow Data X[15] Y[-1]
+Tof Data D[909.000000 mm]
+Acc Data X[0.465088] Y[0.230713] Z[0.828857]
+GYRO Data X[0.079895] Y[-0.983239] Z[-0.274838]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[-1]
+Tof Data D[916.000000 mm]
+Acc Data X[0.517090] Y[0.264648] Z[0.829834]
+GYRO Data X[0.077764] Y[-0.879908] Z[-0.283360]
+Total Distance (m): nan
+Optical FLow Data X[12] Y[0]
+Tof Data D[895.000000 mm]
+Acc Data X[0.517822] Y[0.273682] Z[0.816162]
+GYRO Data X[0.087352] Y[-0.772317] Z[-0.265251]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[0]
+Tof Data D[885.000000 mm]
+Acc Data X[0.538330] Y[0.266113] Z[0.815918]
+GYRO Data X[0.072438] Y[-0.605070] Z[-0.111853]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[0]
+Tof Data D[952.000000 mm]
+Acc Data X[0.515381] Y[0.259033] Z[0.801025]
+GYRO Data X[0.116114] Y[-0.344080] Z[-0.091613]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[0]
+Tof Data D[970.000000 mm]
+Acc Data X[0.492676] Y[0.262451] Z[0.767578]
+GYRO Data X[0.066046] Y[-0.082025] Z[-0.088417]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-1]
+Tof Data D[946.000000 mm]
+Acc Data X[0.504639] Y[0.260010] Z[0.762695]
+GYRO Data X[-0.021305] Y[0.124636] Z[-0.176834]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[929.000000 mm]
+Acc Data X[0.475342] Y[0.264404] Z[0.757080]
+GYRO Data X[0.025566] Y[0.369647] Z[-0.190682]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[1029.000000 mm]
+Acc Data X[0.461914] Y[0.246582] Z[0.733154]
+GYRO Data X[0.231162] Y[0.764860] Z[-0.226901]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[-1]
+Tof Data D[1001.000000 mm]
+Acc Data X[0.454590] Y[0.250732] Z[0.746094]
+GYRO Data X[0.297209] Y[0.989631] Z[-0.236489]
+Total Distance (m): nan
+Optical FLow Data X[-6] Y[-2]
+Tof Data D[947.000000 mm]
+Acc Data X[0.454346] Y[0.241943] Z[0.766602]
+GYRO Data X[0.353668] Y[1.228250] Z[-0.296144]
+Total Distance (m): nan
+Optical FLow Data X[-13] Y[-3]
+Tof Data D[934.000000 mm]
+Acc Data X[0.448242] Y[0.274902] Z[0.804443]
+GYRO Data X[0.663660] Y[1.590440] Z[-0.421845]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[-3]
+Tof Data D[1062.000000 mm]
+Acc Data X[0.343018] Y[0.271729] Z[0.770508]
+GYRO Data X[1.367800] Y[2.156095] Z[-0.607201]
+Total Distance (m): nan
+Optical FLow Data X[-19] Y[-9]
+Tof Data D[1028.000000 mm]
+Acc Data X[0.197021] Y[0.248047] Z[0.747070]
+GYRO Data X[1.261273] Y[2.435194] Z[-0.481500]
+Total Distance (m): nan
+Optical FLow Data X[-15] Y[-9]
+Tof Data D[936.000000 mm]
+Acc Data X[0.234863] Y[0.255615] Z[0.794434]
+GYRO Data X[0.512392] Y[2.520416] Z[-0.428236]
+Total Distance (m): nan
+Optical FLow Data X[-25] Y[-8]
+Tof Data D[933.000000 mm]
+Acc Data X[0.238770] Y[0.260742] Z[0.894775]
+GYRO Data X[0.145941] Y[2.518285] Z[-0.533697]
+Total Distance (m): nan
+Optical FLow Data X[-16] Y[-2]
+Tof Data D[1045.000000 mm]
+Acc Data X[0.266113] Y[0.269775] Z[0.946777]
+GYRO Data X[-0.058590] Y[2.598180] Z[-0.425041]
+Total Distance (m): nan
+Optical FLow Data X[-26] Y[0]
+Tof Data D[1006.000000 mm]
+Acc Data X[0.237793] Y[0.331787] Z[0.986328]
+GYRO Data X[-0.205596] Y[2.715359] Z[-0.393083]
+Total Distance (m): nan
+Optical FLow Data X[-19] Y[0]
+Tof Data D[920.000000 mm]
+Acc Data X[0.224609] Y[0.376465] Z[0.998779]
+GYRO Data X[-0.192813] Y[2.680205] Z[-0.553937]
+Total Distance (m): nan
+Optical FLow Data X[-19] Y[2]
+Tof Data D[917.000000 mm]
+Acc Data X[0.177246] Y[0.347656] Z[0.922852]
+GYRO Data X[-0.202400] Y[2.597115] Z[-0.543285]
+Total Distance (m): nan
+Optical FLow Data X[-29] Y[2]
+Tof Data D[990.000000 mm]
+Acc Data X[0.104004] Y[0.377197] Z[0.927734]
+GYRO Data X[-0.309992] Y[2.531068] Z[-0.327036]
+Total Distance (m): nan
+Optical FLow Data X[-18] Y[2]
+Tof Data D[907.000000 mm]
+Acc Data X[0.066650] Y[0.358154] Z[0.938721]
+GYRO Data X[-0.168312] Y[2.540656] Z[-0.305731]
+Total Distance (m): nan
+Optical FLow Data X[-28] Y[3]
+Tof Data D[915.000000 mm]
+Acc Data X[0.045166] Y[0.319580] Z[0.955566]
+GYRO Data X[-0.064981] Y[2.469283] Z[-0.284426]
+Total Distance (m): nan
+Optical FLow Data X[-18] Y[0]
+Tof Data D[949.000000 mm]
+Acc Data X[0.055420] Y[0.245361] Z[1.016846]
+GYRO Data X[-0.060720] Y[2.336125] Z[-0.314253]
+Total Distance (m): nan
+Optical FLow Data X[-25] Y[2]
+Tof Data D[924.000000 mm]
+Acc Data X[-0.016113] Y[0.203613] Z[1.028809]
+GYRO Data X[-0.074569] Y[2.451174] Z[-0.291882]
+Total Distance (m): nan
+Optical FLow Data X[-17] Y[1]
+Tof Data D[922.000000 mm]
+Acc Data X[-0.063477] Y[0.164307] Z[1.013672]
+GYRO Data X[-0.263120] Y[2.536395] Z[-0.204531]
+Total Distance (m): nan
+Optical FLow Data X[-28] Y[1]
+Tof Data D[923.000000 mm]
+Acc Data X[-0.125000] Y[0.138916] Z[0.991455]
+GYRO Data X[-0.535828] Y[2.491654] Z[-0.294013]
+Total Distance (m): nan
+Optical FLow Data X[-18] Y[3]
+Tof Data D[895.000000 mm]
+Acc Data X[-0.151855] Y[0.128174] Z[0.977539]
+GYRO Data X[-0.627441] Y[2.515089] Z[-0.343015]
+Total Distance (m): nan
+Optical FLow Data X[-19] Y[5]
+Tof Data D[897.000000 mm]
+Acc Data X[-0.176758] Y[0.184570] Z[0.989258]
+GYRO Data X[-0.656203] Y[2.668488] Z[-0.286556]
+Total Distance (m): nan
+Optical FLow Data X[-30] Y[7]
+Tof Data D[919.000000 mm]
+Acc Data X[-0.208984] Y[0.179688] Z[0.949951]
+GYRO Data X[-0.677508] Y[2.668488] Z[-0.418649]
+Total Distance (m): nan
+Optical FLow Data X[-20] Y[5]
+Tof Data D[917.000000 mm]
+Acc Data X[-0.212646] Y[0.172607] Z[0.990967]
+GYRO Data X[-0.618919] Y[2.453304] Z[-0.482565]
+Total Distance (m): nan
+Optical FLow Data X[-31] Y[8]
+Tof Data D[876.000000 mm]
+Acc Data X[-0.170410] Y[0.185303] Z[1.024658]
+GYRO Data X[-0.596548] Y[2.360626] Z[-0.357929]
+Total Distance (m): nan
+Optical FLow Data X[-19] Y[4]
+Tof Data D[881.000000 mm]
+Acc Data X[-0.138916] Y[0.239990] Z[1.038574]
+GYRO Data X[-0.570982] Y[2.090049] Z[-0.251402]
+Total Distance (m): nan
+Optical FLow Data X[-26] Y[7]
+Tof Data D[911.000000 mm]
+Acc Data X[-0.193848] Y[0.244385] Z[1.041016]
+GYRO Data X[-0.133158] Y[1.907889] Z[-0.256729]
+Total Distance (m): nan
+Optical FLow Data X[-16] Y[2]
+Tof Data D[919.000000 mm]
+Acc Data X[-0.258789] Y[0.237061] Z[1.001465]
+GYRO Data X[0.087352] Y[1.733185] Z[-0.249272]
+Total Distance (m): nan
+Optical FLow Data X[-23] Y[1]
+Tof Data D[879.000000 mm]
+Acc Data X[-0.256836] Y[0.235840] Z[0.976562]
+GYRO Data X[0.064981] Y[1.507349] Z[-0.236489]
+Total Distance (m): nan
+Optical FLow Data X[-12] Y[0]
+Tof Data D[895.000000 mm]
+Acc Data X[-0.251953] Y[0.245361] Z[0.968018]
+GYRO Data X[-0.105461] Y[1.115332] Z[-0.094809]
+Total Distance (m): nan
+Optical FLow Data X[-15] Y[0]
+Tof Data D[920.000000 mm]
+Acc Data X[-0.272461] Y[0.283936] Z[0.993408]
+GYRO Data X[-0.134223] Y[0.779774] Z[-0.019175]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[1]
+Tof Data D[921.000000 mm]
+Acc Data X[-0.256836] Y[0.288818] Z[0.956543]
+GYRO Data X[0.144876] Y[0.427171] Z[0.211988]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[0]
+Tof Data D[899.000000 mm]
+Acc Data X[-0.256104] Y[0.295654] Z[0.929199]
+GYRO Data X[-0.030893] Y[0.142745] Z[0.381365]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[0]
+Tof Data D[917.000000 mm]
+Acc Data X[-0.308350] Y[0.248535] Z[0.906006]
+GYRO Data X[-0.054328] Y[-0.120375] Z[0.442085]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[927.000000 mm]
+Acc Data X[-0.307617] Y[0.241211] Z[0.857178]
+GYRO Data X[0.186421] Y[-0.175769] Z[0.514523]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-1]
+Tof Data D[948.000000 mm]
+Acc Data X[-0.342285] Y[0.222412] Z[0.847412]
+GYRO Data X[0.256729] Y[-0.269512] Z[0.543285]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-1]
+Tof Data D[919.000000 mm]
+Acc Data X[-0.304443] Y[0.209961] Z[0.907959]
+GYRO Data X[0.157659] Y[-0.374973] Z[0.549676]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-3]
+Tof Data D[938.000000 mm]
+Acc Data X[-0.275879] Y[0.222900] Z[0.944336]
+GYRO Data X[0.090547] Y[-0.563525] Z[0.638093]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-1]
+Tof Data D[925.000000 mm]
+Acc Data X[-0.211182] Y[0.224365] Z[1.015625]
+GYRO Data X[-0.046872] Y[-0.872452] Z[0.646616]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[-1]
+Tof Data D[925.000000 mm]
+Acc Data X[-0.171387] Y[0.213867] Z[1.040527]
+GYRO Data X[-0.147006] Y[-1.336907] Z[0.611462]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[0]
+Tof Data D[922.000000 mm]
+Acc Data X[-0.153564] Y[0.206299] Z[1.042480]
+GYRO Data X[-0.301470] Y[-1.912150] Z[0.601874]
+Total Distance (m): nan
+Optical FLow Data X[12] Y[2]
+Tof Data D[924.000000 mm]
+Acc Data X[-0.143066] Y[0.223389] Z[1.037598]
+GYRO Data X[-0.460194] Y[-2.410693] Z[0.578439]
+Total Distance (m): nan
+Optical FLow Data X[23] Y[4]
+Tof Data D[913.000000 mm]
+Acc Data X[-0.150146] Y[0.234619] Z[1.034424]
+GYRO Data X[-0.510262] Y[-2.776079] Z[0.494283]
+Total Distance (m): nan
+Optical FLow Data X[19] Y[3]
+Tof Data D[923.000000 mm]
+Acc Data X[-0.172119] Y[0.234375] Z[1.058350]
+GYRO Data X[-0.309992] Y[-2.896454] Z[0.404801]
+Total Distance (m): nan
+Optical FLow Data X[29] Y[4]
+Tof Data D[906.000000 mm]
+Acc Data X[-0.203125] Y[0.243164] Z[1.014893]
+GYRO Data X[0.023436] Y[-2.927347] Z[0.205596]
+Total Distance (m): nan
+Optical FLow Data X[22] Y[2]
+Tof Data D[896.000000 mm]
+Acc Data X[-0.213623] Y[0.208008] Z[0.963135]
+GYRO Data X[0.270577] Y[-2.971023] Z[0.033023]
+Total Distance (m): nan
+Optical FLow Data X[34] Y[-1]
+Tof Data D[891.000000 mm]
+Acc Data X[-0.260986] Y[0.185059] Z[0.909668]
+GYRO Data X[0.216249] Y[-2.993393] Z[0.023436]
+Total Distance (m): nan
+Optical FLow Data X[24] Y[-2]
+Tof Data D[900.000000 mm]
+Acc Data X[-0.176270] Y[0.175049] Z[0.920166]
+GYRO Data X[-0.053263] Y[-2.855974] Z[0.059655]
+Total Distance (m): nan
+Optical FLow Data X[32] Y[-1]
+Tof Data D[872.000000 mm]
+Acc Data X[-0.108643] Y[0.215332] Z[0.960205]
+GYRO Data X[-0.257794] Y[-2.682336] Z[0.119310]
+Total Distance (m): nan
+Optical FLow Data X[19] Y[0]
+Tof Data D[875.000000 mm]
+Acc Data X[-0.049072] Y[0.226318] Z[0.980957]
+GYRO Data X[-0.286556] Y[-2.575809] Z[0.170442]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[1]
+Tof Data D[872.000000 mm]
+Acc Data X[0.048828] Y[0.270752] Z[1.008057]
+GYRO Data X[-0.030893] Y[-2.563026] Z[0.199204]
+Total Distance (m): nan
+Optical FLow Data X[27] Y[3]
+Tof Data D[868.000000 mm]
+Acc Data X[0.146484] Y[0.298584] Z[1.048584]
+GYRO Data X[0.251402] Y[-2.632268] Z[0.190682]
+Total Distance (m): nan
+Optical FLow Data X[18] Y[0]
+Tof Data D[846.000000 mm]
+Acc Data X[0.112061] Y[0.252686] Z[1.006348]
+GYRO Data X[0.418649] Y[-2.763296] Z[0.182160]
+Total Distance (m): nan
+Optical FLow Data X[29] Y[-3]
+Tof Data D[865.000000 mm]
+Acc Data X[0.101074] Y[0.199219] Z[1.011230]
+GYRO Data X[0.485761] Y[-2.863431] Z[0.321710]
+Total Distance (m): nan
+Optical FLow Data X[22] Y[-3]
+Tof Data D[857.000000 mm]
+Acc Data X[0.158936] Y[0.225586] Z[1.002441]
+GYRO Data X[0.379234] Y[-2.833603] Z[0.528371]
+Total Distance (m): nan
+Optical FLow Data X[32] Y[-5]
+Tof Data D[856.000000 mm]
+Acc Data X[0.293945] Y[0.284668] Z[0.984619]
+GYRO Data X[0.173638] Y[-2.833603] Z[0.579504]
+Total Distance (m): nan
+Optical FLow Data X[22] Y[-3]
+Tof Data D[846.000000 mm]
+Acc Data X[0.321045] Y[0.318604] Z[0.950439]
+GYRO Data X[0.160855] Y[-2.900715] Z[0.400539]
+Total Distance (m): nan
+Optical FLow Data X[31] Y[-3]
+Tof Data D[871.000000 mm]
+Acc Data X[0.290039] Y[0.267090] Z[0.898926]
+GYRO Data X[0.115049] Y[-2.903911] Z[0.328101]
+Total Distance (m): nan
+Optical FLow Data X[21] Y[-1]
+Tof Data D[865.000000 mm]
+Acc Data X[0.348389] Y[0.231201] Z[0.899414]
+GYRO Data X[-0.072438] Y[-2.625877] Z[0.182160]
+Total Distance (m): nan
+Optical FLow Data X[28] Y[-1]
+Tof Data D[869.000000 mm]
+Acc Data X[0.351807] Y[0.245117] Z[0.887451]
+GYRO Data X[-0.109722] Y[-2.164617] Z[0.061785]
+Total Distance (m): nan
+Optical FLow Data X[15] Y[-1]
+Tof Data D[957.000000 mm]
+Acc Data X[0.389160] Y[0.254150] Z[0.866211]
+GYRO Data X[-0.060720] Y[-1.789644] Z[-0.038350]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[0]
+Tof Data D[0.000000 mm]
+Acc Data X[0.419678] Y[0.247070] Z[0.817871]
+GYRO Data X[0.026632] Y[-1.512676] Z[-0.069242]
+Total Distance (m): nan
+Optical FLow Data X[19] Y[1]
+Tof Data D[0.000000 mm]
+Acc Data X[0.491455] Y[0.250000] Z[0.832519]
+GYRO Data X[-0.038350] Y[-1.326254] Z[-0.105461]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[0]
+Tof Data D[1041.000000 mm]
+Acc Data X[0.503418] Y[0.250732] Z[0.796631]
+GYRO Data X[-0.052198] Y[-1.182443] Z[-0.127832]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[1]
+Tof Data D[1027.000000 mm]
+Acc Data X[0.518066] Y[0.285400] Z[0.785645]
+GYRO Data X[-0.096939] Y[-0.972586] Z[-0.103331]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[2]
+Tof Data D[0.000000 mm]
+Acc Data X[0.500244] Y[0.305176] Z[0.745117]
+GYRO Data X[-0.141680] Y[-0.815993] Z[-0.059655]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[1]
+Tof Data D[0.000000 mm]
+Acc Data X[0.504150] Y[0.312988] Z[0.718506]
+GYRO Data X[-0.104396] Y[-0.649811] Z[-0.045806]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[1]
+Tof Data D[1058.000000 mm]
+Acc Data X[0.493164] Y[0.302979] Z[0.704590]
+GYRO Data X[-0.015979] Y[-0.403735] Z[-0.057524]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[1]
+Tof Data D[1026.000000 mm]
+Acc Data X[0.483398] Y[0.279053] Z[0.708252]
+GYRO Data X[0.069242] Y[-0.148072] Z[-0.091613]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[0]
+Tof Data D[0.000000 mm]
+Acc Data X[0.485352] Y[0.283936] Z[0.710938]
+GYRO Data X[0.044741] Y[0.105461] Z[-0.087352]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[0.000000 mm]
+Acc Data X[0.491943] Y[0.270264] Z[0.724609]
+GYRO Data X[-0.070307] Y[0.290817] Z[-0.133158]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[1080.000000 mm]
+Acc Data X[0.541992] Y[0.276123] Z[0.739746]
+GYRO Data X[-0.153398] Y[0.546481] Z[-0.198139]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[0]
+Tof Data D[1025.000000 mm]
+Acc Data X[0.572510] Y[0.299805] Z[0.770752]
+GYRO Data X[-0.166181] Y[0.720119] Z[-0.361125]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[1]
+Tof Data D[1066.000000 mm]
+Acc Data X[0.528320] Y[0.290527] Z[0.799316]
+GYRO Data X[-0.011718] Y[0.894822] Z[-0.490022]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[1]
+Tof Data D[996.000000 mm]
+Acc Data X[0.467285] Y[0.262451] Z[0.784668]
+GYRO Data X[0.320645] Y[1.122789] Z[-0.580569]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[-1]
+Tof Data D[1075.000000 mm]
+Acc Data X[0.410889] Y[0.237549] Z[0.770752]
+GYRO Data X[0.517719] Y[1.657552] Z[-0.692422]
+Total Distance (m): nan
+Optical FLow Data X[-10] Y[-3]
+Tof Data D[1019.000000 mm]
+Acc Data X[0.273438] Y[0.256836] Z[0.785400]
+GYRO Data X[0.372843] Y[1.928129] Z[-0.809601]
+Total Distance (m): nan
+Optical FLow Data X[-18] Y[-4]
+Tof Data D[1053.000000 mm]
+Acc Data X[0.345947] Y[0.250977] Z[0.829834]
+GYRO Data X[-0.166181] Y[2.229599] Z[-0.720119]
+Total Distance (m): nan
+Optical FLow Data X[-14] Y[-1]
+Tof Data D[986.000000 mm]
+Acc Data X[0.322998] Y[0.249268] Z[0.830322]
+GYRO Data X[-0.508131] Y[2.549178] Z[-0.468716]
+Total Distance (m): nan
+Optical FLow Data X[-18] Y[1]
+Tof Data D[1058.000000 mm]
+Acc Data X[0.275146] Y[0.252930] Z[0.838623]
+GYRO Data X[-0.675378] Y[2.692989] Z[-0.339819]
+Total Distance (m): nan
+Optical FLow Data X[-31] Y[6]
+Tof Data D[1004.000000 mm]
+Acc Data X[0.242188] Y[0.266602] Z[0.888428]
+GYRO Data X[-0.777643] Y[2.790993] Z[-0.386691]
+Total Distance (m): nan
+Optical FLow Data X[-25] Y[4]
+Tof Data D[1023.000000 mm]
+Acc Data X[0.221680] Y[0.267578] Z[0.891113]
+GYRO Data X[-1.014132] Y[2.811233] Z[-0.420779]
+Total Distance (m): nan
+Optical FLow Data X[-41] Y[6]
+Tof Data D[963.000000 mm]
+Acc Data X[0.152832] Y[0.235596] Z[0.926270]
+GYRO Data X[-0.919323] Y[2.806972] Z[-0.338754]
+Total Distance (m): nan
+Optical FLow Data X[-27] Y[6]
+Tof Data D[990.000000 mm]
+Acc Data X[0.131592] Y[0.252197] Z[0.943359]
+GYRO Data X[-0.858603] Y[2.796319] Z[-0.252468]
+Total Distance (m): nan
+Optical FLow Data X[-40] Y[8]
+Tof Data D[955.000000 mm]
+Acc Data X[0.153809] Y[0.295410] Z[0.986328]
+GYRO Data X[-0.807470] Y[2.757970] Z[-0.282295]
+Total Distance (m): nan
+Optical FLow Data X[-24] Y[5]
+Tof Data D[985.000000 mm]
+Acc Data X[0.132324] Y[0.286377] Z[0.998779]
+GYRO Data X[-0.357929] Y[2.753709] Z[-0.243946]
+Total Distance (m): nan
+Optical FLow Data X[-32] Y[7]
+Tof Data D[923.000000 mm]
+Acc Data X[0.107910] Y[0.249268] Z[0.983887]
+GYRO Data X[0.010653] Y[2.674879] Z[-0.216249]
+Total Distance (m): nan
+Optical FLow Data X[-18] Y[2]
+Tof Data D[914.000000 mm]
+Acc Data X[0.050293] Y[0.238770] Z[0.995117]
+GYRO Data X[0.216249] Y[2.552374] Z[-0.222640]
+Total Distance (m): nan
+Optical FLow Data X[-26] Y[0]
+Tof Data D[906.000000 mm]
+Acc Data X[-0.011475] Y[0.195312] Z[0.997314]
+GYRO Data X[0.291882] Y[2.473544] Z[-0.258859]
+Total Distance (m): nan
+Optical FLow Data X[-15] Y[-2]
+Tof Data D[936.000000 mm]
+Acc Data X[-0.020264] Y[0.170166] Z[0.992188]
+GYRO Data X[0.143811] Y[2.318016] Z[-0.351537]
+Total Distance (m): nan
+Optical FLow Data X[-16] Y[-1]
+Tof Data D[889.000000 mm]
+Acc Data X[0.018555] Y[0.160400] Z[1.025879]
+GYRO Data X[0.059655] Y[2.148638] Z[-0.234358]
+Total Distance (m): nan
+Optical FLow Data X[-24] Y[-1]
+Tof Data D[865.000000 mm]
+Acc Data X[0.082275] Y[0.206543] Z[1.050049]
+GYRO Data X[-0.303600] Y[1.775796] Z[-0.172573]
+Total Distance (m): nan
+Optical FLow Data X[-16] Y[0]
+Tof Data D[868.000000 mm]
+Acc Data X[0.102539] Y[0.202148] Z[1.082520]
+GYRO Data X[-0.234358] Y[1.346494] Z[-0.034088]
+Total Distance (m): nan
+Optical FLow Data X[-21] Y[2]
+Tof Data D[886.000000 mm]
+Acc Data X[0.108887] Y[0.214355] Z[1.094727]
+GYRO Data X[-0.036219] Y[0.870321] Z[0.159790]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[1]
+Tof Data D[859.000000 mm]
+Acc Data X[0.104492] Y[0.206299] Z[1.119873]
+GYRO Data X[0.054328] Y[0.422910] Z[0.137419]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[0]
+Tof Data D[850.000000 mm]
+Acc Data X[0.075684] Y[0.157959] Z[1.123779]
+GYRO Data X[0.200270] Y[-0.128897] Z[0.082025]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-1]
+Tof Data D[852.000000 mm]
+Acc Data X[0.026367] Y[0.163574] Z[1.101807]
+GYRO Data X[0.153398] Y[-0.560329] Z[0.091613]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[-1]
+Tof Data D[844.000000 mm]
+Acc Data X[-0.067383] Y[0.164551] Z[1.027100]
+GYRO Data X[0.024501] Y[-0.779774] Z[0.067112]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-1]
+Tof Data D[837.000000 mm]
+Acc Data X[-0.109619] Y[0.194580] Z[0.977051]
+GYRO Data X[-0.002131] Y[-0.904410] Z[0.106526]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[0]
+Tof Data D[850.000000 mm]
+Acc Data X[-0.141602] Y[0.199219] Z[0.944336]
+GYRO Data X[0.011718] Y[-0.924650] Z[0.269512]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[0]
+Tof Data D[848.000000 mm]
+Acc Data X[-0.117676] Y[0.213135] Z[0.955322]
+GYRO Data X[-0.074569] Y[-0.838363] Z[0.348341]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[0]
+Tof Data D[839.000000 mm]
+Acc Data X[-0.077393] Y[0.198975] Z[0.971436]
+GYRO Data X[-0.140615] Y[-0.712662] Z[0.372843]
+Total Distance (m): nan
+Optical FLow Data X[9] Y[0]
+Tof Data D[828.000000 mm]
+Acc Data X[-0.069092] Y[0.181885] Z[0.979980]
+GYRO Data X[-0.192813] Y[-0.678573] Z[0.360059]
+Total Distance (m): nan
+Optical FLow Data X[7] Y[0]
+Tof Data D[845.000000 mm]
+Acc Data X[-0.071777] Y[0.141357] Z[0.970947]
+GYRO Data X[-0.211988] Y[-0.682835] Z[0.308927]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[2]
+Tof Data D[843.000000 mm]
+Acc Data X[-0.053223] Y[0.090332] Z[0.970703]
+GYRO Data X[-0.363255] Y[-0.624245] Z[0.317449]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[2]
+Tof Data D[836.000000 mm]
+Acc Data X[-0.071289] Y[0.074951] Z[0.962646]
+GYRO Data X[-0.737163] Y[-0.511327] Z[0.321710]
+Total Distance (m): nan
+Optical FLow Data X[7] Y[5]
+Tof Data D[828.000000 mm]
+Acc Data X[-0.072754] Y[0.065430] Z[0.984375]
+GYRO Data X[-0.969391] Y[-0.384560] Z[0.088417]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[6]
+Tof Data D[847.000000 mm]
+Acc Data X[-0.031738] Y[0.034424] Z[1.030518]
+GYRO Data X[-1.135572] Y[-0.349407] Z[-0.023436]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[8]
+Tof Data D[841.000000 mm]
+Acc Data X[-0.023926] Y[0.036865] Z[1.047119]
+GYRO Data X[-1.437042] Y[-0.377104] Z[-0.050067]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[16]
+Tof Data D[833.000000 mm]
+Acc Data X[-0.050781] Y[0.081787] Z[1.034912]
+GYRO Data X[-1.848234] Y[-0.388822] Z[-0.049002]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[11]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.059082] Y[0.103760] Z[1.006592]
+GYRO Data X[-2.027198] Y[-0.426106] Z[-0.282295]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[22]
+Tof Data D[844.000000 mm]
+Acc Data X[-0.032715] Y[0.081543] Z[1.014648]
+GYRO Data X[-1.816276] Y[-0.477238] Z[-0.470847]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[16]
+Tof Data D[836.000000 mm]
+Acc Data X[-0.043213] Y[0.052979] Z[0.990967]
+GYRO Data X[-1.481783] Y[-0.524110] Z[-0.536893]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[21]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.036133] Y[0.012451] Z[0.991699]
+GYRO Data X[-1.215467] Y[-0.497479] Z[-0.493217]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[12]
+Tof Data D[821.000000 mm]
+Acc Data X[-0.007568] Y[-0.008057] Z[1.006348]
+GYRO Data X[-1.130246] Y[-0.433563] Z[-0.434628]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[16]
+Tof Data D[839.000000 mm]
+Acc Data X[0.014160] Y[0.015381] Z[0.991699]
+GYRO Data X[-1.003479] Y[-0.389887] Z[-0.377104]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[10]
+Tof Data D[834.000000 mm]
+Acc Data X[0.009277] Y[-0.014893] Z[0.981445]
+GYRO Data X[-0.860734] Y[-0.398409] Z[-0.369647]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[12]
+Tof Data D[822.000000 mm]
+Acc Data X[0.025879] Y[-0.004883] Z[0.987549]
+GYRO Data X[-0.655138] Y[-0.382430] Z[-0.378169]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[6]
+Tof Data D[830.000000 mm]
+Acc Data X[0.015625] Y[-0.035156] Z[0.976318]
+GYRO Data X[-0.429302] Y[-0.337689] Z[-0.343015]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[5]
+Tof Data D[835.000000 mm]
+Acc Data X[0.024658] Y[-0.101807] Z[0.987305]
+GYRO Data X[-0.291882] Y[-0.265251] Z[-0.247141]
+Total Distance (m): nan
+Optical FLow Data X[15] Y[6]
+Tof Data D[818.000000 mm]
+Acc Data X[0.025146] Y[-0.125488] Z[0.996094]
+GYRO Data X[-0.330232] Y[-0.147006] Z[-0.221575]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[3]
+Tof Data D[820.000000 mm]
+Acc Data X[0.014893] Y[-0.120605] Z[0.978027]
+GYRO Data X[-0.374973] Y[-0.056459] Z[-0.321710]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[5]
+Tof Data D[819.000000 mm]
+Acc Data X[0.025391] Y[-0.115723] Z[0.983398]
+GYRO Data X[-0.350472] Y[-0.018109] Z[-0.401605]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[4]
+Tof Data D[827.000000 mm]
+Acc Data X[0.038330] Y[-0.102539] Z[0.981445]
+GYRO Data X[-0.279099] Y[0.012783] Z[-0.479369]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[4]
+Tof Data D[818.000000 mm]
+Acc Data X[0.041016] Y[-0.099365] Z[0.995605]
+GYRO Data X[-0.204531] Y[0.015979] Z[-0.454868]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[821.000000 mm]
+Acc Data X[0.032715] Y[-0.099854] Z[0.978271]
+GYRO Data X[-0.158724] Y[0.028762] Z[-0.387756]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[4]
+Tof Data D[814.000000 mm]
+Acc Data X[0.039551] Y[-0.107666] Z[0.989258]
+GYRO Data X[-0.108657] Y[0.046872] Z[-0.371777]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[2]
+Tof Data D[823.000000 mm]
+Acc Data X[0.042480] Y[-0.136963] Z[1.001465]
+GYRO Data X[-0.095874] Y[0.099070] Z[-0.333428]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[824.000000 mm]
+Acc Data X[0.042480] Y[-0.150635] Z[1.001709]
+GYRO Data X[-0.166181] Y[0.124636] Z[-0.281230]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[3]
+Tof Data D[821.000000 mm]
+Acc Data X[0.052490] Y[-0.138916] Z[1.000732]
+GYRO Data X[-0.224771] Y[0.139550] Z[-0.327036]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[817.000000 mm]
+Acc Data X[0.062012] Y[-0.136963] Z[1.005371]
+GYRO Data X[-0.237554] Y[0.117179] Z[-0.400539]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[4]
+Tof Data D[824.000000 mm]
+Acc Data X[0.056396] Y[-0.100586] Z[0.994873]
+GYRO Data X[-0.208792] Y[0.092678] Z[-0.514523]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[4]
+Tof Data D[823.000000 mm]
+Acc Data X[0.060791] Y[-0.084961] Z[0.990967]
+GYRO Data X[-0.115049] Y[0.062851] Z[-0.539024]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[3]
+Tof Data D[821.000000 mm]
+Acc Data X[0.063721] Y[-0.102051] Z[1.003662]
+GYRO Data X[-0.044741] Y[0.077764] Z[-0.461260]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[816.000000 mm]
+Acc Data X[0.057373] Y[-0.109619] Z[0.983398]
+GYRO Data X[-0.041545] Y[0.027697] Z[-0.398409]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[822.000000 mm]
+Acc Data X[0.048584] Y[-0.125732] Z[0.983643]
+GYRO Data X[-0.095874] Y[0.019175] Z[-0.350472]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[819.000000 mm]
+Acc Data X[0.024658] Y[-0.125488] Z[0.974854]
+GYRO Data X[-0.104396] Y[0.045806] Z[-0.320645]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[822.000000 mm]
+Acc Data X[0.025391] Y[-0.117432] Z[0.982666]
+GYRO Data X[-0.077764] Y[0.083091] Z[-0.352603]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[4]
+Tof Data D[813.000000 mm]
+Acc Data X[0.047119] Y[-0.121338] Z[0.991455]
+GYRO Data X[-0.001065] Y[0.120375] Z[-0.428236]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[824.000000 mm]
+Acc Data X[0.059570] Y[-0.105469] Z[0.985352]
+GYRO Data X[0.096939] Y[0.126766] Z[-0.464455]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[817.000000 mm]
+Acc Data X[0.063477] Y[-0.097656] Z[0.993164]
+GYRO Data X[0.185356] Y[0.093743] Z[-0.502805]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[0]
+Tof Data D[816.000000 mm]
+Acc Data X[0.072021] Y[-0.094971] Z[0.997070]
+GYRO Data X[0.237554] Y[0.042611] Z[-0.466586]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[812.000000 mm]
+Acc Data X[0.074463] Y[-0.087402] Z[1.000732]
+GYRO Data X[0.189617] Y[0.015979] Z[-0.343015]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[824.000000 mm]
+Acc Data X[0.064941] Y[-0.078613] Z[0.994873]
+GYRO Data X[0.138484] Y[0.013848] Z[-0.252468]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[813.000000 mm]
+Acc Data X[0.053467] Y[-0.100586] Z[0.992920]
+GYRO Data X[0.142745] Y[0.006392] Z[-0.237554]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[809.000000 mm]
+Acc Data X[0.049072] Y[-0.102051] Z[0.984131]
+GYRO Data X[0.194943] Y[-0.006392] Z[-0.262055]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[808.000000 mm]
+Acc Data X[0.047852] Y[-0.091553] Z[0.984863]
+GYRO Data X[0.207727] Y[0.015979] Z[-0.282295]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-2]
+Tof Data D[822.000000 mm]
+Acc Data X[0.036621] Y[-0.097168] Z[0.987793]
+GYRO Data X[0.236489] Y[0.036219] Z[-0.304666]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[813.000000 mm]
+Acc Data X[0.059570] Y[-0.108398] Z[1.000732]
+GYRO Data X[0.218379] Y[0.058590] Z[-0.257794]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[807.000000 mm]
+Acc Data X[0.066162] Y[-0.092773] Z[0.995361]
+GYRO Data X[0.139550] Y[0.034088] Z[-0.200270]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[807.000000 mm]
+Acc Data X[0.061768] Y[-0.070312] Z[0.989990]
+GYRO Data X[0.110788] Y[0.001065] Z[-0.233293]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[821.000000 mm]
+Acc Data X[0.058838] Y[-0.052490] Z[0.987305]
+GYRO Data X[0.119310] Y[-0.005326] Z[-0.225836]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[813.000000 mm]
+Acc Data X[0.056152] Y[-0.044678] Z[0.985596]
+GYRO Data X[0.152333] Y[-0.007457] Z[-0.180030]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[809.000000 mm]
+Acc Data X[0.056396] Y[-0.038818] Z[0.977783]
+GYRO Data X[0.191748] Y[-0.019175] Z[-0.127832]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[810.000000 mm]
+Acc Data X[0.061279] Y[-0.060303] Z[0.990234]
+GYRO Data X[0.248207] Y[-0.020240] Z[-0.089482]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[819.000000 mm]
+Acc Data X[0.055908] Y[-0.092041] Z[0.997314]
+GYRO Data X[0.251402] Y[-0.017044] Z[-0.042611]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[813.000000 mm]
+Acc Data X[0.045166] Y[-0.087891] Z[0.988770]
+GYRO Data X[0.199204] Y[-0.021305] Z[-0.061785]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-1]
+Tof Data D[811.000000 mm]
+Acc Data X[0.046143] Y[-0.097168] Z[0.976074]
+GYRO Data X[0.210922] Y[-0.002131] Z[-0.104396]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-1]
+Tof Data D[811.000000 mm]
+Acc Data X[0.048096] Y[-0.085449] Z[0.975342]
+GYRO Data X[0.177899] Y[0.024501] Z[-0.102265]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[819.000000 mm]
+Acc Data X[0.043945] Y[-0.096191] Z[0.986572]
+GYRO Data X[0.121440] Y[0.068177] Z[-0.119310]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[813.000000 mm]
+Acc Data X[0.061523] Y[-0.101562] Z[0.993896]
+GYRO Data X[0.110788] Y[0.063916] Z[-0.101200]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[-1]
+Tof Data D[811.000000 mm]
+Acc Data X[0.056641] Y[-0.103027] Z[0.993164]
+GYRO Data X[0.045806] Y[0.045806] Z[-0.120375]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[-1]
+Tof Data D[814.000000 mm]
+Acc Data X[0.047852] Y[-0.083984] Z[0.987793]
+GYRO Data X[0.022371] Y[0.053263] Z[-0.192813]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[819.000000 mm]
+Acc Data X[0.051514] Y[-0.084961] Z[0.988770]
+GYRO Data X[0.084156] Y[0.068177] Z[-0.223706]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[813.000000 mm]
+Acc Data X[0.050537] Y[-0.072021] Z[0.991943]
+GYRO Data X[0.069242] Y[0.077764] Z[-0.223706]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[812.000000 mm]
+Acc Data X[0.057129] Y[-0.064453] Z[0.984619]
+GYRO Data X[0.055394] Y[0.084156] Z[-0.193878]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[815.000000 mm]
+Acc Data X[0.059570] Y[-0.061279] Z[0.992432]
+GYRO Data X[0.031958] Y[0.102265] Z[-0.198139]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[820.000000 mm]
+Acc Data X[0.060059] Y[-0.078125] Z[0.995605]
+GYRO Data X[0.058590] Y[0.070307] Z[-0.197074]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[813.000000 mm]
+Acc Data X[0.044678] Y[-0.083252] Z[0.989502]
+GYRO Data X[0.034088] Y[0.066046] Z[-0.191748]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[813.000000 mm]
+Acc Data X[0.046143] Y[-0.091553] Z[1.001953]
+GYRO Data X[-0.036219] Y[0.072438] Z[-0.137419]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[820.000000 mm]
+Acc Data X[0.034180] Y[-0.086914] Z[0.997070]
+GYRO Data X[-0.086286] Y[0.085221] Z[-0.125701]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[823.000000 mm]
+Acc Data X[0.034424] Y[-0.092773] Z[1.007568]
+GYRO Data X[-0.084156] Y[0.089482] Z[-0.201335]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[812.000000 mm]
+Acc Data X[0.043213] Y[-0.083984] Z[1.013428]
+GYRO Data X[-0.031958] Y[0.082025] Z[-0.221575]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[810.000000 mm]
+Acc Data X[0.049805] Y[-0.082764] Z[1.016602]
+GYRO Data X[-0.051133] Y[0.070307] Z[-0.184291]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[822.000000 mm]
+Acc Data X[0.043945] Y[-0.089600] Z[1.002441]
+GYRO Data X[-0.073503] Y[0.086286] Z[-0.205596]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[821.000000 mm]
+Acc Data X[0.038574] Y[-0.083252] Z[0.987060]
+GYRO Data X[-0.055394] Y[0.067112] Z[-0.276969]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[812.000000 mm]
+Acc Data X[0.042236] Y[-0.065674] Z[0.984131]
+GYRO Data X[-0.025566] Y[0.058590] Z[-0.291882]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[813.000000 mm]
+Acc Data X[0.052734] Y[-0.053711] Z[0.989990]
+GYRO Data X[-0.038350] Y[0.067112] Z[-0.231162]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[851.000000 mm]
+Acc Data X[0.041748] Y[-0.045166] Z[0.983154]
+GYRO Data X[-0.071373] Y[0.062851] Z[-0.182160]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[819.000000 mm]
+Acc Data X[0.040771] Y[-0.041260] Z[0.990723]
+GYRO Data X[-0.080960] Y[0.051133] Z[-0.152333]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[812.000000 mm]
+Acc Data X[0.042236] Y[-0.052490] Z[0.990723]
+GYRO Data X[-0.023436] Y[0.042611] Z[-0.132093]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[0.000000 mm]
+Acc Data X[0.032959] Y[-0.063721] Z[0.989502]
+GYRO Data X[-0.025566] Y[0.041545] Z[-0.118244]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[3]
+Tof Data D[0.000000 mm]
+Acc Data X[0.027832] Y[-0.072510] Z[0.989502]
+GYRO Data X[-0.050067] Y[0.054328] Z[-0.082025]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[840.000000 mm]
+Acc Data X[0.028076] Y[-0.063721] Z[0.989258]
+GYRO Data X[-0.109722] Y[0.068177] Z[-0.092678]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[805.000000 mm]
+Acc Data X[0.025879] Y[-0.072754] Z[0.988281]
+GYRO Data X[-0.073503] Y[0.061785] Z[-0.127832]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[0.000000 mm]
+Acc Data X[0.031738] Y[-0.059570] Z[0.995850]
+GYRO Data X[-0.056459] Y[0.055394] Z[-0.119310]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[1]
+Tof Data D[0.000000 mm]
+Acc Data X[0.041992] Y[-0.043213] Z[0.995117]
+GYRO Data X[-0.085221] Y[0.057524] Z[-0.115049]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[818.000000 mm]
+Acc Data X[0.043945] Y[-0.034180] Z[0.984375]
+GYRO Data X[-0.056459] Y[0.043676] Z[-0.109722]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[799.000000 mm]
+Acc Data X[0.044189] Y[-0.021240] Z[0.978027]
+GYRO Data X[-0.014914] Y[0.018109] Z[-0.104396]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[0.000000 mm]
+Acc Data X[0.037109] Y[-0.013428] Z[0.976562]
+GYRO Data X[0.040480] Y[0.011718] Z[-0.104396]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[0.000000 mm]
+Acc Data X[0.024902] Y[-0.014160] Z[0.963867]
+GYRO Data X[0.109722] Y[0.027697] Z[-0.104396]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[819.000000 mm]
+Acc Data X[0.027832] Y[-0.015869] Z[0.956055]
+GYRO Data X[0.122505] Y[0.059655] Z[-0.072438]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[799.000000 mm]
+Acc Data X[0.039795] Y[-0.011230] Z[0.956055]
+GYRO Data X[0.110788] Y[0.079895] Z[-0.028762]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[819.000000 mm]
+Acc Data X[0.044678] Y[0.004639] Z[0.957275]
+GYRO Data X[0.100135] Y[0.075634] Z[-0.019175]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[854.000000 mm]
+Acc Data X[0.035156] Y[0.016602] Z[0.957275]
+GYRO Data X[0.157659] Y[0.085221] Z[-0.012783]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[-1]
+Tof Data D[0.000000 mm]
+Acc Data X[0.041504] Y[0.019287] Z[0.956299]
+GYRO Data X[0.226901] Y[0.090547] Z[-0.013848]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[0.000000 mm]
+Acc Data X[0.027344] Y[0.018555] Z[0.972168]
+GYRO Data X[0.214118] Y[0.093743] Z[0.043676]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[822.000000 mm]
+Acc Data X[0.035156] Y[0.029785] Z[0.981445]
+GYRO Data X[0.206661] Y[0.106526] Z[0.054328]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[851.000000 mm]
+Acc Data X[0.018311] Y[0.006836] Z[0.982910]
+GYRO Data X[0.230097] Y[0.127832] Z[0.004261]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-4]
+Tof Data D[0.000000 mm]
+Acc Data X[0.016846] Y[0.002686] Z[0.992432]
+GYRO Data X[0.200270] Y[0.149137] Z[-0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[0.000000 mm]
+Acc Data X[0.010498] Y[0.001953] Z[1.000244]
+GYRO Data X[0.151268] Y[0.178964] Z[-0.056459]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-3]
+Tof Data D[813.000000 mm]
+Acc Data X[0.017822] Y[0.008789] Z[1.014648]
+GYRO Data X[0.128897] Y[0.175769] Z[-0.047937]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-3]
+Tof Data D[855.000000 mm]
+Acc Data X[0.023926] Y[0.022461] Z[1.020264]
+GYRO Data X[0.129962] Y[0.201335] Z[-0.060720]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[-2]
+Tof Data D[0.000000 mm]
+Acc Data X[0.021973] Y[0.004639] Z[1.007324]
+GYRO Data X[0.178964] Y[0.193878] Z[-0.070307]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[-4]
+Tof Data D[0.000000 mm]
+Acc Data X[0.023926] Y[0.007080] Z[1.023438]
+GYRO Data X[0.186421] Y[0.182160] Z[-0.066046]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[-2]
+Tof Data D[805.000000 mm]
+Acc Data X[0.017090] Y[0.008545] Z[0.996582]
+GYRO Data X[0.247141] Y[0.176834] Z[-0.050067]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-3]
+Tof Data D[812.000000 mm]
+Acc Data X[-0.010010] Y[0.011475] Z[1.005859]
+GYRO Data X[0.299339] Y[0.161920] Z[-0.028762]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-4]
+Tof Data D[794.000000 mm]
+Acc Data X[0.019043] Y[0.016113] Z[1.001221]
+GYRO Data X[0.331297] Y[0.192813] Z[-0.023436]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-3]
+Tof Data D[802.000000 mm]
+Acc Data X[0.022461] Y[0.007812] Z[0.985840]
+GYRO Data X[0.366451] Y[0.183225] Z[-0.045806]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[-6]
+Tof Data D[809.000000 mm]
+Acc Data X[-0.000732] Y[0.018555] Z[0.992920]
+GYRO Data X[0.337689] Y[0.143811] Z[0.005326]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-4]
+Tof Data D[810.000000 mm]
+Acc Data X[-0.016113] Y[0.031006] Z[1.016846]
+GYRO Data X[0.364320] Y[0.164051] Z[0.009587]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-6]
+Tof Data D[804.000000 mm]
+Acc Data X[-0.032471] Y[0.010986] Z[1.026367]
+GYRO Data X[0.372843] Y[0.135289] Z[0.087352]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[-5]
+Tof Data D[809.000000 mm]
+Acc Data X[0.000488] Y[0.027100] Z[1.053955]
+GYRO Data X[0.349407] Y[0.012783] Z[0.216249]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-7]
+Tof Data D[810.000000 mm]
+Acc Data X[-0.004883] Y[0.042969] Z[1.061523]
+GYRO Data X[0.382430] Y[-0.091613] Z[0.206661]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-4]
+Tof Data D[811.000000 mm]
+Acc Data X[-0.051025] Y[0.018311] Z[1.050049]
+GYRO Data X[0.525175] Y[-0.158724] Z[0.204531]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-4]
+Tof Data D[803.000000 mm]
+Acc Data X[-0.053467] Y[0.026855] Z[1.041260]
+GYRO Data X[0.569916] Y[-0.154463] Z[0.137419]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-9]
+Tof Data D[808.000000 mm]
+Acc Data X[-0.030273] Y[0.005371] Z[1.043945]
+GYRO Data X[0.562460] Y[-0.161920] Z[0.235423]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-5]
+Tof Data D[810.000000 mm]
+Acc Data X[-0.016602] Y[0.012451] Z[1.050781]
+GYRO Data X[0.467651] Y[-0.219444] Z[0.300405]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-8]
+Tof Data D[816.000000 mm]
+Acc Data X[-0.005859] Y[0.007568] Z[1.050293]
+GYRO Data X[0.412257] Y[-0.210922] Z[0.254598]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-5]
+Tof Data D[804.000000 mm]
+Acc Data X[-0.010742] Y[-0.001465] Z[1.031250]
+GYRO Data X[0.452737] Y[-0.198139] Z[0.132093]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-7]
+Tof Data D[810.000000 mm]
+Acc Data X[-0.008545] Y[0.001953] Z[1.022949]
+GYRO Data X[0.491087] Y[-0.226901] Z[0.095874]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-5]
+Tof Data D[811.000000 mm]
+Acc Data X[0.014160] Y[0.029297] Z[1.000977]
+GYRO Data X[0.372843] Y[-0.292948] Z[0.128897]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-6]
+Tof Data D[809.000000 mm]
+Acc Data X[0.015869] Y[0.021729] Z[0.984863]
+GYRO Data X[0.279099] Y[-0.353668] Z[0.122505]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-3]
+Tof Data D[818.000000 mm]
+Acc Data X[0.020508] Y[0.033203] Z[0.973145]
+GYRO Data X[0.298274] Y[-0.380299] Z[0.156594]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-4]
+Tof Data D[840.000000 mm]
+Acc Data X[0.043213] Y[0.040039] Z[0.978516]
+GYRO Data X[0.217314] Y[-0.367516] Z[0.154463]
+Total Distance (m): nan
+Optical FLow Data X[7] Y[-4]
+Tof Data D[825.000000 mm]
+Acc Data X[0.001465] Y[0.047363] Z[0.936523]
+GYRO Data X[0.242880] Y[-0.271642] Z[0.011718]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[-3]
+Tof Data D[798.000000 mm]
+Acc Data X[0.017334] Y[0.023438] Z[0.918213]
+GYRO Data X[0.239685] Y[-0.194943] Z[0.073503]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-4]
+Tof Data D[792.000000 mm]
+Acc Data X[0.041260] Y[0.057861] Z[0.938477]
+GYRO Data X[0.135289] Y[-0.107592] Z[0.069242]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-1]
+Tof Data D[822.000000 mm]
+Acc Data X[0.072021] Y[0.047363] Z[0.977051]
+GYRO Data X[0.073503] Y[-0.043676] Z[0.098004]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-3]
+Tof Data D[831.000000 mm]
+Acc Data X[0.075439] Y[0.071045] Z[0.997070]
+GYRO Data X[0.124636] Y[-0.023436] Z[0.069242]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[820.000000 mm]
+Acc Data X[0.106201] Y[0.085938] Z[1.006592]
+GYRO Data X[0.162985] Y[-0.075634] Z[0.010653]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[824.000000 mm]
+Acc Data X[0.098633] Y[0.104248] Z[1.019531]
+GYRO Data X[0.282295] Y[-0.211988] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-3]
+Tof Data D[831.000000 mm]
+Acc Data X[0.074463] Y[0.108398] Z[1.000732]
+GYRO Data X[0.385626] Y[-0.235423] Z[-0.063916]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-3]
+Tof Data D[833.000000 mm]
+Acc Data X[0.034180] Y[0.087646] Z[0.979248]
+GYRO Data X[0.418649] Y[-0.207727] Z[-0.020240]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-3]
+Tof Data D[823.000000 mm]
+Acc Data X[0.046387] Y[0.108398] Z[0.976807]
+GYRO Data X[0.433563] Y[-0.202400] Z[-0.054328]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-6]
+Tof Data D[819.000000 mm]
+Acc Data X[0.071777] Y[0.136719] Z[1.020752]
+GYRO Data X[0.519849] Y[-0.211988] Z[-0.045806]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-4]
+Tof Data D[833.000000 mm]
+Acc Data X[0.066162] Y[0.142334] Z[1.011719]
+GYRO Data X[0.584830] Y[-0.259925] Z[-0.051133]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-6]
+Tof Data D[833.000000 mm]
+Acc Data X[0.060303] Y[0.146240] Z[1.053955]
+GYRO Data X[0.640224] Y[-0.248207] Z[0.039415]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-5]
+Tof Data D[823.000000 mm]
+Acc Data X[0.077148] Y[0.135498] Z[1.031982]
+GYRO Data X[0.633832] Y[-0.211988] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-8]
+Tof Data D[824.000000 mm]
+Acc Data X[0.055176] Y[0.107666] Z[0.995117]
+GYRO Data X[0.637028] Y[-0.240750] Z[-0.010653]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-5]
+Tof Data D[833.000000 mm]
+Acc Data X[0.057861] Y[0.116699] Z[0.999512]
+GYRO Data X[0.530502] Y[-0.281230] Z[-0.046872]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-7]
+Tof Data D[838.000000 mm]
+Acc Data X[0.062256] Y[0.135742] Z[1.009033]
+GYRO Data X[0.447411] Y[-0.207727] Z[-0.158724]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-4]
+Tof Data D[828.000000 mm]
+Acc Data X[0.042480] Y[0.136719] Z[0.960938]
+GYRO Data X[0.378169] Y[-0.103331] Z[-0.265251]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-4]
+Tof Data D[826.000000 mm]
+Acc Data X[0.042480] Y[0.156494] Z[0.934326]
+GYRO Data X[0.232228] Y[-0.026632] Z[-0.273773]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[834.000000 mm]
+Acc Data X[0.069824] Y[0.225830] Z[0.954346]
+GYRO Data X[0.107592] Y[-0.010653] Z[-0.205596]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[839.000000 mm]
+Acc Data X[0.073242] Y[0.241699] Z[0.937744]
+GYRO Data X[0.226901] Y[0.001065] Z[-0.137419]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-2]
+Tof Data D[835.000000 mm]
+Acc Data X[0.064697] Y[0.226562] Z[0.958984]
+GYRO Data X[0.367516] Y[-0.058590] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-1]
+Tof Data D[839.000000 mm]
+Acc Data X[0.053955] Y[0.173340] Z[0.939453]
+GYRO Data X[0.377104] Y[-0.047937] Z[-0.014914]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-5]
+Tof Data D[836.000000 mm]
+Acc Data X[0.081055] Y[0.181152] Z[0.954590]
+GYRO Data X[0.156594] Y[0.003196] Z[-0.044741]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-3]
+Tof Data D[857.000000 mm]
+Acc Data X[0.088379] Y[0.170654] Z[0.961426]
+GYRO Data X[0.034088] Y[-0.040480] Z[0.013848]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-1]
+Tof Data D[837.000000 mm]
+Acc Data X[0.087891] Y[0.207031] Z[0.980957]
+GYRO Data X[-0.095874] Y[-0.024501] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[860.000000 mm]
+Acc Data X[0.095215] Y[0.231934] Z[0.994385]
+GYRO Data X[-0.153398] Y[0.019175] Z[-0.064981]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[857.000000 mm]
+Acc Data X[0.071777] Y[0.227051] Z[0.962646]
+GYRO Data X[-0.102265] Y[-0.006392] Z[-0.085221]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[828.000000 mm]
+Acc Data X[0.044678] Y[0.230713] Z[0.948730]
+GYRO Data X[-0.109722] Y[-0.002131] Z[-0.054328]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[842.000000 mm]
+Acc Data X[0.036621] Y[0.213135] Z[0.938965]
+GYRO Data X[-0.103331] Y[0.008522] Z[0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[855.000000 mm]
+Acc Data X[0.041504] Y[0.206543] Z[0.953125]
+GYRO Data X[-0.135289] Y[0.045806] Z[0.049002]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[842.000000 mm]
+Acc Data X[0.031250] Y[0.163086] Z[0.968750]
+GYRO Data X[-0.236489] Y[0.100135] Z[0.075634]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[836.000000 mm]
+Acc Data X[-0.000732] Y[0.127930] Z[0.955322]
+GYRO Data X[-0.398409] Y[0.193878] Z[0.118244]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[4]
+Tof Data D[824.000000 mm]
+Acc Data X[-0.018555] Y[0.140869] Z[0.980957]
+GYRO Data X[-0.724380] Y[0.399474] Z[0.103331]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[4]
+Tof Data D[848.000000 mm]
+Acc Data X[-0.048584] Y[0.142822] Z[0.962891]
+GYRO Data X[-0.891626] Y[0.682835] Z[0.014914]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[6]
+Tof Data D[834.000000 mm]
+Acc Data X[-0.121826] Y[0.103760] Z[0.866699]
+GYRO Data X[-0.921454] Y[1.018393] Z[-0.003196]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[10]
+Tof Data D[846.000000 mm]
+Acc Data X[-0.170410] Y[0.094727] Z[0.850098]
+GYRO Data X[-1.105744] Y[1.393366] Z[-0.002131]
+Total Distance (m): nan
+Optical FLow Data X[-10] Y[7]
+Tof Data D[831.000000 mm]
+Acc Data X[-0.085938] Y[0.164551] Z[0.915772]
+GYRO Data X[-1.115332] Y[1.528654] Z[0.064981]
+Total Distance (m): nan
+Optical FLow Data X[-16] Y[13]
+Tof Data D[844.000000 mm]
+Acc Data X[0.008789] Y[0.212158] Z[1.047363]
+GYRO Data X[-0.857538] Y[1.492435] Z[0.243946]
+Total Distance (m): nan
+Optical FLow Data X[-13] Y[7]
+Tof Data D[829.000000 mm]
+Acc Data X[0.010986] Y[0.180176] Z[1.071289]
+GYRO Data X[-0.502805] Y[1.363539] Z[0.221575]
+Total Distance (m): nan
+Optical FLow Data X[-17] Y[7]
+Tof Data D[837.000000 mm]
+Acc Data X[-0.041260] Y[0.103516] Z[1.031738]
+GYRO Data X[-0.231162] Y[1.108940] Z[0.180030]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[3]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.071289] Y[0.077881] Z[0.997559]
+GYRO Data X[-0.176834] Y[0.970456] Z[0.119310]
+Total Distance (m): nan
+Optical FLow Data X[-14] Y[2]
+Tof Data D[840.000000 mm]
+Acc Data X[-0.081543] Y[0.074219] Z[0.993652]
+GYRO Data X[-0.214118] Y[0.831972] Z[0.085221]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[2]
+Tof Data D[823.000000 mm]
+Acc Data X[-0.080811] Y[0.062012] Z[0.993652]
+GYRO Data X[-0.271642] Y[0.715858] Z[0.020240]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[2]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.093506] Y[0.063477] Z[0.984863]
+GYRO Data X[-0.339819] Y[0.599744] Z[-0.052198]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[3]
+Tof Data D[826.000000 mm]
+Acc Data X[-0.005615] Y[0.101074] Z[1.074463]
+GYRO Data X[-0.343015] Y[0.378169] Z[-0.141680]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[3]
+Tof Data D[834.000000 mm]
+Acc Data X[0.015137] Y[0.100830] Z[1.141602]
+GYRO Data X[-0.123571] Y[0.176834] Z[-0.250337]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[4]
+Tof Data D[826.000000 mm]
+Acc Data X[-0.061279] Y[0.072021] Z[1.048096]
+GYRO Data X[0.027697] Y[-0.022371] Z[-0.374973]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[0]
+Tof Data D[824.000000 mm]
+Acc Data X[-0.078613] Y[0.097900] Z[1.014404]
+GYRO Data X[-0.005326] Y[-0.199204] Z[-0.354733]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[1]
+Tof Data D[819.000000 mm]
+Acc Data X[-0.128662] Y[0.072998] Z[0.979248]
+GYRO Data X[-0.068177] Y[-0.272708] Z[-0.324906]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[831.000000 mm]
+Acc Data X[-0.161621] Y[0.062012] Z[0.944092]
+GYRO Data X[-0.098004] Y[-0.203466] Z[-0.269512]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[3]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.154053] Y[0.068604] Z[0.946045]
+GYRO Data X[-0.047937] Y[-0.104396] Z[-0.320645]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[819.000000 mm]
+Acc Data X[-0.169434] Y[0.046387] Z[0.929932]
+GYRO Data X[0.042611] Y[0.001065] Z[-0.331297]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[1]
+Tof Data D[822.000000 mm]
+Acc Data X[-0.186523] Y[0.054688] Z[0.951660]
+GYRO Data X[-0.030893] Y[0.190682] Z[-0.317449]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[1]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.152588] Y[0.070557] Z[0.983398]
+GYRO Data X[-0.083091] Y[0.329167] Z[-0.335558]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[1]
+Tof Data D[823.000000 mm]
+Acc Data X[-0.155029] Y[0.109863] Z[0.994629]
+GYRO Data X[0.088417] Y[0.361125] Z[-0.235423]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[1]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.194092] Y[0.079590] Z[0.967285]
+GYRO Data X[0.101200] Y[0.401605] Z[-0.160855]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[0]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.215820] Y[0.064453] Z[0.934570]
+GYRO Data X[-0.013848] Y[0.545415] Z[0.015979]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[0]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.232422] Y[0.058838] Z[0.924316]
+GYRO Data X[-0.252468] Y[0.731837] Z[0.234358]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[0]
+Tof Data D[821.000000 mm]
+Acc Data X[-0.211426] Y[0.101074] Z[0.959229]
+GYRO Data X[-0.371777] Y[0.878843] Z[0.378169]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[2]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.164307] Y[0.113525] Z[1.003174]
+GYRO Data X[-0.324906] Y[0.971521] Z[0.477238]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[2]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.179688] Y[0.101807] Z[1.006592]
+GYRO Data X[-0.329167] Y[0.997088] Z[0.626375]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[2]
+Tof Data D[833.000000 mm]
+Acc Data X[-0.244873] Y[0.056641] Z[0.958008]
+GYRO Data X[-0.347276] Y[0.972586] Z[0.744620]
+Total Distance (m): nan
+Optical FLow Data X[-15] Y[3]
+Tof Data D[820.000000 mm]
+Acc Data X[-0.286377] Y[0.038330] Z[0.874512]
+GYRO Data X[-0.324906] Y[1.067395] Z[0.801079]
+Total Distance (m): nan
+Optical FLow Data X[-10] Y[1]
+Tof Data D[825.000000 mm]
+Acc Data X[-0.319580] Y[0.007812] Z[0.838867]
+GYRO Data X[-0.158724] Y[0.932106] Z[0.676443]
+Total Distance (m): nan
+Optical FLow Data X[-15] Y[2]
+Tof Data D[831.000000 mm]
+Acc Data X[-0.314697] Y[0.037842] Z[0.887939]
+GYRO Data X[0.149137] Y[1.166465] Z[0.601874]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[0]
+Tof Data D[836.000000 mm]
+Acc Data X[-0.321289] Y[0.026123] Z[0.880127]
+GYRO Data X[0.186421] Y[1.427454] Z[0.506001]
+Total Distance (m): nan
+Optical FLow Data X[-13] Y[-1]
+Tof Data D[822.000000 mm]
+Acc Data X[-0.326904] Y[0.021484] Z[0.887207]
+GYRO Data X[-0.059655] Y[1.546764] Z[0.542220]
+Total Distance (m): nan
+Optical FLow Data X[-12] Y[-1]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.285645] Y[0.019043] Z[0.958008]
+GYRO Data X[-0.417584] Y[1.708684] Z[0.547546]
+Total Distance (m): nan
+Optical FLow Data X[-19] Y[1]
+Tof Data D[840.000000 mm]
+Acc Data X[-0.252930] Y[0.039551] Z[1.044434]
+GYRO Data X[-0.629571] Y[1.684183] Z[0.421845]
+Total Distance (m): nan
+Optical FLow Data X[-14] Y[2]
+Tof Data D[846.000000 mm]
+Acc Data X[-0.282227] Y[-0.027344] Z[1.027588]
+GYRO Data X[-0.576308] Y[1.562743] Z[0.173638]
+Total Distance (m): nan
+Optical FLow Data X[-21] Y[5]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.331543] Y[-0.006592] Z[1.057861]
+GYRO Data X[-0.273773] Y[1.156877] Z[0.111853]
+Total Distance (m): nan
+Optical FLow Data X[-12] Y[2]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.395264] Y[0.025391] Z[0.986816]
+GYRO Data X[0.100135] Y[0.846885] Z[0.080960]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[2]
+Tof Data D[850.000000 mm]
+Acc Data X[-0.441895] Y[0.018311] Z[0.937988]
+GYRO Data X[0.363255] Y[0.654072] Z[0.025566]
+Total Distance (m): nan
+Optical FLow Data X[-10] Y[-1]
+Tof Data D[854.000000 mm]
+Acc Data X[-0.471680] Y[0.027344] Z[0.878906]
+GYRO Data X[0.418649] Y[0.653007] Z[0.079895]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[-2]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.437500] Y[0.064697] Z[0.877197]
+GYRO Data X[0.093743] Y[0.822384] Z[0.203466]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[-2]
+Tof Data D[852.000000 mm]
+Acc Data X[-0.427979] Y[0.080078] Z[0.905518]
+GYRO Data X[-0.338754] Y[0.936367] Z[0.369647]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[0]
+Tof Data D[860.000000 mm]
+Acc Data X[-0.435303] Y[0.052002] Z[0.916504]
+GYRO Data X[-0.428236] Y[0.906540] Z[0.471912]
+Total Distance (m): nan
+Optical FLow Data X[-12] Y[3]
+Tof Data D[862.000000 mm]
+Acc Data X[-0.447021] Y[0.053223] Z[0.913818]
+GYRO Data X[-0.285491] Y[0.763795] Z[0.367516]
+Total Distance (m): nan
+Optical FLow Data X[-6] Y[2]
+Tof Data D[843.000000 mm]
+Acc Data X[-0.504395] Y[0.044189] Z[0.888428]
+GYRO Data X[0.054328] Y[0.576308] Z[0.218379]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[1]
+Tof Data D[879.000000 mm]
+Acc Data X[-0.465332] Y[0.080078] Z[0.857422]
+GYRO Data X[0.230097] Y[0.431432] Z[0.237554]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[0]
+Tof Data D[884.000000 mm]
+Acc Data X[-0.419922] Y[0.070557] Z[0.868652]
+GYRO Data X[0.112918] Y[0.565655] Z[0.240750]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[-1]
+Tof Data D[871.000000 mm]
+Acc Data X[-0.422119] Y[0.080322] Z[0.903565]
+GYRO Data X[-0.041545] Y[0.581634] Z[0.263120]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[-1]
+Tof Data D[859.000000 mm]
+Acc Data X[-0.429443] Y[0.064453] Z[0.916504]
+GYRO Data X[-0.080960] Y[0.480434] Z[0.200270]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[-1]
+Tof Data D[900.000000 mm]
+Acc Data X[-0.455078] Y[0.043213] Z[0.910645]
+GYRO Data X[0.106526] Y[0.223706] Z[0.219444]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[0]
+Tof Data D[905.000000 mm]
+Acc Data X[-0.485596] Y[0.053223] Z[0.867432]
+GYRO Data X[0.171508] Y[0.096939] Z[0.105461]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[896.000000 mm]
+Acc Data X[-0.539551] Y[0.051514] Z[0.841064]
+GYRO Data X[0.014914] Y[0.118244] Z[-0.085221]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[0]
+Tof Data D[882.000000 mm]
+Acc Data X[-0.498535] Y[0.088135] Z[0.845703]
+GYRO Data X[-0.033023] Y[0.127832] Z[-0.060720]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[-1]
+Tof Data D[916.000000 mm]
+Acc Data X[-0.478027] Y[0.112061] Z[0.865234]
+GYRO Data X[-0.086286] Y[0.105461] Z[0.050067]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[0]
+Tof Data D[923.000000 mm]
+Acc Data X[-0.459473] Y[0.120605] Z[0.879395]
+GYRO Data X[-0.159790] Y[0.036219] Z[0.164051]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[899.000000 mm]
+Acc Data X[-0.449707] Y[0.129883] Z[0.888184]
+GYRO Data X[-0.187487] Y[-0.007457] Z[0.160855]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[886.000000 mm]
+Acc Data X[-0.475342] Y[0.125977] Z[0.857666]
+GYRO Data X[-0.069242] Y[-0.100135] Z[0.204531]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[2]
+Tof Data D[927.000000 mm]
+Acc Data X[-0.540527] Y[0.102539] Z[0.820068]
+GYRO Data X[-0.040480] Y[-0.080960] Z[0.185356]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[1]
+Tof Data D[941.000000 mm]
+Acc Data X[-0.535400] Y[0.076416] Z[0.811035]
+GYRO Data X[0.089482] Y[-0.063916] Z[0.202400]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[906.000000 mm]
+Acc Data X[-0.519531] Y[0.068848] Z[0.818604]
+GYRO Data X[0.049002] Y[-0.012783] Z[0.156594]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[886.000000 mm]
+Acc Data X[-0.516602] Y[0.063477] Z[0.852295]
+GYRO Data X[-0.033023] Y[-0.028762] Z[0.167247]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[928.000000 mm]
+Acc Data X[-0.516846] Y[0.042480] Z[0.850098]
+GYRO Data X[-0.120375] Y[-0.129962] Z[0.123571]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[933.000000 mm]
+Acc Data X[-0.485596] Y[0.078125] Z[0.866211]
+GYRO Data X[-0.175769] Y[-0.185356] Z[0.089482]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[0]
+Tof Data D[903.000000 mm]
+Acc Data X[-0.458252] Y[0.075684] Z[0.871826]
+GYRO Data X[-0.200270] Y[-0.209857] Z[0.051133]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[1]
+Tof Data D[883.000000 mm]
+Acc Data X[-0.445557] Y[0.085693] Z[0.891602]
+GYRO Data X[-0.193878] Y[-0.318514] Z[0.073503]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[1]
+Tof Data D[939.000000 mm]
+Acc Data X[-0.416748] Y[0.082031] Z[0.891602]
+GYRO Data X[-0.187487] Y[-0.509196] Z[0.039415]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[2]
+Tof Data D[879.000000 mm]
+Acc Data X[-0.380615] Y[0.085449] Z[0.915283]
+GYRO Data X[-0.173638] Y[-0.705205] Z[0.061785]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[1]
+Tof Data D[900.000000 mm]
+Acc Data X[-0.342529] Y[0.064209] Z[0.947266]
+GYRO Data X[-0.227967] Y[-0.916127] Z[0.119310]
+Total Distance (m): nan
+Optical FLow Data X[9] Y[2]
+Tof Data D[0.000000 mm]
+Acc Data X[-0.350098] Y[0.047363] Z[0.972412]
+GYRO Data X[-0.398409] Y[-1.120658] Z[0.118244]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[1]
+Tof Data D[0.000000 mm]
+Acc Data X[-0.442139] Y[-0.016113] Z[0.915283]
+GYRO Data X[-0.499609] Y[-1.423193] Z[0.001065]
+Total Distance (m): nan
+Optical FLow Data X[13] Y[3]
+Tof Data D[885.000000 mm]
+Acc Data X[-0.470703] Y[-0.025146] Z[0.862793]
+GYRO Data X[-0.410127] Y[-1.596831] Z[-0.251402]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[4]
+Tof Data D[905.000000 mm]
+Acc Data X[-0.351807] Y[0.014160] Z[0.915039]
+GYRO Data X[-0.402670] Y[-1.515871] Z[-0.320645]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[4]
+Tof Data D[898.000000 mm]
+Acc Data X[-0.337158] Y[0.020752] Z[0.931641]
+GYRO Data X[-0.312122] Y[-1.425324] Z[-0.320645]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[4]
+Tof Data D[900.000000 mm]
+Acc Data X[-0.295654] Y[0.002930] Z[0.952393]
+GYRO Data X[-0.224771] Y[-1.374191] Z[-0.327036]
+Total Distance (m): nan
+Optical FLow Data X[17] Y[3]
+Tof Data D[863.000000 mm]
+Acc Data X[-0.295410] Y[0.017334] Z[0.979248]
+GYRO Data X[-0.165116] Y[-1.259143] Z[-0.319579]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[1]
+Tof Data D[900.000000 mm]
+Acc Data X[-0.337891] Y[0.057373] Z[0.959229]
+GYRO Data X[0.019175] Y[-1.360343] Z[-0.516653]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[1]
+Tof Data D[873.000000 mm]
+Acc Data X[-0.333252] Y[0.074219] Z[0.932129]
+GYRO Data X[0.267381] Y[-1.575526] Z[-0.537959]
+Total Distance (m): nan
+Optical FLow Data X[17] Y[0]
+Tof Data D[864.000000 mm]
+Acc Data X[-0.364502] Y[0.043457] Z[0.885498]
+GYRO Data X[0.458064] Y[-1.515871] Z[-0.394148]
+Total Distance (m): nan
+Optical FLow Data X[14] Y[-1]
+Tof Data D[868.000000 mm]
+Acc Data X[-0.321289] Y[0.011230] Z[0.890137]
+GYRO Data X[0.399474] Y[-1.190966] Z[-0.253533]
+Total Distance (m): nan
+Optical FLow Data X[18] Y[-4]
+Tof Data D[880.000000 mm]
+Acc Data X[-0.181396] Y[-0.012207] Z[0.958008]
+GYRO Data X[0.325971] Y[-0.868191] Z[-0.149137]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[-2]
+Tof Data D[846.000000 mm]
+Acc Data X[-0.107178] Y[0.001465] Z[1.018066]
+GYRO Data X[0.247141] Y[-0.890561] Z[-0.224771]
+Total Distance (m): nan
+Optical FLow Data X[14] Y[-3]
+Tof Data D[839.000000 mm]
+Acc Data X[-0.157471] Y[-0.038818] Z[1.043457]
+GYRO Data X[0.339819] Y[-1.041829] Z[-0.456998]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[-1]
+Tof Data D[854.000000 mm]
+Acc Data X[-0.227783] Y[-0.081787] Z[0.986084]
+GYRO Data X[0.511327] Y[-1.208010] Z[-0.829841]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[-2]
+Tof Data D[854.000000 mm]
+Acc Data X[-0.146484] Y[-0.104492] Z[0.997070]
+GYRO Data X[0.418649] Y[-1.101483] Z[-0.879908]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[-2]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.052246] Y[-0.040283] Z[1.025146]
+GYRO Data X[0.062851] Y[-1.054612] Z[-0.765925]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[-1]
+Tof Data D[823.000000 mm]
+Acc Data X[-0.036133] Y[0.017090] Z[1.042480]
+GYRO Data X[-0.214118] Y[-1.031176] Z[-0.789361]
+Total Distance (m): nan
+Optical FLow Data X[15] Y[0]
+Tof Data D[847.000000 mm]
+Acc Data X[-0.074219] Y[-0.004883] Z[1.090820]
+GYRO Data X[-0.188552] Y[-1.042894] Z[-0.706270]
+Total Distance (m): nan
+Optical FLow Data X[9] Y[2]
+Tof Data D[847.000000 mm]
+Acc Data X[-0.090576] Y[0.015869] Z[1.063232]
+GYRO Data X[-0.091613] Y[-1.296427] Z[-0.727576]
+Total Distance (m): nan
+Optical FLow Data X[13] Y[2]
+Tof Data D[814.000000 mm]
+Acc Data X[-0.074463] Y[0.076660] Z[1.047119]
+GYRO Data X[-0.035154] Y[-1.373126] Z[-0.721184]
+Total Distance (m): nan
+Optical FLow Data X[9] Y[0]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.106201] Y[0.118408] Z[1.037109]
+GYRO Data X[0.150202] Y[-1.404019] Z[-0.851146]
+Total Distance (m): nan
+Optical FLow Data X[17] Y[1]
+Tof Data D[830.000000 mm]
+Acc Data X[0.009033] Y[0.131836] Z[1.007812]
+GYRO Data X[0.437824] Y[-1.402953] Z[-0.779774]
+Total Distance (m): nan
+Optical FLow Data X[13] Y[0]
+Tof Data D[816.000000 mm]
+Acc Data X[0.059326] Y[0.155762] Z[1.003174]
+GYRO Data X[0.532632] Y[-1.337972] Z[-0.542220]
+Total Distance (m): nan
+Optical FLow Data X[19] Y[-3]
+Tof Data D[818.000000 mm]
+Acc Data X[0.040771] Y[0.132568] Z[1.016846]
+GYRO Data X[0.641289] Y[-1.317732] Z[-0.352603]
+Total Distance (m): nan
+Optical FLow Data X[13] Y[-3]
+Tof Data D[815.000000 mm]
+Acc Data X[0.012207] Y[0.057129] Z[0.967773]
+GYRO Data X[0.973652] Y[-1.552090] Z[-0.207727]
+Total Distance (m): nan
+Optical FLow Data X[18] Y[-8]
+Tof Data D[814.000000 mm]
+Acc Data X[-0.080078] Y[-0.008789] Z[0.904785]
+GYRO Data X[0.679639] Y[-1.400823] Z[-0.234358]
+Total Distance (m): nan
+Optical FLow Data X[12] Y[-5]
+Tof Data D[813.000000 mm]
+Acc Data X[0.062256] Y[-0.004639] Z[0.916992]
+GYRO Data X[0.449542] Y[-1.270861] Z[-0.151268]
+Total Distance (m): nan
+Optical FLow Data X[13] Y[-4]
+Tof Data D[817.000000 mm]
+Acc Data X[0.085449] Y[0.046387] Z[0.964111]
+GYRO Data X[0.290817] Y[-1.149420] Z[-0.186421]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[-4]
+Tof Data D[807.000000 mm]
+Acc Data X[0.123779] Y[0.036377] Z[0.982910]
+GYRO Data X[0.320645] Y[-1.106810] Z[-0.262055]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[-2]
+Tof Data D[805.000000 mm]
+Acc Data X[0.124512] Y[0.053955] Z[0.984863]
+GYRO Data X[0.299339] Y[-1.119593] Z[-0.370712]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[-3]
+Tof Data D[813.000000 mm]
+Acc Data X[0.154053] Y[0.076172] Z[1.015137]
+GYRO Data X[0.341950] Y[-1.151551] Z[-0.469782]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[-2]
+Tof Data D[820.000000 mm]
+Acc Data X[0.134033] Y[0.098145] Z[1.014893]
+GYRO Data X[0.361125] Y[-1.134507] Z[-0.484695]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[-3]
+Tof Data D[808.000000 mm]
+Acc Data X[0.062012] Y[0.088623] Z[1.012207]
+GYRO Data X[0.319579] Y[-1.096157] Z[-0.543285]
+Total Distance (m): nan
+Optical FLow Data X[9] Y[-2]
+Tof Data D[807.000000 mm]
+Acc Data X[0.141846] Y[0.121338] Z[1.016357]
+GYRO Data X[0.300405] Y[-1.043959] Z[-0.465521]
+Total Distance (m): nan
+Optical FLow Data X[14] Y[-3]
+Tof Data D[819.000000 mm]
+Acc Data X[0.246582] Y[0.182129] Z[1.033936]
+GYRO Data X[0.372843] Y[-1.095092] Z[-0.450607]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[-1]
+Tof Data D[819.000000 mm]
+Acc Data X[0.239990] Y[0.179932] Z[1.020508]
+GYRO Data X[0.525175] Y[-1.169660] Z[-0.498544]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[-2]
+Tof Data D[818.000000 mm]
+Acc Data X[0.201172] Y[0.215576] Z[0.996826]
+GYRO Data X[0.608266] Y[-1.212271] Z[-0.431432]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[-5]
+Tof Data D[815.000000 mm]
+Acc Data X[0.168945] Y[0.187256] Z[0.924072]
+GYRO Data X[0.813862] Y[-1.151551] Z[-0.508131]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[-5]
+Tof Data D[830.000000 mm]
+Acc Data X[0.254395] Y[0.163086] Z[0.919678]
+GYRO Data X[0.869256] Y[-1.048220] Z[-0.503870]
+Total Distance (m): nan
+Optical FLow Data X[14] Y[-8]
+Tof Data D[836.000000 mm]
+Acc Data X[0.354248] Y[0.164795] Z[0.965576]
+GYRO Data X[0.607201] Y[-1.084439] Z[-0.362190]
+Total Distance (m): nan
+Optical FLow Data X[9] Y[-5]
+Tof Data D[824.000000 mm]
+Acc Data X[0.371582] Y[0.188232] Z[0.965088]
+GYRO Data X[0.323840] Y[-1.156877] Z[-0.192813]
+Total Distance (m): nan
+Optical FLow Data X[15] Y[-5]
+Tof Data D[823.000000 mm]
+Acc Data X[0.412598] Y[0.228516] Z[0.959473]
+GYRO Data X[0.271642] Y[-1.215467] Z[-0.092678]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[-3]
+Tof Data D[849.000000 mm]
+Acc Data X[0.319336] Y[0.291016] Z[0.993408]
+GYRO Data X[0.435693] Y[-1.357147] Z[-0.123571]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[-3]
+Tof Data D[866.000000 mm]
+Acc Data X[0.215332] Y[0.171387] Z[0.838379]
+GYRO Data X[0.610397] Y[-1.382713] Z[-0.159790]
+Total Distance (m): nan
+Optical FLow Data X[12] Y[-4]
+Tof Data D[869.000000 mm]
+Acc Data X[0.236084] Y[0.171143] Z[0.807861]
+GYRO Data X[0.449542] Y[-1.194161] Z[-0.096939]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[-4]
+Tof Data D[884.000000 mm]
+Acc Data X[0.350830] Y[0.228027] Z[0.866211]
+GYRO Data X[0.216249] Y[-0.994957] Z[-0.148072]
+Total Distance (m): nan
+Optical FLow Data X[14] Y[-4]
+Tof Data D[916.000000 mm]
+Acc Data X[0.372803] Y[0.278809] Z[0.900391]
+GYRO Data X[0.377104] Y[-0.940629] Z[-0.111853]
+Total Distance (m): nan
+Optical FLow Data X[9] Y[-2]
+Tof Data D[944.000000 mm]
+Acc Data X[0.462891] Y[0.268311] Z[0.932373]
+GYRO Data X[0.551807] Y[-0.953412] Z[-0.143811]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[-3]
+Tof Data D[941.000000 mm]
+Acc Data X[0.475586] Y[0.211670] Z[0.959229]
+GYRO Data X[0.600809] Y[-1.053547] Z[-0.094809]
+Total Distance (m): nan
+Optical FLow Data X[12] Y[-5]
+Tof Data D[901.000000 mm]
+Acc Data X[0.462891] Y[0.178955] Z[0.938965]
+GYRO Data X[0.491087] Y[-1.121723] Z[0.020240]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[-4]
+Tof Data D[949.000000 mm]
+Acc Data X[0.322754] Y[0.175293] Z[0.893799]
+GYRO Data X[0.207727] Y[-1.066330] Z[0.039415]
+Total Distance (m): nan
+Optical FLow Data X[13] Y[-4]
+Tof Data D[972.000000 mm]
+Acc Data X[0.329346] Y[0.199219] Z[0.823975]
+GYRO Data X[-0.011718] Y[-1.024784] Z[-0.063916]
+Total Distance (m): nan
+Optical FLow Data X[9] Y[0]
+Tof Data D[0.000000 mm]
+Acc Data X[0.438477] Y[0.307373] Z[0.838135]
+GYRO Data X[-0.083091] Y[-0.864995] Z[-0.131028]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[0]
+Tof Data D[0.000000 mm]
+Acc Data X[0.476563] Y[0.378174] Z[0.858154]
+GYRO Data X[-0.201335] Y[-0.649811] Z[-0.217314]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[1]
+Tof Data D[987.000000 mm]
+Acc Data X[0.483398] Y[0.357666] Z[0.760742]
+GYRO Data X[0.001065] Y[-0.635963] Z[-0.216249]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[1]
+Tof Data D[986.000000 mm]
+Acc Data X[0.470703] Y[0.293945] Z[0.852051]
+GYRO Data X[0.259925] Y[-0.779774] Z[-0.058590]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[0]
+Tof Data D[979.000000 mm]
+Acc Data X[0.487305] Y[0.222656] Z[0.845459]
+GYRO Data X[0.178964] Y[-0.790426] Z[0.139550]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[-1]
+Tof Data D[971.000000 mm]
+Acc Data X[0.459961] Y[0.182861] Z[0.805176]
+GYRO Data X[-0.194943] Y[-0.782969] Z[0.202400]
+Total Distance (m): nan
+Optical FLow Data X[7] Y[-1]
+Tof Data D[997.000000 mm]
+Acc Data X[0.449707] Y[0.207764] Z[0.753418]
+GYRO Data X[-0.499609] Y[-0.625310] Z[0.251402]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[3]
+Tof Data D[998.000000 mm]
+Acc Data X[0.526123] Y[0.218506] Z[0.753662]
+GYRO Data X[-0.662594] Y[-0.406931] Z[0.170442]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[4]
+Tof Data D[1004.000000 mm]
+Acc Data X[0.451660] Y[0.325684] Z[0.724609]
+GYRO Data X[-0.507066] Y[-0.176834] Z[-0.050067]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[6]
+Tof Data D[970.000000 mm]
+Acc Data X[0.527344] Y[0.348877] Z[0.779297]
+GYRO Data X[-0.297209] Y[-0.080960] Z[-0.054328]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[1016.000000 mm]
+Acc Data X[0.520264] Y[0.314209] Z[0.740967]
+GYRO Data X[-0.178964] Y[-0.045806] Z[0.035154]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[1020.000000 mm]
+Acc Data X[0.534912] Y[0.272949] Z[0.755127]
+GYRO Data X[-0.102265] Y[-0.036219] Z[0.204531]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[1018.000000 mm]
+Acc Data X[0.542480] Y[0.243164] Z[0.760010]
+GYRO Data X[-0.128897] Y[-0.050067] Z[0.158724]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[1001.000000 mm]
+Acc Data X[0.546387] Y[0.220947] Z[0.751465]
+GYRO Data X[-0.136354] Y[-0.075634] Z[0.124636]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[1]
+Tof Data D[1044.000000 mm]
+Acc Data X[0.545654] Y[0.212891] Z[0.750732]
+GYRO Data X[-0.256729] Y[-0.080960] Z[0.144876]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[1038.000000 mm]
+Acc Data X[0.531250] Y[0.216553] Z[0.748535]
+GYRO Data X[-0.292948] Y[-0.014914] Z[0.174703]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[3]
+Tof Data D[1019.000000 mm]
+Acc Data X[0.508301] Y[0.200439] Z[0.733643]
+GYRO Data X[-0.333428] Y[0.157659] Z[0.109722]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[1040.000000 mm]
+Acc Data X[0.572754] Y[0.174561] Z[0.754395]
+GYRO Data X[-0.414388] Y[0.319579] Z[0.043676]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[4]
+Tof Data D[1061.000000 mm]
+Acc Data X[0.352295] Y[0.273193] Z[0.729980]
+GYRO Data X[-0.396278] Y[0.736098] Z[-0.246076]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[3]
+Tof Data D[1040.000000 mm]
+Acc Data X[0.510254] Y[0.250977] Z[0.814697]
+GYRO Data X[-0.252468] Y[0.843689] Z[-0.071373]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[4]
+Tof Data D[1017.000000 mm]
+Acc Data X[0.487549] Y[0.235352] Z[0.812500]
+GYRO Data X[-0.156594] Y[0.986435] Z[0.101200]
+Total Distance (m): nan
+Optical FLow Data X[-6] Y[1]
+Tof Data D[1041.000000 mm]
+Acc Data X[0.480957] Y[0.240234] Z[0.860352]
+GYRO Data X[-0.036219] Y[1.123854] Z[0.141680]
+Total Distance (m): nan
+Optical FLow Data X[-12] Y[1]
+Tof Data D[1042.000000 mm]
+Acc Data X[0.453125] Y[0.191162] Z[0.834961]
+GYRO Data X[-0.112918] Y[1.211206] Z[0.226901]
+Total Distance (m): nan
+Optical FLow Data X[-10] Y[0]
+Tof Data D[1027.000000 mm]
+Acc Data X[0.468018] Y[0.215576] Z[0.861084]
+GYRO Data X[-0.287621] Y[1.167530] Z[0.331297]
+Total Distance (m): nan
+Optical FLow Data X[-10] Y[1]
+Tof Data D[1023.000000 mm]
+Acc Data X[0.506104] Y[0.244629] Z[0.907959]
+GYRO Data X[-0.177899] Y[1.094027] Z[0.313188]
+Total Distance (m): nan
+Optical FLow Data X[-15] Y[2]
+Tof Data D[989.000000 mm]
+Acc Data X[0.398926] Y[0.254639] Z[0.870605]
+GYRO Data X[0.067112] Y[1.153681] Z[0.334493]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[0]
+Tof Data D[986.000000 mm]
+Acc Data X[0.383545] Y[0.244385] Z[0.899170]
+GYRO Data X[0.103331] Y[1.205879] Z[0.338754]
+Total Distance (m): nan
+Optical FLow Data X[-15] Y[0]
+Tof Data D[986.000000 mm]
+Acc Data X[0.387451] Y[0.295410] Z[0.937012]
+GYRO Data X[0.158724] Y[1.303884] Z[0.181095]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[-1]
+Tof Data D[981.000000 mm]
+Acc Data X[0.389404] Y[0.300537] Z[0.944580]
+GYRO Data X[0.351537] Y[1.208010] Z[-0.073503]
+Total Distance (m): nan
+Optical FLow Data X[-16] Y[-4]
+Tof Data D[957.000000 mm]
+Acc Data X[0.352783] Y[0.179199] Z[0.940186]
+GYRO Data X[0.421845] Y[1.265534] Z[-0.315318]
+Total Distance (m): nan
+Optical FLow Data X[-10] Y[-3]
+Tof Data D[947.000000 mm]
+Acc Data X[0.259277] Y[0.186768] Z[0.924561]
+GYRO Data X[0.451672] Y[1.225054] Z[-0.256729]
+Total Distance (m): nan
+Optical FLow Data X[-14] Y[-5]
+Tof Data D[940.000000 mm]
+Acc Data X[0.311768] Y[0.175781] Z[0.951172]
+GYRO Data X[0.137419] Y[1.169660] Z[-0.138484]
+Total Distance (m): nan
+Optical FLow Data X[-10] Y[-2]
+Tof Data D[939.000000 mm]
+Acc Data X[0.362305] Y[0.131348] Z[0.944580]
+GYRO Data X[-0.077764] Y[1.177117] Z[-0.068177]
+Total Distance (m): nan
+Optical FLow Data X[-15] Y[-2]
+Tof Data D[923.000000 mm]
+Acc Data X[0.279297] Y[0.224121] Z[0.993896]
+GYRO Data X[-0.052198] Y[1.020523] Z[-0.028762]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[0]
+Tof Data D[910.000000 mm]
+Acc Data X[0.326172] Y[0.184326] Z[0.981445]
+GYRO Data X[-0.178964] Y[0.869256] Z[-0.064981]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[0]
+Tof Data D[913.000000 mm]
+Acc Data X[0.323486] Y[0.176270] Z[1.012451]
+GYRO Data X[-0.071373] Y[0.737163] Z[-0.073503]
+Total Distance (m): nan
+Optical FLow Data X[-12] Y[0]
+Tof Data D[919.000000 mm]
+Acc Data X[0.203613] Y[0.194336] Z[1.033447]
+GYRO Data X[0.115049] Y[0.739294] Z[-0.076699]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[0]
+Tof Data D[892.000000 mm]
+Acc Data X[0.244873] Y[0.165039] Z[1.055420]
+GYRO Data X[-0.372843] Y[0.702009] Z[-0.073503]
+Total Distance (m): nan
+Optical FLow Data X[-10] Y[1]
+Tof Data D[882.000000 mm]
+Acc Data X[0.297852] Y[0.142090] Z[1.043213]
+GYRO Data X[-0.461260] Y[0.721184] Z[0.075634]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[2]
+Tof Data D[896.000000 mm]
+Acc Data X[0.229736] Y[0.104736] Z[1.042236]
+GYRO Data X[-0.736098] Y[0.665790] Z[-0.010653]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[6]
+Tof Data D[905.000000 mm]
+Acc Data X[0.335449] Y[0.073242] Z[1.052246]
+GYRO Data X[-0.674312] Y[0.604005] Z[-0.103331]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[5]
+Tof Data D[877.000000 mm]
+Acc Data X[0.146973] Y[0.152832] Z[1.029785]
+GYRO Data X[-0.423975] Y[0.586961] Z[-0.102265]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[6]
+Tof Data D[876.000000 mm]
+Acc Data X[0.155029] Y[0.138672] Z[0.983398]
+GYRO Data X[-0.416518] Y[0.673247] Z[-0.248207]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[3]
+Tof Data D[887.000000 mm]
+Acc Data X[0.115967] Y[0.142334] Z[0.951660]
+GYRO Data X[-0.304666] Y[0.796818] Z[-0.129962]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[4]
+Tof Data D[888.000000 mm]
+Acc Data X[0.145264] Y[0.193115] Z[0.965576]
+GYRO Data X[-0.360059] Y[0.912932] Z[0.062851]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[3]
+Tof Data D[869.000000 mm]
+Acc Data X[0.073730] Y[0.202148] Z[1.056396]
+GYRO Data X[-0.247141] Y[1.065264] Z[0.282295]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[3]
+Tof Data D[866.000000 mm]
+Acc Data X[0.145996] Y[0.126221] Z[0.963867]
+GYRO Data X[-0.164051] Y[0.966195] Z[0.364320]
+Total Distance (m): nan
+Optical FLow Data X[-12] Y[2]
+Tof Data D[873.000000 mm]
+Acc Data X[0.187256] Y[0.135010] Z[0.960938]
+GYRO Data X[-0.085221] Y[0.932106] Z[0.349407]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[1]
+Tof Data D[875.000000 mm]
+Acc Data X[0.134277] Y[0.092773] Z[0.952881]
+GYRO Data X[0.154463] Y[1.034372] Z[0.314253]
+Total Distance (m): nan
+Optical FLow Data X[-13] Y[0]
+Tof Data D[860.000000 mm]
+Acc Data X[0.014893] Y[0.002441] Z[0.872070]
+GYRO Data X[0.151268] Y[1.139833] Z[0.382430]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[0]
+Tof Data D[867.000000 mm]
+Acc Data X[0.034180] Y[0.026123] Z[0.856445]
+GYRO Data X[-0.124636] Y[1.232511] Z[0.407996]
+Total Distance (m): nan
+Optical FLow Data X[-16] Y[0]
+Tof Data D[872.000000 mm]
+Acc Data X[0.075439] Y[0.083740] Z[0.897461]
+GYRO Data X[-0.254598] Y[1.359277] Z[0.333428]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[0]
+Tof Data D[873.000000 mm]
+Acc Data X[0.053955] Y[0.138672] Z[0.899902]
+GYRO Data X[-0.252468] Y[1.429585] Z[0.250337]
+Total Distance (m): nan
+Optical FLow Data X[-12] Y[2]
+Tof Data D[856.000000 mm]
+Acc Data X[0.084717] Y[0.146729] Z[0.957275]
+GYRO Data X[-0.172573] Y[1.421063] Z[0.105461]
+Total Distance (m): nan
+Optical FLow Data X[-17] Y[2]
+Tof Data D[850.000000 mm]
+Acc Data X[0.065674] Y[0.163818] Z[0.959717]
+GYRO Data X[-0.100135] Y[1.391235] Z[0.157659]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[1]
+Tof Data D[860.000000 mm]
+Acc Data X[0.093018] Y[0.135986] Z[0.967773]
+GYRO Data X[0.015979] Y[1.474326] Z[0.132093]
+Total Distance (m): nan
+Optical FLow Data X[-18] Y[2]
+Tof Data D[860.000000 mm]
+Acc Data X[0.040771] Y[0.181885] Z[0.979980]
+GYRO Data X[-0.145941] Y[1.370995] Z[0.155529]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[0]
+Tof Data D[846.000000 mm]
+Acc Data X[0.062988] Y[0.220459] Z[1.066650]
+GYRO Data X[-0.015979] Y[1.264469] Z[0.087352]
+Total Distance (m): nan
+Optical FLow Data X[-14] Y[1]
+Tof Data D[846.000000 mm]
+Acc Data X[0.092529] Y[0.211670] Z[1.118408]
+GYRO Data X[0.256729] Y[1.030111] Z[0.132093]
+Total Distance (m): nan
+Optical FLow Data X[-10] Y[0]
+Tof Data D[851.000000 mm]
+Acc Data X[-0.015625] Y[0.170654] Z[1.087891]
+GYRO Data X[0.356864] Y[0.708401] Z[0.200270]
+Total Distance (m): nan
+Optical FLow Data X[-13] Y[-2]
+Tof Data D[857.000000 mm]
+Acc Data X[-0.119141] Y[0.128906] Z[1.028809]
+GYRO Data X[0.288687] Y[0.576308] Z[0.294013]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[-3]
+Tof Data D[847.000000 mm]
+Acc Data X[-0.186035] Y[0.103760] Z[1.006592]
+GYRO Data X[0.142745] Y[0.529436] Z[0.304666]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[-2]
+Tof Data D[844.000000 mm]
+Acc Data X[-0.192139] Y[0.089844] Z[0.942871]
+GYRO Data X[0.052198] Y[0.706270] Z[0.332363]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[-1]
+Tof Data D[846.000000 mm]
+Acc Data X[-0.221191] Y[0.087891] Z[0.889893]
+GYRO Data X[0.013848] Y[0.840494] Z[0.365386]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[0]
+Tof Data D[856.000000 mm]
+Acc Data X[-0.234619] Y[0.081543] Z[0.861816]
+GYRO Data X[-0.068177] Y[1.101483] Z[0.482565]
+Total Distance (m): nan
+Optical FLow Data X[-9] Y[0]
+Tof Data D[848.000000 mm]
+Acc Data X[-0.302734] Y[0.083008] Z[0.787354]
+GYRO Data X[-0.297209] Y[1.347560] Z[0.511327]
+Total Distance (m): nan
+Optical FLow Data X[-11] Y[0]
+Tof Data D[853.000000 mm]
+Acc Data X[-0.293701] Y[0.112061] Z[0.877197]
+GYRO Data X[-0.438889] Y[1.675661] Z[0.394148]
+Total Distance (m): nan
+Optical FLow Data X[-21] Y[2]
+Tof Data D[852.000000 mm]
+Acc Data X[-0.241943] Y[0.158691] Z[0.933105]
+GYRO Data X[-0.456998] Y[1.836516] Z[0.238619]
+Total Distance (m): nan
+Optical FLow Data X[-15] Y[3]
+Tof Data D[864.000000 mm]
+Acc Data X[-0.155273] Y[0.187988] Z[1.006592]
+GYRO Data X[-0.283360] Y[1.784318] Z[0.224771]
+Total Distance (m): nan
+Optical FLow Data X[-23] Y[3]
+Tof Data D[858.000000 mm]
+Acc Data X[-0.099854] Y[0.196045] Z[1.063477]
+GYRO Data X[-0.142745] Y[1.503088] Z[0.376038]
+Total Distance (m): nan
+Optical FLow Data X[-15] Y[1]
+Tof Data D[866.000000 mm]
+Acc Data X[-0.089600] Y[0.178223] Z[1.089844]
+GYRO Data X[-0.148072] Y[1.137702] Z[0.404801]
+Total Distance (m): nan
+Optical FLow Data X[-16] Y[2]
+Tof Data D[867.000000 mm]
+Acc Data X[-0.069824] Y[0.172852] Z[1.102051]
+GYRO Data X[-0.106526] Y[0.719054] Z[0.415453]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[1]
+Tof Data D[866.000000 mm]
+Acc Data X[-0.091797] Y[0.174316] Z[1.065674]
+GYRO Data X[0.011718] Y[0.313188] Z[0.373908]
+Total Distance (m): nan
+Optical FLow Data X[-6] Y[0]
+Tof Data D[863.000000 mm]
+Acc Data X[-0.091064] Y[0.127930] Z[1.013428]
+GYRO Data X[0.068177] Y[-0.063916] Z[0.253533]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[0]
+Tof Data D[871.000000 mm]
+Acc Data X[-0.290771] Y[0.160400] Z[0.886719]
+GYRO Data X[0.096939] Y[-0.294013] Z[0.154463]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[878.000000 mm]
+Acc Data X[-0.251953] Y[0.150391] Z[0.888184]
+GYRO Data X[0.105461] Y[-0.221575] Z[0.051133]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[858.000000 mm]
+Acc Data X[-0.261719] Y[0.182129] Z[0.887207]
+GYRO Data X[0.070307] Y[-0.024501] Z[0.015979]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[870.000000 mm]
+Acc Data X[-0.259766] Y[0.165527] Z[0.914062]
+GYRO Data X[-0.002131] Y[0.052198] Z[0.046872]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[878.000000 mm]
+Acc Data X[-0.282715] Y[0.175537] Z[0.921631]
+GYRO Data X[-0.036219] Y[0.064981] Z[0.086286]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[880.000000 mm]
+Acc Data X[-0.269043] Y[0.153076] Z[0.958740]
+GYRO Data X[0.010653] Y[0.064981] Z[0.096939]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[868.000000 mm]
+Acc Data X[-0.202393] Y[0.159424] Z[1.031494]
+GYRO Data X[0.019175] Y[-0.041545] Z[0.119310]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[875.000000 mm]
+Acc Data X[-0.138184] Y[0.189697] Z[1.062988]
+GYRO Data X[-0.037284] Y[-0.255663] Z[0.076699]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[887.000000 mm]
+Acc Data X[-0.082031] Y[0.187256] Z[1.086426]
+GYRO Data X[0.076699] Y[-0.586961] Z[-0.068177]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[0]
+Tof Data D[879.000000 mm]
+Acc Data X[-0.028320] Y[0.195801] Z[1.102783]
+GYRO Data X[0.260990] Y[-0.964064] Z[-0.149137]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-1]
+Tof Data D[876.000000 mm]
+Acc Data X[-0.066650] Y[0.176270] Z[1.054688]
+GYRO Data X[0.251402] Y[-1.352886] Z[-0.211988]
+Total Distance (m): nan
+Optical FLow Data X[13] Y[-4]
+Tof Data D[889.000000 mm]
+Acc Data X[-0.092041] Y[0.159912] Z[0.988281]
+GYRO Data X[0.123571] Y[-1.618137] Z[-0.259925]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[-1]
+Tof Data D[891.000000 mm]
+Acc Data X[-0.071045] Y[0.258301] Z[0.957275]
+GYRO Data X[0.311057] Y[-1.787514] Z[-0.380299]
+Total Distance (m): nan
+Optical FLow Data X[20] Y[-2]
+Tof Data D[878.000000 mm]
+Acc Data X[-0.047119] Y[0.303955] Z[0.936523]
+GYRO Data X[0.659399] Y[-1.836516] Z[-0.390952]
+Total Distance (m): nan
+Optical FLow Data X[15] Y[-3]
+Tof Data D[876.000000 mm]
+Acc Data X[-0.031738] Y[0.281494] Z[0.919434]
+GYRO Data X[0.920388] Y[-1.903628] Z[-0.346211]
+Total Distance (m): nan
+Optical FLow Data X[23] Y[-7]
+Tof Data D[885.000000 mm]
+Acc Data X[-0.132324] Y[0.223877] Z[0.925293]
+GYRO Data X[1.179248] Y[-1.835451] Z[-0.221575]
+Total Distance (m): nan
+Optical FLow Data X[16] Y[-7]
+Tof Data D[889.000000 mm]
+Acc Data X[-0.116699] Y[0.153809] Z[0.898193]
+GYRO Data X[1.151551] Y[-1.740642] Z[-0.200270]
+Total Distance (m): nan
+Optical FLow Data X[23] Y[-13]
+Tof Data D[880.000000 mm]
+Acc Data X[-0.269287] Y[0.111328] Z[0.873291]
+GYRO Data X[1.021589] Y[-1.611745] Z[-0.363255]
+Total Distance (m): nan
+Optical FLow Data X[14] Y[-8]
+Tof Data D[863.000000 mm]
+Acc Data X[-0.262451] Y[0.017822] Z[0.843506]
+GYRO Data X[0.740359] Y[-1.385909] Z[-0.436758]
+Total Distance (m): nan
+Optical FLow Data X[12] Y[-6]
+Tof Data D[884.000000 mm]
+Acc Data X[-0.242676] Y[0.038086] Z[0.889160]
+GYRO Data X[0.463390] Y[-1.038633] Z[-0.532632]
+Total Distance (m): nan
+Optical FLow Data X[15] Y[-7]
+Tof Data D[889.000000 mm]
+Acc Data X[-0.109375] Y[0.115479] Z[0.979248]
+GYRO Data X[0.033023] Y[-0.862864] Z[-0.630637]
+Total Distance (m): nan
+Optical FLow Data X[7] Y[-2]
+Tof Data D[860.000000 mm]
+Acc Data X[-0.082520] Y[0.154297] Z[1.028320]
+GYRO Data X[-0.159790] Y[-0.798948] Z[-0.596548]
+Total Distance (m): nan
+Optical FLow Data X[10] Y[0]
+Tof Data D[861.000000 mm]
+Acc Data X[-0.135010] Y[0.166260] Z[1.042969]
+GYRO Data X[-0.222640] Y[-0.867125] Z[-0.564590]
+Total Distance (m): nan
+Optical FLow Data X[9] Y[1]
+Tof Data D[882.000000 mm]
+Acc Data X[-0.078125] Y[0.218750] Z[1.036865]
+GYRO Data X[-0.356864] Y[-0.867125] Z[-0.621049]
+Total Distance (m): nan
+Optical FLow Data X[11] Y[4]
+Tof Data D[890.000000 mm]
+Acc Data X[-0.043213] Y[0.261475] Z[1.038086]
+GYRO Data X[-0.350472] Y[-0.850081] Z[-0.609331]
+Total Distance (m): nan
+Optical FLow Data X[7] Y[3]
+Tof Data D[850.000000 mm]
+Acc Data X[-0.044189] Y[0.269531] Z[1.008545]
+GYRO Data X[-0.282295] Y[-0.833037] Z[-0.470847]
+Total Distance (m): nan
+Optical FLow Data X[8] Y[4]
+Tof Data D[845.000000 mm]
+Acc Data X[0.004150] Y[0.270996] Z[1.020996]
+GYRO Data X[-0.216249] Y[-0.803209] Z[-0.301470]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[3]
+Tof Data D[873.000000 mm]
+Acc Data X[-0.013916] Y[0.218018] Z[0.999512]
+GYRO Data X[-0.127832] Y[-0.722249] Z[-0.110788]
+Total Distance (m): nan
+Optical FLow Data X[7] Y[1]
+Tof Data D[889.000000 mm]
+Acc Data X[-0.036377] Y[0.173340] Z[0.980225]
+GYRO Data X[-0.186421] Y[-0.610397] Z[0.041545]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[2]
+Tof Data D[855.000000 mm]
+Acc Data X[-0.032471] Y[0.143066] Z[0.954590]
+GYRO Data X[-0.327036] Y[-0.451672] Z[0.093743]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[2]
+Tof Data D[851.000000 mm]
+Acc Data X[-0.018799] Y[0.108398] Z[0.906250]
+GYRO Data X[-0.410127] Y[-0.232228] Z[0.155529]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[3]
+Tof Data D[866.000000 mm]
+Acc Data X[-0.031494] Y[0.092773] Z[0.882812]
+GYRO Data X[-0.529436] Y[0.038350] Z[0.286556]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[875.000000 mm]
+Acc Data X[0.009766] Y[0.086182] Z[0.887207]
+GYRO Data X[-0.639159] Y[0.304666] Z[0.379234]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[6]
+Tof Data D[859.000000 mm]
+Acc Data X[0.070312] Y[0.055664] Z[0.940186]
+GYRO Data X[-0.607201] Y[0.482565] Z[0.446346]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[5]
+Tof Data D[862.000000 mm]
+Acc Data X[0.109131] Y[0.031250] Z[0.979004]
+GYRO Data X[-0.626375] Y[0.528371] Z[0.499609]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[7]
+Tof Data D[859.000000 mm]
+Acc Data X[0.106201] Y[0.067383] Z[1.016357]
+GYRO Data X[-0.753142] Y[0.524110] Z[0.512392]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[5]
+Tof Data D[870.000000 mm]
+Acc Data X[0.112549] Y[0.053711] Z[1.013428]
+GYRO Data X[-0.801079] Y[0.478304] Z[0.227967]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[8]
+Tof Data D[860.000000 mm]
+Acc Data X[0.112061] Y[0.045654] Z[1.028809]
+GYRO Data X[-0.594418] Y[0.370712] Z[0.027697]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[6]
+Tof Data D[862.000000 mm]
+Acc Data X[0.111572] Y[0.036133] Z[1.058350]
+GYRO Data X[-0.476173] Y[0.236489] Z[-0.127832]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[5]
+Tof Data D[855.000000 mm]
+Acc Data X[0.073486] Y[0.018066] Z[1.055664]
+GYRO Data X[-0.450607] Y[0.143811] Z[-0.227967]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[7]
+Tof Data D[865.000000 mm]
+Acc Data X[0.039551] Y[0.040283] Z[1.039795]
+GYRO Data X[-0.492152] Y[0.084156] Z[-0.254598]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[5]
+Tof Data D[847.000000 mm]
+Acc Data X[0.087158] Y[0.071777] Z[1.039551]
+GYRO Data X[-0.546481] Y[0.059655] Z[-0.312122]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[8]
+Tof Data D[847.000000 mm]
+Acc Data X[0.011230] Y[0.074463] Z[1.024902]
+GYRO Data X[-0.532632] Y[0.018109] Z[-0.297209]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[5]
+Tof Data D[849.000000 mm]
+Acc Data X[0.017090] Y[0.067627] Z[1.001465]
+GYRO Data X[-0.495348] Y[0.008522] Z[-0.344080]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[8]
+Tof Data D[827.000000 mm]
+Acc Data X[0.014404] Y[0.078857] Z[1.014404]
+GYRO Data X[-0.303600] Y[0.030893] Z[-0.438889]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[4]
+Tof Data D[831.000000 mm]
+Acc Data X[0.041992] Y[0.061279] Z[1.022705]
+GYRO Data X[-0.123571] Y[0.033023] Z[-0.459129]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[5]
+Tof Data D[846.000000 mm]
+Acc Data X[0.046631] Y[0.066895] Z[1.022461]
+GYRO Data X[-0.059655] Y[-0.012783] Z[-0.401605]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[838.000000 mm]
+Acc Data X[0.034912] Y[0.065430] Z[1.009766]
+GYRO Data X[-0.051133] Y[-0.070307] Z[-0.351537]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[836.000000 mm]
+Acc Data X[0.001465] Y[0.034424] Z[0.996582]
+GYRO Data X[-0.019175] Y[-0.066046] Z[-0.280165]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[834.000000 mm]
+Acc Data X[-0.017334] Y[0.045166] Z[1.004883]
+GYRO Data X[-0.084156] Y[-0.007457] Z[-0.276969]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[850.000000 mm]
+Acc Data X[-0.013672] Y[0.037598] Z[1.001709]
+GYRO Data X[-0.142745] Y[0.046872] Z[-0.333428]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[3]
+Tof Data D[849.000000 mm]
+Acc Data X[-0.008545] Y[0.039307] Z[1.003662]
+GYRO Data X[-0.162985] Y[0.078830] Z[-0.337689]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[4]
+Tof Data D[834.000000 mm]
+Acc Data X[0.024658] Y[0.048584] Z[1.017090]
+GYRO Data X[-0.211988] Y[0.054328] Z[-0.339819]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[841.000000 mm]
+Acc Data X[0.032715] Y[0.058594] Z[1.019531]
+GYRO Data X[-0.216249] Y[-0.002131] Z[-0.311057]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[5]
+Tof Data D[848.000000 mm]
+Acc Data X[0.015381] Y[0.084717] Z[1.014404]
+GYRO Data X[-0.174703] Y[-0.027697] Z[-0.308927]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[839.000000 mm]
+Acc Data X[0.017090] Y[0.091309] Z[1.004150]
+GYRO Data X[-0.145941] Y[-0.039415] Z[-0.396278]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[5]
+Tof Data D[831.000000 mm]
+Acc Data X[0.023682] Y[0.103760] Z[0.999023]
+GYRO Data X[-0.076699] Y[-0.029827] Z[-0.395213]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[836.000000 mm]
+Acc Data X[0.031006] Y[0.115967] Z[0.990234]
+GYRO Data X[-0.057524] Y[-0.052198] Z[-0.374973]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[3]
+Tof Data D[846.000000 mm]
+Acc Data X[0.032715] Y[0.136475] Z[0.967529]
+GYRO Data X[-0.040480] Y[-0.091613] Z[-0.335558]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[2]
+Tof Data D[837.000000 mm]
+Acc Data X[0.016846] Y[0.144775] Z[0.952148]
+GYRO Data X[-0.018109] Y[-0.099070] Z[-0.298274]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[827.000000 mm]
+Acc Data X[0.011230] Y[0.158447] Z[0.939697]
+GYRO Data X[-0.013848] Y[-0.088417] Z[-0.225836]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[2]
+Tof Data D[836.000000 mm]
+Acc Data X[-0.000732] Y[0.167725] Z[0.922607]
+GYRO Data X[-0.024501] Y[-0.041545] Z[-0.177899]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[1]
+Tof Data D[851.000000 mm]
+Acc Data X[0.009521] Y[0.169189] Z[0.921875]
+GYRO Data X[-0.010653] Y[0.029827] Z[-0.112918]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[892.000000 mm]
+Acc Data X[0.030762] Y[0.192871] Z[0.942871]
+GYRO Data X[-0.023436] Y[0.068177] Z[-0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[0.000000 mm]
+Acc Data X[0.047607] Y[0.189941] Z[0.959229]
+GYRO Data X[0.010653] Y[0.061785] Z[0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[0.000000 mm]
+Acc Data X[0.043701] Y[0.155518] Z[0.961182]
+GYRO Data X[0.122505] Y[0.035154] Z[0.063916]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[854.000000 mm]
+Acc Data X[0.027832] Y[0.163574] Z[0.952148]
+GYRO Data X[0.076699] Y[0.035154] Z[0.100135]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[879.000000 mm]
+Acc Data X[0.017822] Y[0.163818] Z[0.936279]
+GYRO Data X[0.090547] Y[0.049002] Z[0.100135]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[0.000000 mm]
+Acc Data X[0.019775] Y[0.141357] Z[0.935547]
+GYRO Data X[0.131028] Y[0.100135] Z[0.110788]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[0.000000 mm]
+Acc Data X[0.016846] Y[0.141357] Z[0.943115]
+GYRO Data X[0.046872] Y[0.124636] Z[0.164051]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[-1]
+Tof Data D[835.000000 mm]
+Acc Data X[0.023438] Y[0.147217] Z[0.948730]
+GYRO Data X[-0.020240] Y[0.149137] Z[0.173638]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-1]
+Tof Data D[891.000000 mm]
+Acc Data X[0.033691] Y[0.165527] Z[0.943115]
+GYRO Data X[-0.076699] Y[0.166181] Z[0.183225]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-2]
+Tof Data D[0.000000 mm]
+Acc Data X[0.033936] Y[0.207764] Z[0.928467]
+GYRO Data X[-0.138484] Y[0.143811] Z[0.173638]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[-1]
+Tof Data D[0.000000 mm]
+Acc Data X[0.012695] Y[0.236816] Z[0.925049]
+GYRO Data X[-0.092678] Y[0.100135] Z[0.036219]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[-1]
+Tof Data D[845.000000 mm]
+Acc Data X[0.005859] Y[0.239014] Z[0.920166]
+GYRO Data X[0.054328] Y[0.052198] Z[-0.018109]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-1]
+Tof Data D[845.000000 mm]
+Acc Data X[0.008789] Y[0.264404] Z[0.940186]
+GYRO Data X[0.139550] Y[0.085221] Z[0.099070]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-3]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.015381] Y[0.244873] Z[0.945557]
+GYRO Data X[0.136354] Y[0.123571] Z[0.213053]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-3]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.034424] Y[0.216553] Z[0.946533]
+GYRO Data X[0.042611] Y[0.181095] Z[0.344080]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-5]
+Tof Data D[848.000000 mm]
+Acc Data X[-0.054688] Y[0.159180] Z[0.971924]
+GYRO Data X[0.129962] Y[0.170442] Z[0.507066]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-4]
+Tof Data D[823.000000 mm]
+Acc Data X[-0.041992] Y[0.112793] Z[1.021973]
+GYRO Data X[0.357929] Y[0.148072] Z[0.598679]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[-7]
+Tof Data D[807.000000 mm]
+Acc Data X[-0.053711] Y[0.069824] Z[1.061279]
+GYRO Data X[0.488956] Y[0.144876] Z[0.546481]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[-6]
+Tof Data D[815.000000 mm]
+Acc Data X[-0.032959] Y[0.045898] Z[1.077393]
+GYRO Data X[0.559264] Y[0.091613] Z[0.569916]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[-10]
+Tof Data D[827.000000 mm]
+Acc Data X[0.006836] Y[0.039795] Z[1.114502]
+GYRO Data X[0.561394] Y[-0.010653] Z[0.566721]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-7]
+Tof Data D[824.000000 mm]
+Acc Data X[0.013184] Y[-0.000732] Z[1.114746]
+GYRO Data X[0.764860] Y[-0.144876] Z[0.609331]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-8]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.000488] Y[-0.031006] Z[1.098389]
+GYRO Data X[0.568851] Y[-0.242880] Z[0.520914]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-11]
+Tof Data D[823.000000 mm]
+Acc Data X[0.019287] Y[-0.003418] Z[1.054688]
+GYRO Data X[0.462325] Y[-0.339819] Z[0.369647]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-7]
+Tof Data D[832.000000 mm]
+Acc Data X[0.026367] Y[0.028809] Z[1.030518]
+GYRO Data X[0.698813] Y[-0.329167] Z[0.294013]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-10]
+Tof Data D[822.000000 mm]
+Acc Data X[0.025635] Y[0.018311] Z[1.011719]
+GYRO Data X[0.702009] Y[-0.355798] Z[0.257794]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-7]
+Tof Data D[824.000000 mm]
+Acc Data X[0.018555] Y[-0.002686] Z[0.994629]
+GYRO Data X[0.772317] Y[-0.354733] Z[0.243946]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-11]
+Tof Data D[823.000000 mm]
+Acc Data X[0.032471] Y[-0.024170] Z[0.977783]
+GYRO Data X[0.684965] Y[-0.319579] Z[0.270577]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-7]
+Tof Data D[831.000000 mm]
+Acc Data X[0.068115] Y[-0.010254] Z[0.983398]
+GYRO Data X[0.531567] Y[-0.196009] Z[0.220510]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-9]
+Tof Data D[823.000000 mm]
+Acc Data X[0.101562] Y[-0.015381] Z[0.972412]
+GYRO Data X[0.460194] Y[-0.182160] Z[0.151268]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-5]
+Tof Data D[819.000000 mm]
+Acc Data X[0.133789] Y[0.039795] Z[0.969727]
+GYRO Data X[0.422910] Y[-0.180030] Z[0.153398]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-6]
+Tof Data D[822.000000 mm]
+Acc Data X[0.125244] Y[0.069824] Z[1.002197]
+GYRO Data X[0.512392] Y[-0.137419] Z[0.115049]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-4]
+Tof Data D[833.000000 mm]
+Acc Data X[0.090820] Y[0.119385] Z[0.984863]
+GYRO Data X[0.566721] Y[-0.087352] Z[-0.162985]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-5]
+Tof Data D[823.000000 mm]
+Acc Data X[0.074219] Y[0.251953] Z[1.009277]
+GYRO Data X[0.442085] Y[-0.176834] Z[-0.154463]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-6]
+Tof Data D[821.000000 mm]
+Acc Data X[0.133057] Y[0.098633] Z[0.974854]
+GYRO Data X[0.313188] Y[-0.264186] Z[0.138484]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-4]
+Tof Data D[827.000000 mm]
+Acc Data X[0.063232] Y[0.125977] Z[0.990478]
+GYRO Data X[0.245011] Y[-0.231162] Z[0.113983]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-3]
+Tof Data D[836.000000 mm]
+Acc Data X[0.118408] Y[0.153809] Z[0.999023]
+GYRO Data X[0.077764] Y[-0.296144] Z[0.024501]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[826.000000 mm]
+Acc Data X[0.104980] Y[0.210937] Z[1.003174]
+GYRO Data X[0.058590] Y[-0.180030] Z[0.035154]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-1]
+Tof Data D[835.000000 mm]
+Acc Data X[0.086182] Y[0.224365] Z[0.978760]
+GYRO Data X[0.118244] Y[-0.180030] Z[0.095874]
+Total Distance (m): nan
+Optical FLow Data X[6] Y[-1]
+Tof Data D[835.000000 mm]
+Acc Data X[0.059570] Y[0.228760] Z[0.985840]
+GYRO Data X[0.240750] Y[-0.187487] Z[0.087352]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[-2]
+Tof Data D[825.000000 mm]
+Acc Data X[0.090820] Y[0.222900] Z[0.965576]
+GYRO Data X[0.335558] Y[-0.187487] Z[0.050067]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[832.000000 mm]
+Acc Data X[0.043701] Y[0.206787] Z[0.930420]
+GYRO Data X[0.383495] Y[-0.113983] Z[-0.014914]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-3]
+Tof Data D[848.000000 mm]
+Acc Data X[-0.019043] Y[0.157227] Z[0.880127]
+GYRO Data X[0.203466] Y[-0.026632] Z[-0.093743]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-4]
+Tof Data D[841.000000 mm]
+Acc Data X[0.027344] Y[0.190918] Z[0.931885]
+GYRO Data X[0.353668] Y[0.093743] Z[0.206661]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[817.000000 mm]
+Acc Data X[0.046143] Y[0.196533] Z[0.962646]
+GYRO Data X[0.068177] Y[0.136354] Z[-0.045806]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-3]
+Tof Data D[829.000000 mm]
+Acc Data X[0.063721] Y[0.236328] Z[1.012695]
+GYRO Data X[-0.062851] Y[0.193878] Z[-0.084156]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[-1]
+Tof Data D[850.000000 mm]
+Acc Data X[0.093750] Y[0.259766] Z[1.051270]
+GYRO Data X[0.021305] Y[0.105461] Z[0.004261]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[848.000000 mm]
+Acc Data X[0.098633] Y[0.242676] Z[1.044678]
+GYRO Data X[0.128897] Y[-0.035154] Z[0.041545]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[833.000000 mm]
+Acc Data X[0.044434] Y[0.233643] Z[1.035156]
+GYRO Data X[0.050067] Y[-0.157659] Z[-0.030893]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[838.000000 mm]
+Acc Data X[0.040039] Y[0.245605] Z[1.036865]
+GYRO Data X[0.069242] Y[-0.185356] Z[-0.057524]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[0]
+Tof Data D[851.000000 mm]
+Acc Data X[0.051758] Y[0.249268] Z[1.029785]
+GYRO Data X[0.101200] Y[-0.186421] Z[-0.060720]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-1]
+Tof Data D[844.000000 mm]
+Acc Data X[0.075684] Y[0.253174] Z[1.020752]
+GYRO Data X[0.064981] Y[-0.210922] Z[0.011718]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[826.000000 mm]
+Acc Data X[0.088623] Y[0.249023] Z[0.995361]
+GYRO Data X[0.006392] Y[-0.236489] Z[0.070307]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-1]
+Tof Data D[836.000000 mm]
+Acc Data X[0.079590] Y[0.259277] Z[0.967773]
+GYRO Data X[-0.001065] Y[-0.257794] Z[0.068177]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[847.000000 mm]
+Acc Data X[0.089600] Y[0.263184] Z[0.936035]
+GYRO Data X[0.080960] Y[-0.242880] Z[0.034088]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[0]
+Tof Data D[844.000000 mm]
+Acc Data X[0.076904] Y[0.256592] Z[0.891846]
+GYRO Data X[0.102265] Y[-0.171508] Z[0.035154]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-1]
+Tof Data D[836.000000 mm]
+Acc Data X[0.074463] Y[0.244141] Z[0.878174]
+GYRO Data X[0.077764] Y[-0.102265] Z[0.031958]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[0.072510] Y[0.241455] Z[0.877930]
+GYRO Data X[0.000000] Y[-0.012783] Z[0.056459]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[847.000000 mm]
+Acc Data X[0.093018] Y[0.252930] Z[0.878906]
+GYRO Data X[-0.082025] Y[0.046872] Z[0.020240]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[846.000000 mm]
+Acc Data X[0.117676] Y[0.269775] Z[0.880859]
+GYRO Data X[-0.088417] Y[0.066046] Z[0.037284]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[839.000000 mm]
+Acc Data X[0.127197] Y[0.273926] Z[0.907471]
+GYRO Data X[-0.053263] Y[0.071373] Z[0.082025]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[835.000000 mm]
+Acc Data X[0.114746] Y[0.267334] Z[0.932617]
+GYRO Data X[-0.030893] Y[0.083091] Z[0.070307]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[848.000000 mm]
+Acc Data X[0.107910] Y[0.254883] Z[0.939697]
+GYRO Data X[-0.007457] Y[0.058590] Z[0.042611]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[855.000000 mm]
+Acc Data X[0.100098] Y[0.236816] Z[0.945068]
+GYRO Data X[-0.066046] Y[0.064981] Z[0.089482]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[844.000000 mm]
+Acc Data X[0.078369] Y[0.225830] Z[0.962402]
+GYRO Data X[-0.143811] Y[0.107592] Z[0.079895]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[1]
+Tof Data D[832.000000 mm]
+Acc Data X[0.072510] Y[0.230713] Z[0.979736]
+GYRO Data X[-0.194943] Y[0.154463] Z[0.074569]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[851.000000 mm]
+Acc Data X[0.083740] Y[0.222656] Z[0.998047]
+GYRO Data X[-0.206661] Y[0.167247] Z[0.074569]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[838.000000 mm]
+Acc Data X[0.078613] Y[0.213867] Z[1.021973]
+GYRO Data X[-0.191748] Y[0.186421] Z[0.090547]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[852.000000 mm]
+Acc Data X[0.089355] Y[0.207031] Z[1.039795]
+GYRO Data X[-0.127832] Y[0.175769] Z[0.111853]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[851.000000 mm]
+Acc Data X[0.092529] Y[0.231934] Z[1.052002]
+GYRO Data X[-0.166181] Y[0.170442] Z[0.036219]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[850.000000 mm]
+Acc Data X[0.105713] Y[0.188965] Z[1.040039]
+GYRO Data X[-0.170442] Y[0.134223] Z[-0.014914]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[835.000000 mm]
+Acc Data X[0.097412] Y[0.172119] Z[1.032959]
+GYRO Data X[-0.194943] Y[0.123571] Z[-0.021305]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[850.000000 mm]
+Acc Data X[0.093994] Y[0.162354] Z[1.024414]
+GYRO Data X[-0.256729] Y[0.066046] Z[-0.023436]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[2]
+Tof Data D[843.000000 mm]
+Acc Data X[0.083496] Y[0.183838] Z[1.007324]
+GYRO Data X[-0.314253] Y[0.045806] Z[-0.077764]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[3]
+Tof Data D[841.000000 mm]
+Acc Data X[0.078613] Y[0.182617] Z[0.990723]
+GYRO Data X[-0.287621] Y[0.044741] Z[-0.120375]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[5]
+Tof Data D[833.000000 mm]
+Acc Data X[0.060059] Y[0.175781] Z[0.979492]
+GYRO Data X[-0.249272] Y[0.056459] Z[-0.099070]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[845.000000 mm]
+Acc Data X[0.056641] Y[0.173584] Z[0.968262]
+GYRO Data X[-0.250337] Y[0.049002] Z[-0.101200]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[4]
+Tof Data D[828.000000 mm]
+Acc Data X[0.042725] Y[0.167725] Z[0.944580]
+GYRO Data X[-0.321710] Y[0.035154] Z[-0.076699]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[836.000000 mm]
+Acc Data X[0.034668] Y[0.137451] Z[0.920654]
+GYRO Data X[-0.409062] Y[0.010653] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[6]
+Tof Data D[841.000000 mm]
+Acc Data X[0.026855] Y[0.127197] Z[0.933594]
+GYRO Data X[-0.430367] Y[0.057524] Z[0.099070]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[4]
+Tof Data D[843.000000 mm]
+Acc Data X[0.037598] Y[0.130127] Z[0.940430]
+GYRO Data X[-0.467651] Y[0.269512] Z[0.033023]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[4]
+Tof Data D[830.000000 mm]
+Acc Data X[0.022949] Y[0.099854] Z[0.938232]
+GYRO Data X[-0.479369] Y[0.390952] Z[0.054328]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[6]
+Tof Data D[841.000000 mm]
+Acc Data X[0.030273] Y[0.098633] Z[0.962891]
+GYRO Data X[-0.628506] Y[0.493217] Z[0.056459]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[5]
+Tof Data D[824.000000 mm]
+Acc Data X[0.059570] Y[0.102051] Z[0.964600]
+GYRO Data X[-0.719054] Y[0.557133] Z[0.064981]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[5]
+Tof Data D[835.000000 mm]
+Acc Data X[0.052734] Y[0.107422] Z[1.004150]
+GYRO Data X[-0.702009] Y[0.658333] Z[0.029827]
+Total Distance (m): nan
+Optical FLow Data X[-8] Y[9]
+Tof Data D[825.000000 mm]
+Acc Data X[0.020752] Y[0.082031] Z[0.986084]
+GYRO Data X[-0.675378] Y[0.632767] Z[-0.034088]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[6]
+Tof Data D[838.000000 mm]
+Acc Data X[0.008545] Y[0.062988] Z[0.970947]
+GYRO Data X[-0.684965] Y[0.664725] Z[-0.161920]
+Total Distance (m): nan
+Optical FLow Data X[-6] Y[6]
+Tof Data D[818.000000 mm]
+Acc Data X[0.024414] Y[0.071777] Z[0.984375]
+GYRO Data X[-0.688161] Y[0.660464] Z[-0.240750]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[10]
+Tof Data D[833.000000 mm]
+Acc Data X[0.036377] Y[0.085693] Z[1.000732]
+GYRO Data X[-0.624245] Y[0.622114] Z[-0.288687]
+Total Distance (m): nan
+Optical FLow Data X[-5] Y[6]
+Tof Data D[826.000000 mm]
+Acc Data X[0.052002] Y[0.096436] Z[1.021973]
+GYRO Data X[-0.498544] Y[0.549676] Z[-0.362190]
+Total Distance (m): nan
+Optical FLow Data X[-7] Y[8]
+Tof Data D[831.000000 mm]
+Acc Data X[0.030518] Y[0.061279] Z[1.039551]
+GYRO Data X[-0.385626] Y[0.426106] Z[-0.377104]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[5]
+Tof Data D[820.000000 mm]
+Acc Data X[0.024902] Y[0.068848] Z[1.047119]
+GYRO Data X[-0.400539] Y[0.337689] Z[-0.426106]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[6]
+Tof Data D[817.000000 mm]
+Acc Data X[-0.000732] Y[0.061035] Z[1.020996]
+GYRO Data X[-0.434628] Y[0.235423] Z[-0.484695]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[5]
+Tof Data D[824.000000 mm]
+Acc Data X[-0.041260] Y[0.045898] Z[0.990723]
+GYRO Data X[-0.449542] Y[0.167247] Z[-0.506001]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[5]
+Tof Data D[828.000000 mm]
+Acc Data X[-0.044189] Y[0.048828] Z[0.971680]
+GYRO Data X[-0.501740] Y[0.169377] Z[-0.471912]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[7]
+Tof Data D[819.000000 mm]
+Acc Data X[-0.056152] Y[0.074463] Z[0.971680]
+GYRO Data X[-0.509196] Y[0.231162] Z[-0.446346]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[5]
+Tof Data D[809.000000 mm]
+Acc Data X[-0.055176] Y[0.077881] Z[0.977539]
+GYRO Data X[-0.441019] Y[0.264186] Z[-0.431432]
+Total Distance (m): nan
+Optical FLow Data X[-4] Y[8]
+Tof Data D[826.000000 mm]
+Acc Data X[-0.053711] Y[0.090576] Z[0.987793]
+GYRO Data X[-0.340885] Y[0.265251] Z[-0.379234]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[4]
+Tof Data D[808.000000 mm]
+Acc Data X[-0.049316] Y[0.090088] Z[0.990723]
+GYRO Data X[-0.311057] Y[0.259925] Z[-0.327036]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[6]
+Tof Data D[809.000000 mm]
+Acc Data X[-0.052246] Y[0.092773] Z[0.998535]
+GYRO Data X[-0.248207] Y[0.278034] Z[-0.332363]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[4]
+Tof Data D[824.000000 mm]
+Acc Data X[-0.057129] Y[0.076904] Z[0.985107]
+GYRO Data X[-0.148072] Y[0.232228] Z[-0.288687]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[5]
+Tof Data D[822.000000 mm]
+Acc Data X[-0.074707] Y[0.081055] Z[0.984131]
+GYRO Data X[-0.170442] Y[0.199204] Z[-0.267381]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[2]
+Tof Data D[803.000000 mm]
+Acc Data X[-0.057861] Y[0.038330] Z[0.985107]
+GYRO Data X[-0.118244] Y[0.180030] Z[-0.234358]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[3]
+Tof Data D[808.000000 mm]
+Acc Data X[-0.079834] Y[0.017090] Z[0.980469]
+GYRO Data X[-0.178964] Y[0.144876] Z[-0.186421]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[821.000000 mm]
+Acc Data X[-0.093994] Y[0.000244] Z[0.974854]
+GYRO Data X[-0.292948] Y[0.118244] Z[-0.142745]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[4]
+Tof Data D[814.000000 mm]
+Acc Data X[-0.100098] Y[0.008057] Z[0.971924]
+GYRO Data X[-0.400539] Y[0.137419] Z[-0.095874]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[5]
+Tof Data D[805.000000 mm]
+Acc Data X[-0.105225] Y[0.031006] Z[0.979736]
+GYRO Data X[-0.446346] Y[0.156594] Z[-0.119310]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[3]
+Tof Data D[809.000000 mm]
+Acc Data X[-0.071777] Y[0.027832] Z[0.988525]
+GYRO Data X[-0.381365] Y[0.185356] Z[-0.135289]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[6]
+Tof Data D[819.000000 mm]
+Acc Data X[-0.065674] Y[0.056641] Z[0.993652]
+GYRO Data X[-0.350472] Y[0.149137] Z[-0.121440]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[4]
+Tof Data D[811.000000 mm]
+Acc Data X[-0.054199] Y[0.051758] Z[0.998047]
+GYRO Data X[-0.300405] Y[0.095874] Z[-0.084156]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[4]
+Tof Data D[805.000000 mm]
+Acc Data X[-0.074219] Y[0.056641] Z[0.983398]
+GYRO Data X[-0.236489] Y[0.049002] Z[-0.037284]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[810.000000 mm]
+Acc Data X[-0.089355] Y[0.059082] Z[0.957764]
+GYRO Data X[-0.218379] Y[0.043676] Z[-0.043676]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[817.000000 mm]
+Acc Data X[-0.077881] Y[0.076172] Z[0.956055]
+GYRO Data X[-0.127832] Y[0.072438] Z[-0.039415]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[812.000000 mm]
+Acc Data X[-0.069092] Y[0.082764] Z[0.961914]
+GYRO Data X[-0.004261] Y[0.062851] Z[-0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[808.000000 mm]
+Acc Data X[-0.068848] Y[0.086670] Z[0.947021]
+GYRO Data X[0.031958] Y[0.041545] Z[0.063916]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[808.000000 mm]
+Acc Data X[-0.091797] Y[0.081787] Z[0.929932]
+GYRO Data X[0.060720] Y[0.040480] Z[0.145941]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[817.000000 mm]
+Acc Data X[-0.108398] Y[0.067627] Z[0.925781]
+GYRO Data X[0.112918] Y[0.100135] Z[0.194943]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-2]
+Tof Data D[822.000000 mm]
+Acc Data X[-0.114746] Y[0.055176] Z[0.922119]
+GYRO Data X[0.158724] Y[0.153398] Z[0.270577]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-2]
+Tof Data D[805.000000 mm]
+Acc Data X[-0.113281] Y[0.052979] Z[0.943115]
+GYRO Data X[0.171508] Y[0.197074] Z[0.358994]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-2]
+Tof Data D[808.000000 mm]
+Acc Data X[-0.096436] Y[0.052490] Z[0.975830]
+GYRO Data X[0.183225] Y[0.207727] Z[0.413323]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-3]
+Tof Data D[818.000000 mm]
+Acc Data X[-0.092041] Y[0.046875] Z[1.012939]
+GYRO Data X[0.242880] Y[0.183225] Z[0.411192]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-4]
+Tof Data D[821.000000 mm]
+Acc Data X[-0.072021] Y[0.044189] Z[1.048340]
+GYRO Data X[0.355798] Y[0.080960] Z[0.372843]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[-5]
+Tof Data D[806.000000 mm]
+Acc Data X[-0.052734] Y[0.053467] Z[1.076172]
+GYRO Data X[0.482565] Y[-0.089482] Z[0.330232]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-4]
+Tof Data D[823.000000 mm]
+Acc Data X[-0.075195] Y[0.043213] Z[1.071289]
+GYRO Data X[0.573112] Y[-0.235423] Z[0.297209]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-8]
+Tof Data D[817.000000 mm]
+Acc Data X[-0.102539] Y[0.026855] Z[1.032715]
+GYRO Data X[0.664725] Y[-0.323840] Z[0.232228]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-6]
+Tof Data D[809.000000 mm]
+Acc Data X[-0.106689] Y[0.021240] Z[1.009277]
+GYRO Data X[0.688161] Y[-0.354733] Z[0.234358]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-10]
+Tof Data D[807.000000 mm]
+Acc Data X[-0.113281] Y[0.014648] Z[0.978760]
+GYRO Data X[0.619984] Y[-0.319579] Z[0.273773]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-6]
+Tof Data D[823.000000 mm]
+Acc Data X[-0.127441] Y[0.000000] Z[0.958984]
+GYRO Data X[0.483630] Y[-0.306796] Z[0.382430]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-9]
+Tof Data D[814.000000 mm]
+Acc Data X[-0.137451] Y[-0.002930] Z[0.950684]
+GYRO Data X[0.353668] Y[-0.238619] Z[0.438889]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-5]
+Tof Data D[807.000000 mm]
+Acc Data X[-0.115234] Y[0.013428] Z[0.959961]
+GYRO Data X[0.282295] Y[-0.132093] Z[0.398409]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-6]
+Tof Data D[810.000000 mm]
+Acc Data X[-0.102539] Y[0.010254] Z[0.956787]
+GYRO Data X[0.264186] Y[-0.040480] Z[0.306796]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-4]
+Tof Data D[819.000000 mm]
+Acc Data X[-0.085205] Y[0.026123] Z[0.941162]
+GYRO Data X[0.356864] Y[0.007457] Z[0.337689]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-3]
+Tof Data D[820.000000 mm]
+Acc Data X[-0.067627] Y[0.060791] Z[0.989746]
+GYRO Data X[0.317449] Y[0.026632] Z[0.338754]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-6]
+Tof Data D[806.000000 mm]
+Acc Data X[-0.040527] Y[0.057373] Z[1.000732]
+GYRO Data X[0.297209] Y[-0.044741] Z[0.336624]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-4]
+Tof Data D[807.000000 mm]
+Acc Data X[-0.054688] Y[0.036377] Z[1.004395]
+GYRO Data X[0.297209] Y[-0.133158] Z[0.382430]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-6]
+Tof Data D[818.000000 mm]
+Acc Data X[-0.081055] Y[0.016113] Z[1.004395]
+GYRO Data X[0.229032] Y[-0.182160] Z[0.413323]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-3]
+Tof Data D[816.000000 mm]
+Acc Data X[-0.106934] Y[0.007568] Z[1.006836]
+GYRO Data X[0.094809] Y[-0.159790] Z[0.393083]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-4]
+Tof Data D[805.000000 mm]
+Acc Data X[-0.111816] Y[-0.011230] Z[1.014404]
+GYRO Data X[0.026632] Y[-0.120375] Z[0.364320]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-2]
+Tof Data D[806.000000 mm]
+Acc Data X[-0.105225] Y[-0.019043] Z[1.033936]
+GYRO Data X[-0.043676] Y[-0.025566] Z[0.378169]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[813.000000 mm]
+Acc Data X[-0.097900] Y[-0.027832] Z[1.046875]
+GYRO Data X[-0.101200] Y[0.041545] Z[0.350472]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[813.000000 mm]
+Acc Data X[-0.081543] Y[-0.029541] Z[1.065674]
+GYRO Data X[-0.010653] Y[0.092678] Z[0.312122]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[804.000000 mm]
+Acc Data X[-0.032959] Y[-0.034424] Z[1.084229]
+GYRO Data X[0.010653] Y[0.151268] Z[0.263120]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[-1]
+Tof Data D[802.000000 mm]
+Acc Data X[-0.032959] Y[-0.039795] Z[1.094482]
+GYRO Data X[0.061785] Y[0.141680] Z[0.269512]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[-1]
+Tof Data D[807.000000 mm]
+Acc Data X[-0.013916] Y[-0.033691] Z[1.093018]
+GYRO Data X[-0.014914] Y[0.040480] Z[0.183225]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[-1]
+Tof Data D[808.000000 mm]
+Acc Data X[-0.026123] Y[-0.032959] Z[1.066162]
+GYRO Data X[-0.076699] Y[-0.047937] Z[0.102265]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[804.000000 mm]
+Acc Data X[-0.045654] Y[-0.032227] Z[1.052734]
+GYRO Data X[-0.112918] Y[-0.100135] Z[-0.008522]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[1]
+Tof Data D[806.000000 mm]
+Acc Data X[-0.040039] Y[-0.020264] Z[1.037598]
+GYRO Data X[-0.148072] Y[-0.122505] Z[-0.064981]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[796.000000 mm]
+Acc Data X[-0.040771] Y[0.010010] Z[1.029541]
+GYRO Data X[-0.214118] Y[-0.108657] Z[-0.086286]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[3]
+Tof Data D[805.000000 mm]
+Acc Data X[-0.047852] Y[0.015625] Z[1.000488]
+GYRO Data X[-0.207727] Y[-0.126766] Z[-0.139550]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[2]
+Tof Data D[807.000000 mm]
+Acc Data X[-0.056152] Y[0.020508] Z[0.984375]
+GYRO Data X[-0.149137] Y[-0.123571] Z[-0.178964]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[2]
+Tof Data D[805.000000 mm]
+Acc Data X[-0.068359] Y[0.019531] Z[0.973145]
+GYRO Data X[-0.104396] Y[-0.107592] Z[-0.189617]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[2]
+Tof Data D[798.000000 mm]
+Acc Data X[-0.068115] Y[0.020264] Z[0.984131]
+GYRO Data X[-0.111853] Y[-0.064981] Z[-0.167247]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[804.000000 mm]
+Acc Data X[-0.069580] Y[0.032227] Z[0.997070]
+GYRO Data X[-0.137419] Y[-0.026632] Z[-0.157659]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[3]
+Tof Data D[806.000000 mm]
+Acc Data X[-0.065430] Y[0.030518] Z[1.004150]
+GYRO Data X[-0.143811] Y[-0.012783] Z[-0.137419]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[807.000000 mm]
+Acc Data X[-0.052490] Y[0.031738] Z[1.012451]
+GYRO Data X[-0.152333] Y[-0.022371] Z[-0.117179]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[807.000000 mm]
+Acc Data X[-0.060791] Y[0.034912] Z[1.007568]
+GYRO Data X[-0.134223] Y[-0.017044] Z[-0.131028]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[805.000000 mm]
+Acc Data X[-0.066895] Y[0.021240] Z[0.996338]
+GYRO Data X[-0.120375] Y[-0.018109] Z[-0.169377]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[4]
+Tof Data D[808.000000 mm]
+Acc Data X[-0.071045] Y[0.003662] Z[0.997070]
+GYRO Data X[-0.116114] Y[-0.023436] Z[-0.166181]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[811.000000 mm]
+Acc Data X[-0.063477] Y[0.008789] Z[1.002441]
+GYRO Data X[-0.167247] Y[0.001065] Z[-0.175769]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[808.000000 mm]
+Acc Data X[-0.069092] Y[0.000977] Z[0.984863]
+GYRO Data X[-0.218379] Y[0.024501] Z[-0.164051]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[4]
+Tof Data D[806.000000 mm]
+Acc Data X[-0.066895] Y[0.000732] Z[0.982910]
+GYRO Data X[-0.230097] Y[0.028762] Z[-0.153398]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[807.000000 mm]
+Acc Data X[-0.064941] Y[0.005127] Z[0.995850]
+GYRO Data X[-0.229032] Y[0.069242] Z[-0.191748]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[5]
+Tof Data D[814.000000 mm]
+Acc Data X[-0.043945] Y[0.010498] Z[1.001953]
+GYRO Data X[-0.222640] Y[0.078830] Z[-0.240750]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[3]
+Tof Data D[814.000000 mm]
+Acc Data X[-0.050537] Y[0.019043] Z[1.008057]
+GYRO Data X[-0.162985] Y[0.080960] Z[-0.290817]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[5]
+Tof Data D[811.000000 mm]
+Acc Data X[-0.064941] Y[0.016113] Z[0.995850]
+GYRO Data X[-0.152333] Y[0.058590] Z[-0.306796]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[3]
+Tof Data D[813.000000 mm]
+Acc Data X[-0.081055] Y[0.026855] Z[0.989990]
+GYRO Data X[-0.182160] Y[0.054328] Z[-0.311057]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[5]
+Tof Data D[819.000000 mm]
+Acc Data X[-0.083252] Y[0.024170] Z[0.982910]
+GYRO Data X[-0.190682] Y[0.072438] Z[-0.292948]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[813.000000 mm]
+Acc Data X[-0.076660] Y[0.037109] Z[0.984863]
+GYRO Data X[-0.192813] Y[0.099070] Z[-0.259925]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[5]
+Tof Data D[812.000000 mm]
+Acc Data X[-0.083496] Y[0.035889] Z[0.980957]
+GYRO Data X[-0.166181] Y[0.123571] Z[-0.278034]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[3]
+Tof Data D[816.000000 mm]
+Acc Data X[-0.097900] Y[0.018066] Z[0.971191]
+GYRO Data X[-0.126766] Y[0.137419] Z[-0.231162]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[824.000000 mm]
+Acc Data X[-0.091064] Y[0.021240] Z[0.968506]
+GYRO Data X[-0.161920] Y[0.137419] Z[-0.154463]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[4]
+Tof Data D[816.000000 mm]
+Acc Data X[-0.093262] Y[0.018555] Z[0.949219]
+GYRO Data X[-0.188552] Y[0.143811] Z[-0.088417]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[3]
+Tof Data D[813.000000 mm]
+Acc Data X[-0.082764] Y[0.012451] Z[0.955322]
+GYRO Data X[-0.192813] Y[0.122505] Z[-0.028762]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[4]
+Tof Data D[825.000000 mm]
+Acc Data X[-0.073730] Y[0.014648] Z[0.947266]
+GYRO Data X[-0.167247] Y[0.063916] Z[0.026632]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[2]
+Tof Data D[829.000000 mm]
+Acc Data X[-0.059814] Y[0.025879] Z[0.978271]
+GYRO Data X[-0.158724] Y[0.053263] Z[0.042611]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[3]
+Tof Data D[819.000000 mm]
+Acc Data X[-0.031250] Y[0.070557] Z[0.988037]
+GYRO Data X[-0.186421] Y[0.157659] Z[-0.073503]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[816.000000 mm]
+Acc Data X[-0.029297] Y[0.076660] Z[0.962891]
+GYRO Data X[-0.170442] Y[0.109722] Z[-0.088417]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[4]
+Tof Data D[832.000000 mm]
+Acc Data X[-0.039062] Y[0.111084] Z[0.962646]
+GYRO Data X[-0.084156] Y[0.079895] Z[-0.068177]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[833.000000 mm]
+Acc Data X[-0.051025] Y[0.133057] Z[0.947266]
+GYRO Data X[0.022371] Y[0.050067] Z[-0.101200]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[3]
+Tof Data D[818.000000 mm]
+Acc Data X[-0.060791] Y[0.149902] Z[0.937744]
+GYRO Data X[0.084156] Y[0.049002] Z[0.004261]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[819.000000 mm]
+Acc Data X[-0.069092] Y[0.144775] Z[0.925293]
+GYRO Data X[0.126766] Y[0.059655] Z[0.119310]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.051025] Y[0.147949] Z[0.944092]
+GYRO Data X[0.213053] Y[0.110788] Z[0.150202]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[-2]
+Tof Data D[833.000000 mm]
+Acc Data X[-0.041260] Y[0.128662] Z[0.946777]
+GYRO Data X[0.272708] Y[0.093743] Z[0.147006]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[820.000000 mm]
+Acc Data X[-0.046875] Y[0.122559] Z[0.924805]
+GYRO Data X[0.221575] Y[0.058590] Z[0.161920]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-4]
+Tof Data D[819.000000 mm]
+Acc Data X[-0.053955] Y[0.167969] Z[0.950928]
+GYRO Data X[0.274838] Y[0.018109] Z[0.152333]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-3]
+Tof Data D[837.000000 mm]
+Acc Data X[-0.029541] Y[0.156982] Z[1.003906]
+GYRO Data X[0.466586] Y[-0.038350] Z[0.094809]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-5]
+Tof Data D[834.000000 mm]
+Acc Data X[-0.017822] Y[0.122559] Z[1.033691]
+GYRO Data X[0.574178] Y[-0.144876] Z[0.155529]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-5]
+Tof Data D[818.000000 mm]
+Acc Data X[-0.027832] Y[0.097656] Z[1.045654]
+GYRO Data X[0.507066] Y[-0.290817] Z[0.229032]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-7]
+Tof Data D[820.000000 mm]
+Acc Data X[-0.021729] Y[0.129883] Z[1.007324]
+GYRO Data X[0.303600] Y[-0.412257] Z[0.322775]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-5]
+Tof Data D[835.000000 mm]
+Acc Data X[-0.034424] Y[0.145752] Z[0.993408]
+GYRO Data X[0.353668] Y[-0.427171] Z[0.272708]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-4]
+Tof Data D[834.000000 mm]
+Acc Data X[-0.035645] Y[0.127197] Z[0.983154]
+GYRO Data X[0.567786] Y[-0.439954] Z[0.185356]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-6]
+Tof Data D[818.000000 mm]
+Acc Data X[-0.019043] Y[0.126465] Z[0.971680]
+GYRO Data X[0.668986] Y[-0.438889] Z[0.232228]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-6]
+Tof Data D[825.000000 mm]
+Acc Data X[-0.020508] Y[0.116699] Z[0.972656]
+GYRO Data X[0.736098] Y[-0.430367] Z[0.237554]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[-10]
+Tof Data D[821.000000 mm]
+Acc Data X[-0.030762] Y[0.097900] Z[0.963135]
+GYRO Data X[0.761664] Y[-0.434628] Z[0.246076]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-7]
+Tof Data D[827.000000 mm]
+Acc Data X[-0.062500] Y[0.062988] Z[0.936768]
+GYRO Data X[0.715858] Y[-0.363255] Z[0.281230]
+Total Distance (m): nan
+Optical FLow Data X[5] Y[-10]
+Tof Data D[812.000000 mm]
+Acc Data X[-0.054688] Y[0.083984] Z[0.948730]
+GYRO Data X[0.631702] Y[-0.288687] Z[0.262055]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-6]
+Tof Data D[852.000000 mm]
+Acc Data X[-0.033691] Y[0.088135] Z[0.960449]
+GYRO Data X[0.632767] Y[-0.219444] Z[0.202400]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-9]
+Tof Data D[860.000000 mm]
+Acc Data X[-0.008789] Y[0.100586] Z[0.984619]
+GYRO Data X[0.655138] Y[-0.232228] Z[0.211988]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-6]
+Tof Data D[816.000000 mm]
+Acc Data X[-0.000732] Y[0.114258] Z[0.989014]
+GYRO Data X[0.563525] Y[-0.258859] Z[0.256729]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-7]
+Tof Data D[819.000000 mm]
+Acc Data X[0.008301] Y[0.131104] Z[0.992920]
+GYRO Data X[0.482565] Y[-0.290817] Z[0.269512]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-8]
+Tof Data D[842.000000 mm]
+Acc Data X[-0.036133] Y[0.135742] Z[0.995117]
+GYRO Data X[0.515588] Y[-0.291882] Z[0.269512]
+Total Distance (m): nan
+Optical FLow Data X[3] Y[-5]
+Tof Data D[850.000000 mm]
+Acc Data X[-0.062012] Y[0.112305] Z[0.980469]
+GYRO Data X[0.480434] Y[-0.274838] Z[0.271642]
+Total Distance (m): nan
+Optical FLow Data X[4] Y[-7]
+Tof Data D[810.000000 mm]
+Acc Data X[-0.068359] Y[0.106689] Z[0.984131]
+GYRO Data X[0.448476] Y[-0.192813] Z[0.240750]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-5]
+Tof Data D[825.000000 mm]
+Acc Data X[-0.047363] Y[0.116211] Z[0.990234]
+GYRO Data X[0.374973] Y[-0.133158] Z[0.226901]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-6]
+Tof Data D[840.000000 mm]
+Acc Data X[-0.023682] Y[0.136475] Z[1.006836]
+GYRO Data X[0.318514] Y[-0.080960] Z[0.237554]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-4]
+Tof Data D[838.000000 mm]
+Acc Data X[-0.001221] Y[0.128418] Z[1.027588]
+GYRO Data X[0.296144] Y[-0.071373] Z[0.224771]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-5]
+Tof Data D[812.000000 mm]
+Acc Data X[-0.005371] Y[0.121582] Z[1.028320]
+GYRO Data X[0.270577] Y[-0.075634] Z[0.226901]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-3]
+Tof Data D[826.000000 mm]
+Acc Data X[-0.005371] Y[0.114990] Z[1.025635]
+GYRO Data X[0.191748] Y[-0.075634] Z[0.211988]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[-4]
+Tof Data D[840.000000 mm]
+Acc Data X[0.000000] Y[0.124023] Z[1.024170]
+GYRO Data X[0.133158] Y[0.022371] Z[0.147006]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[-2]
+Tof Data D[835.000000 mm]
+Acc Data X[0.017578] Y[0.095703] Z[1.019775]
+GYRO Data X[0.151268] Y[0.074569] Z[0.095874]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[825.000000 mm]
+Acc Data X[0.021729] Y[0.098633] Z[1.027100]
+GYRO Data X[0.083091] Y[0.094809] Z[0.078830]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-2]
+Tof Data D[829.000000 mm]
+Acc Data X[0.031250] Y[0.103271] Z[1.038086]
+GYRO Data X[-0.058590] Y[0.080960] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[-1]
+Tof Data D[841.000000 mm]
+Acc Data X[0.041260] Y[0.113525] Z[1.029541]
+GYRO Data X[-0.149137] Y[0.061785] Z[-0.017044]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[838.000000 mm]
+Acc Data X[0.041016] Y[0.156006] Z[1.015625]
+GYRO Data X[-0.238619] Y[0.055394] Z[-0.057524]
+Total Distance (m): nan
+Optical FLow Data X[-2] Y[1]
+Tof Data D[826.000000 mm]
+Acc Data X[0.036133] Y[0.181641] Z[0.982910]
+GYRO Data X[-0.233293] Y[0.084156] Z[-0.100135]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[828.000000 mm]
+Acc Data X[0.020264] Y[0.197754] Z[0.969482]
+GYRO Data X[-0.167247] Y[0.054328] Z[-0.149137]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[841.000000 mm]
+Acc Data X[0.005371] Y[0.206055] Z[0.954102]
+GYRO Data X[-0.137419] Y[0.067112] Z[-0.196009]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[828.000000 mm]
+Acc Data X[0.011719] Y[0.196777] Z[0.949707]
+GYRO Data X[-0.084156] Y[0.090547] Z[-0.200270]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[845.000000 mm]
+Acc Data X[0.011963] Y[0.187988] Z[0.950684]
+GYRO Data X[-0.090547] Y[0.145941] Z[-0.172573]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[823.000000 mm]
+Acc Data X[0.004150] Y[0.168701] Z[0.936523]
+GYRO Data X[-0.177899] Y[0.134223] Z[-0.108657]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[828.000000 mm]
+Acc Data X[-0.001465] Y[0.175781] Z[0.942383]
+GYRO Data X[-0.268447] Y[0.106526] Z[-0.042611]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[818.000000 mm]
+Acc Data X[-0.005615] Y[0.180664] Z[0.952148]
+GYRO Data X[-0.295078] Y[0.087352] Z[-0.029827]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[2]
+Tof Data D[797.000000 mm]
+Acc Data X[0.003906] Y[0.187500] Z[0.970947]
+GYRO Data X[-0.281230] Y[0.051133] Z[-0.076699]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[3]
+Tof Data D[834.000000 mm]
+Acc Data X[0.006348] Y[0.194580] Z[0.994629]
+GYRO Data X[-0.231162] Y[-0.004261] Z[-0.072438]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[840.000000 mm]
+Acc Data X[0.006348] Y[0.195068] Z[1.003906]
+GYRO Data X[-0.218379] Y[-0.049002] Z[-0.027697]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[3]
+Tof Data D[817.000000 mm]
+Acc Data X[0.000488] Y[0.204102] Z[1.013672]
+GYRO Data X[-0.224771] Y[-0.055394] Z[-0.017044]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.012451] Y[0.176758] Z[1.000977]
+GYRO Data X[-0.145941] Y[-0.067112] Z[-0.025566]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[840.000000 mm]
+Acc Data X[-0.030029] Y[0.158936] Z[0.994629]
+GYRO Data X[-0.142745] Y[-0.073503] Z[0.013848]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[1]
+Tof Data D[837.000000 mm]
+Acc Data X[-0.025146] Y[0.154541] Z[0.998047]
+GYRO Data X[-0.164051] Y[-0.027697] Z[0.036219]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[820.000000 mm]
+Acc Data X[-0.012939] Y[0.148438] Z[1.002930]
+GYRO Data X[-0.117179] Y[0.005326] Z[0.017044]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[1]
+Tof Data D[828.000000 mm]
+Acc Data X[0.006348] Y[0.140381] Z[1.008301]
+GYRO Data X[-0.059655] Y[0.010653] Z[0.008522]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[840.000000 mm]
+Acc Data X[0.014893] Y[0.138184] Z[1.016357]
+GYRO Data X[-0.056459] Y[-0.009587] Z[0.018109]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[829.000000 mm]
+Acc Data X[0.021973] Y[0.127441] Z[1.013916]
+GYRO Data X[-0.051133] Y[-0.024501] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[818.000000 mm]
+Acc Data X[0.026123] Y[0.127197] Z[1.014160]
+GYRO Data X[-0.077764] Y[-0.038350] Z[0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[819.000000 mm]
+Acc Data X[0.028320] Y[0.120605] Z[1.010254]
+GYRO Data X[-0.111853] Y[-0.073503] Z[-0.025566]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[837.000000 mm]
+Acc Data X[0.024902] Y[0.115967] Z[0.991211]
+GYRO Data X[-0.123571] Y[-0.108657] Z[-0.040480]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[828.000000 mm]
+Acc Data X[0.020996] Y[0.130615] Z[0.989746]
+GYRO Data X[-0.149137] Y[-0.124636] Z[-0.066046]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[1]
+Tof Data D[814.000000 mm]
+Acc Data X[0.013184] Y[0.133789] Z[0.977295]
+GYRO Data X[-0.140615] Y[-0.134223] Z[-0.086286]
+Total Distance (m): nan
+Optical FLow Data X[2] Y[2]
+Tof Data D[811.000000 mm]
+Acc Data X[0.000488] Y[0.138672] Z[0.952881]
+GYRO Data X[-0.121440] Y[-0.103331] Z[-0.088417]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[830.000000 mm]
+Acc Data X[-0.001465] Y[0.136230] Z[0.947754]
+GYRO Data X[-0.082025] Y[-0.057524] Z[-0.087352]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[2]
+Tof Data D[821.000000 mm]
+Acc Data X[0.012939] Y[0.130371] Z[0.962646]
+GYRO Data X[-0.037284] Y[-0.009587] Z[-0.051133]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[810.000000 mm]
+Acc Data X[0.023438] Y[0.133301] Z[0.982666]
+GYRO Data X[-0.075634] Y[0.009587] Z[-0.017044]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[822.000000 mm]
+Acc Data X[0.019775] Y[0.140869] Z[0.980469]
+GYRO Data X[-0.119310] Y[0.023436] Z[-0.019175]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[814.000000 mm]
+Acc Data X[0.018799] Y[0.126221] Z[0.973633]
+GYRO Data X[-0.087352] Y[0.019175] Z[-0.080960]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[809.000000 mm]
+Acc Data X[0.017090] Y[0.127930] Z[0.968018]
+GYRO Data X[-0.060720] Y[0.026632] Z[-0.103331]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[811.000000 mm]
+Acc Data X[0.008057] Y[0.133545] Z[0.960449]
+GYRO Data X[-0.088417] Y[0.031958] Z[-0.051133]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[820.000000 mm]
+Acc Data X[0.007568] Y[0.136719] Z[0.967285]
+GYRO Data X[-0.093743] Y[0.056459] Z[0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[807.000000 mm]
+Acc Data X[0.010498] Y[0.128418] Z[0.988281]
+GYRO Data X[-0.105461] Y[0.056459] Z[0.009587]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[810.000000 mm]
+Acc Data X[0.015869] Y[0.134766] Z[1.007324]
+GYRO Data X[-0.111853] Y[0.031958] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[814.000000 mm]
+Acc Data X[0.008545] Y[0.130371] Z[1.005127]
+GYRO Data X[-0.112918] Y[-0.006392] Z[-0.021305]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[817.000000 mm]
+Acc Data X[0.005127] Y[0.122070] Z[1.000244]
+GYRO Data X[-0.095874] Y[-0.025566] Z[-0.025566]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[818.000000 mm]
+Acc Data X[0.007568] Y[0.127441] Z[1.007324]
+GYRO Data X[-0.094809] Y[-0.030893] Z[-0.038350]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[803.000000 mm]
+Acc Data X[0.016113] Y[0.126709] Z[1.008301]
+GYRO Data X[-0.084156] Y[-0.046872] Z[-0.060720]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[1]
+Tof Data D[817.000000 mm]
+Acc Data X[0.008057] Y[0.130371] Z[1.003174]
+GYRO Data X[-0.089482] Y[-0.058590] Z[-0.025566]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[819.000000 mm]
+Acc Data X[0.006592] Y[0.127197] Z[0.984131]
+GYRO Data X[-0.087352] Y[-0.077764] Z[0.007457]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[2]
+Tof Data D[815.000000 mm]
+Acc Data X[-0.007324] Y[0.127197] Z[0.977539]
+GYRO Data X[-0.054328] Y[-0.051133] Z[0.037284]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[802.000000 mm]
+Acc Data X[0.004883] Y[0.113770] Z[0.975342]
+GYRO Data X[-0.005326] Y[-0.023436] Z[-0.026632]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[811.000000 mm]
+Acc Data X[0.018311] Y[0.103027] Z[0.978760]
+GYRO Data X[0.025566] Y[-0.006392] Z[0.027697]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[822.000000 mm]
+Acc Data X[0.021729] Y[0.109619] Z[0.984131]
+GYRO Data X[-0.082025] Y[-0.007457] Z[0.053263]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[816.000000 mm]
+Acc Data X[0.026367] Y[0.101318] Z[0.974121]
+GYRO Data X[-0.062851] Y[-0.012783] Z[0.031958]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[810.000000 mm]
+Acc Data X[0.021729] Y[0.104248] Z[0.984863]
+GYRO Data X[-0.034088] Y[-0.005326] Z[-0.019175]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[815.000000 mm]
+Acc Data X[0.022217] Y[0.098145] Z[0.987060]
+GYRO Data X[-0.033023] Y[-0.006392] Z[-0.021305]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[823.000000 mm]
+Acc Data X[0.011963] Y[0.098877] Z[0.980225]
+GYRO Data X[-0.042611] Y[-0.005326] Z[0.004261]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[810.000000 mm]
+Acc Data X[0.009766] Y[0.093506] Z[0.976807]
+GYRO Data X[-0.043676] Y[0.001065] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[1] Y[0]
+Tof Data D[810.000000 mm]
+Acc Data X[0.007324] Y[0.096680] Z[0.971191]
+GYRO Data X[-0.030893] Y[0.018109] Z[0.012783]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[818.000000 mm]
+Acc Data X[0.018066] Y[0.103516] Z[0.987549]
+GYRO Data X[-0.058590] Y[0.045806] Z[0.037284]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[821.000000 mm]
+Acc Data X[0.015869] Y[0.097168] Z[0.987305]
+GYRO Data X[-0.058590] Y[0.051133] Z[0.039415]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[813.000000 mm]
+Acc Data X[0.017090] Y[0.106445] Z[0.986084]
+GYRO Data X[-0.068177] Y[0.062851] Z[0.022371]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[814.000000 mm]
+Acc Data X[0.014648] Y[0.099121] Z[0.987305]
+GYRO Data X[-0.037284] Y[0.078830] Z[-0.014914]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[1]
+Tof Data D[839.000000 mm]
+Acc Data X[0.024170] Y[0.104980] Z[0.999512]
+GYRO Data X[-0.023436] Y[0.063916] Z[-0.027697]
+Total Distance (m): nan
+Optical FLow Data X[-3] Y[0]
+Tof Data D[819.000000 mm]
+Acc Data X[0.020752] Y[0.102539] Z[1.000000]
+GYRO Data X[-0.033023] Y[0.034088] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[810.000000 mm]
+Acc Data X[0.011719] Y[0.109619] Z[0.993164]
+GYRO Data X[-0.033023] Y[0.019175] Z[0.015979]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[807.000000 mm]
+Acc Data X[-0.003906] Y[0.091064] Z[0.992188]
+GYRO Data X[-0.006392] Y[0.004261] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[1]
+Tof Data D[839.000000 mm]
+Acc Data X[-0.008301] Y[0.109131] Z[0.999023]
+GYRO Data X[-0.050067] Y[0.015979] Z[0.017044]
+Total Distance (m): nan
+Optical FLow Data X[-1] Y[0]
+Tof Data D[827.000000 mm]
+Acc Data X[0.014404] Y[0.104248] Z[1.000977]
+GYRO Data X[-0.024501] Y[0.012783] Z[-0.017044]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[818.000000 mm]
+Acc Data X[0.006836] Y[0.111328] Z[0.999512]
+GYRO Data X[0.012783] Y[0.005326] Z[0.000000]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[804.000000 mm]
+Acc Data X[0.013916] Y[0.107422] Z[1.000244]
+GYRO Data X[0.001065] Y[-0.007457] Z[0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[813.000000 mm]
+Acc Data X[0.015137] Y[0.096191] Z[0.992920]
+GYRO Data X[0.030893] Y[-0.012783] Z[0.029827]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[817.000000 mm]
+Acc Data X[0.006104] Y[0.099854] Z[0.989746]
+GYRO Data X[-0.013848] Y[-0.017044] Z[0.018109]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[805.000000 mm]
+Acc Data X[0.006104] Y[0.090576] Z[0.982422]
+GYRO Data X[0.011718] Y[-0.012783] Z[0.002131]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[781.000000 mm]
+Acc Data X[0.005859] Y[0.098389] Z[0.978760]
+GYRO Data X[0.007457] Y[0.002131] Z[0.006392]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[819.000000 mm]
+Acc Data X[0.013672] Y[0.090576] Z[0.979004]
+GYRO Data X[-0.003196] Y[0.011718] Z[0.030893]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[825.000000 mm]
+Acc Data X[0.015869] Y[0.101318] Z[0.981201]
+GYRO Data X[-0.026632] Y[0.028762] Z[0.036219]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[805.000000 mm]
+Acc Data X[0.022705] Y[0.088867] Z[0.982178]
+GYRO Data X[0.007457] Y[0.020240] Z[0.008522]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[782.000000 mm]
+Acc Data X[0.020508] Y[0.098145] Z[0.984131]
+GYRO Data X[-0.004261] Y[0.018109] Z[0.042611]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[823.000000 mm]
+Acc Data X[0.016602] Y[0.104980] Z[0.979492]
+GYRO Data X[-0.038350] Y[0.008522] Z[-0.003196]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[823.000000 mm]
+Acc Data X[0.005127] Y[0.083496] Z[0.969238]
+GYRO Data X[0.028762] Y[0.019175] Z[0.017044]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[798.000000 mm]
+Acc Data X[-0.000488] Y[0.097412] Z[0.982422]
+GYRO Data X[-0.043676] Y[0.029827] Z[0.054328]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
+Tof Data D[784.000000 mm]
+Acc Data X[0.004639] Y[0.098877] Z[0.985107]
+GYRO Data X[-0.029827] Y[0.061785] Z[-0.001065]
+Total Distance (m): nan
+Optical FLow Data X[0] Y[0]
