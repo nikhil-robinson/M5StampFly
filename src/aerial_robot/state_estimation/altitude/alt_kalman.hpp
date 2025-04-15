@@ -23,37 +23,52 @@
  * SOFTWARE.
  */
 
-#ifndef IMU_HPP
-#define IMU_HPP
+#ifndef ALT_KALMAN_HPP
+#define ALT_KALMAN_HPP
 
-#include <Arduino.h>
-#include "bmi2.h"
-#include "bmi2.h"
-#include <bmi270.h>
-#include "spi_s3.hpp"
+#include <BasicLinearAlgebra.h>
+#include <ElementStorage.h>
 
-#define DPS20002RAD 34.90658504
-#define DPS10002RAD 17.4532925199
-#define ACCEL          UINT8_C(0x00)
-#define GYRO           UINT8_C(0x01)
-#define GRAVITY_EARTH  (9.80665f)
+class Alt_kalman {
+  // state
+  BLA::Matrix<3, 1> estimate_state_;
+  BLA::Matrix<3, 1> predict_state_;
+  BLA::Matrix<3, 1> control_input_model_;
+  BLA::Matrix<3, 3> state_transition_model_;
+  BLA::Matrix<3, 3> state_transition_model_transpose_;
+  BLA::Matrix<3, 3> predict_P_;
+  BLA::Matrix<3, 3> correction_P_;
+  BLA::Matrix<3, 3> Q_;
+  BLA::Matrix<3, 3> R_;
+  BLA::Matrix<3, 3> H_;
+  BLA::Matrix<3, 3> G_;
 
-void imu_init(void);
-void imu_test(void);
-void imu_update(void);
-float imu_get_acc_x(void);
-float imu_get_acc_y(void);
-float imu_get_acc_z(void);
-float imu_get_gyro_x(void);
-float imu_get_gyro_y(void);
-float imu_get_gyro_z(void);
+  float gravity_ = 9.80665;
 
-float lsb_to_mps2(int16_t val, float g_range, uint8_t bit_width);
-float lsb_to_rps(int16_t val, float rps, uint8_t bit_width);
+  // Sensor
+  // float z_sens;
 
-void bmi270_dev_init(void);
-void bmi2_delay_us(uint32_t period, void *intf_ptr);
-int8_t set_accel_gyro_config(struct bmi2_dev *bmi);
-void bmi2_error_codes_print_result(int8_t rslt);
+  // Bias beta
+  float beta = -0.01;
+
+  // Q
+  float q1 = 0.1 * 0.1, q2 = (1.0) * (1.0);  // q1=1.0*1.0 q2=1.0*1.0
+
+  // R
+  // float R = 0.004*0.004;
+  float R = 0.004 * 0.004;
+
+public:
+  // step
+  float step = 1.0 / 400.0;
+  // state
+  float Velocity = 0.0, Altitude = 0.0, Bias = 0.0;
+
+  // Method
+  Alt_kalman();
+  void initialize();
+  void update(float z_sens, float accel, float h);
+  void reset(void);
+};
 
 #endif

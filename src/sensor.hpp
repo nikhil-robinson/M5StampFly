@@ -28,12 +28,12 @@
 
 #include <Arduino.h>
 #include "flight_control.hpp"
-#include "pid.hpp"
+#include "utils/pid/pid.hpp"
+#include "utils/lpf/lpf.hpp"
 #include <INA3221.h>
 #include <MadgwickAHRS.h>
-#include <common.h>
 #include <stdint.h>
-#include "alt_kalman.hpp"
+#include "aerial_robot/state_estimation/altitude/alt_kalman.hpp"
 #include <driver/spi_master.h>
 #include "driver/gpio.h"
 #include "sdkconfig.h"
@@ -98,6 +98,7 @@ void sensor_init(void);
 float sensor_read(void);
 void sensor_reset_offset(void);
 void sensor_calc_offset_avarage(void);
+void print_gyro_offset(void);
 void ahrs_reset(void);
 uint8_t scan_i2c(void);
 

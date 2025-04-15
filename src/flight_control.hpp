@@ -34,7 +34,7 @@
 
 #define BATTERY_VOLTAGE (3.7)
 #define PIN_BUTTON      0
-#define AVERAGENUM      800
+#define AVERAGENUM      2000
 
 #define INIT_MODE         0
 #define AVERAGE_MODE      1

@@ -27,9 +27,14 @@
 #include "imu.hpp"
 #include "tof.hpp"
 #include "flight_control.hpp"
+#include "sensor/mag/mag_bmm150.hpp"
+#include <memory>
+#include <aerial_robot/state_estimation/attitude/complementary_ahrs.hpp>
 
 Madgwick Drone_ahrs;
+ComplementaryAHRS complementary_filter;
 Alt_kalman EstimatedAltitude;
+std::shared_ptr<MagnetmeterBMM150> magnetmeter;
 
 INA3221 ina3221(INA3221_ADDR40_GND);  // Set I2C address to 0x40 (A0 pin -> GND)
 Filter acc_filter;
@@ -43,6 +48,9 @@ Filter raw_gx_filter;
 Filter raw_gy_filter;
 Filter raw_gz_filter;
 Filter alt_filter;
+Filter mag_x_filter;
+Filter mag_y_filter;
+Filter mag_z_filter;
 
 // Sensor data
 volatile float Roll_angle = 0.0f, Pitch_angle = 0.0f, Yaw_angle = 0.0f;
@@ -116,10 +124,9 @@ void sensor_calc_offset_avarage(void) {
     Offset_counter++;
 }
 
-void test_voltage(void) {
-    for (uint16_t i = 0; i < 1000; i++) {
-        USBSerial.printf("Voltage[%03d]:%f\n\r", i, ina3221.getVoltage(INA3221_CH2));
-    }
+void print_gyro_offset(void)
+{
+  USBSerial.printf("gyro bias: %9.6f, %9.6f, %9.6f\n", Roll_rate_offset, Pitch_rate_offset, Yaw_rate_offset);
 }
 
 void ahrs_reset(void) {
@@ -137,6 +144,7 @@ void sensor_init() {
     }
 
     tof_init();
+    spi_init();
     imu_init();
     Drone_ahrs.begin(400.0);
     ina3221.begin(&Wire1);
@@ -167,6 +175,15 @@ void sensor_init() {
     raw_az_d_filter.set_parameter(0.1, 0.0025);  // alt158
     az_filter.set_parameter(0.1, 0.0025);        // alt158
     alt_filter.set_parameter(0.005, 0.0025);
+    mag_x_filter.set_parameter(0.25, 0.0025);
+    mag_y_filter.set_parameter(0.25, 0.0025);
+    mag_z_filter.set_parameter(0.25, 0.0025);
+
+    EstimatedAltitude.initialize();
+
+    // magnetmeter
+    magnetmeter = std::make_shared<MagnetmeterBMM150>();
+    magnetmeter->initialize();
 }
 
 float sensor_read(void) {
@@ -246,6 +263,10 @@ float sensor_read(void) {
         alt_filter.reset();
 
         acc_filter.reset();
+
+        mag_x_filter.reset();
+        mag_y_filter.reset();
+        mag_z_filter.reset();
     }
 
     if (Mode > AVERAGE_MODE) {
@@ -257,12 +278,6 @@ float sensor_read(void) {
         Roll_rate  = raw_gx_filter.update(Roll_rate_raw - Roll_rate_offset, Interval_time);
         Pitch_rate = raw_gy_filter.update(Pitch_rate_raw - Pitch_rate_offset, Interval_time);
         Yaw_rate   = raw_gz_filter.update(Yaw_rate_raw - Yaw_rate_offset, Interval_time);
-
-        Drone_ahrs.updateIMU((Pitch_rate) * (float)RAD_TO_DEG, (Roll_rate) * (float)RAD_TO_DEG,
-                             -(Yaw_rate) * (float)RAD_TO_DEG, Accel_y, Accel_x, -Accel_z);
-        Roll_angle  = Drone_ahrs.getPitch() * (float)DEG_TO_RAD;
-        Pitch_angle = Drone_ahrs.getRoll() * (float)DEG_TO_RAD;
-        Yaw_angle   = -Drone_ahrs.getYaw() * (float)DEG_TO_RAD;
 
         // for debug
         // USBSerial.printf("%6.3f %7.4f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f\n\r",
@@ -313,8 +328,37 @@ float sensor_read(void) {
                 // USBSerial.printf("%9.6f, %9.6f, %9.6f, %9.6f, %9.6f\r\n",Elapsed_time,Altitude/1000.0,  Altitude2,
                 // Alt_velocity,-(Accel_z_raw - Accel_z_offset)*9.81/(-Accel_z_offset));
             }
-        } else
+
+            magnetmeter->update();
+            BLA::Matrix<3, 1> mag_data = magnetmeter->getMag();
+            float mag_data_x  = mag_x_filter.update(mag_data(0), Interval_time);
+            float mag_data_y  = mag_y_filter.update(mag_data(1), Interval_time);
+            float mag_data_z  = mag_z_filter.update(mag_data(2), Interval_time);
+
+            USBSerial.printf("rpy: %9.6f %9.6f %9.6f\n", Roll_angle, Pitch_angle, Yaw_angle);
+            USBSerial.print("mag: ");
+            USBSerial.print(mag_data);
+            USBSerial.print("\n");
+            USBSerial.printf("gyro: %9.6f %9.6f %9.6f\n", Roll_rate, Pitch_rate, Yaw_rate);
+            USBSerial.printf("acc: %9.6f %9.6f %9.6f\n", Accel_x, Accel_y, Accel_z);
+
+            USBSerial.printf("filtered mag: %9.6f %9.6f %9.6f\n", mag_data_x, mag_data_y, mag_data_z);
+            USBSerial.print("\n");
+
+            Drone_ahrs.update((Pitch_rate) * (float)RAD_TO_DEG, (Roll_rate) * (float)RAD_TO_DEG, -(Yaw_rate) * (float)RAD_TO_DEG,
+                              Accel_y, Accel_x, -Accel_z,
+                              -mag_data_y, mag_data_x, mag_data_z);
+        }
+        else
+          {
+            Drone_ahrs.updateIMU((Pitch_rate) * (float)RAD_TO_DEG, (Roll_rate) * (float)RAD_TO_DEG, -(Yaw_rate) * (float)RAD_TO_DEG,
+                                 Accel_y, Accel_x, -Accel_z);
             dcnt++;
+          }
+
+        Roll_angle  = Drone_ahrs.getPitch() * (float)DEG_TO_RAD;
+        Pitch_angle = Drone_ahrs.getRoll() * (float)DEG_TO_RAD;
+        Yaw_angle   = -Drone_ahrs.getYaw() * (float)DEG_TO_RAD;
 
         Altitude = alt_filter.update((float)Range / 1000.0, Interval_time);
         if (first_flag == 1)

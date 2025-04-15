@@ -38,13 +38,13 @@
 // 2024-08-10 Acroモードで高度制御働かないバグを修正
 
 #include "flight_control.hpp"
-#include "rc.hpp"
-#include "pid.hpp"
+#include "communication/rc.hpp"
+#include "utils/pid/pid.hpp"
 #include "sensor.hpp"
-#include "led.hpp"
-#include "telemetry.hpp"
-#include "button.hpp"
-#include "buzzer.h"
+#include "devices/led/led.hpp"
+#include "communication/telemetry.hpp"
+#include "devices/button/button.hpp"
+#include "devices/buzzer/buzzer.h"
 
 // モータPWM出力Pinのアサイン
 // Motor PWM Pin
@@ -283,7 +283,7 @@ void init_copter(void) {
 
     USBSerial.printf("Finish StampFly init!\r\n");
     USBSerial.printf("Enjoy Flight!\r\n");
-    start_tone();
+    // start_tone();
 }
 
 // Main loop
@@ -326,6 +326,8 @@ void loop_400Hz(void) {
         if (OffsetCounter < AVERAGENUM) {
             sensor_calc_offset_avarage();
             OffsetCounter++;
+            if(OffsetCounter == AVERAGENUM)
+              print_gyro_offset();
             return;
         }
         // Mode change
