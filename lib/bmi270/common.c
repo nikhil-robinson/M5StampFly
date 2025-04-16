@@ -8,7 +8,8 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include "freertos/FreeRTOS.h"
+#include "freertos/semphr.h"
 #include "common.h"
 //#include "bmi2_defs.h"
 
@@ -192,10 +193,11 @@ spi_device_interface_config_t pmw_devcfg = {
     .post_cb = NULL,// transactionが完了した後に呼ばれる関数をセットできる
 };
 
+static SemaphoreHandle_t spiMutex;
+
 esp_err_t spi_init(void)
 {
-
-
+    spiMutex = xSemaphoreCreateMutex();
     //Initialize the SPI bus
     esp_err_t ret = spi_bus_initialize(SPI2_HOST, &buscfg, SPI_DMA_CH_AUTO);
     if(ret != ESP_OK) return ret;
@@ -221,6 +223,42 @@ uint8_t pmw_spi_reg_read(uint8_t reg_addr)
     trans.rx_buffer = rx_data;
     spi_device_polling_transmit(pwm_spidev, &trans);
     return rx_data[1]; // The second byte is the register value
+}
+
+bool spiExchange(size_t length, bool is_tx, const uint8_t *data_tx, uint8_t *data_rx)
+{
+
+    if (length == 0) {
+        return true;    //no need to send anything
+    }
+
+    esp_err_t ret;
+
+    if (is_tx == true) {
+
+        static spi_transaction_t t;
+        memset(&t, 0, sizeof(t));					//Zero out the transaction
+        t.length = length * 8;						//Len is in bytes, transaction length is in bits.
+        t.tx_buffer = data_tx;						//Data
+        ret = spi_device_polling_transmit(pwm_spidev, &t); //Transmit!
+        assert(ret == ESP_OK);						//Should have had no issues.
+        //DEBUG_PRINTD("spi send = %d",t.length);
+        return true;
+    }
+
+    static spi_transaction_t r;
+    memset(&r, 0, sizeof(r));
+    r.length = length * 8;
+    r.flags = SPI_TRANS_USE_RXDATA;
+    ret = spi_device_polling_transmit(pwm_spidev, &r);
+    assert(ret == ESP_OK);
+
+    if (r.rxlength > 0) {
+        //DEBUG_PRINTD("rxlength = %d",r.rxlength);
+        memcpy(data_rx, r.rx_data, length);
+    }
+
+    return true;
 }
 
 esp_err_t pmw_spi_reg_write(uint8_t reg, uint8_t value)
@@ -273,6 +311,18 @@ BMI2_INTF_RETURN_TYPE bmi2_spi_read(uint8_t reg_addr, uint8_t *reg_data, uint32_
     }
     assert(ret==ESP_OK);
     return ret;
+}
+
+
+void spiBeginTransaction(uint32_t baudRatePrescaler)
+{
+    xSemaphoreTake(spiMutex, portMAX_DELAY);
+    // spiConfigureWithSpeed(baudRatePrescaler);
+}
+
+void spiEndTransaction()
+{
+    xSemaphoreGive(spiMutex);
 }
 
 /*!

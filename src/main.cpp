@@ -3,16 +3,18 @@
 #include "flight_control.hpp"
 #include "sensor.hpp"
 #include "Bitcraze_PMW3901.h"
+#include "optical_flow.hpp"
 #include "tof.hpp"
 #include "imu.hpp"
 #include "button.hpp"
+#include "flowdeck_v1v2.hpp"
 
 // VL53L0X_ADDRESS           0x29
 // MPU6886_ADDRESS           0x68
 // BMP280_ADDRESS            0x76
 
 
-#if 1
+#if 0
 void setup() {
     init_copter();
     delay(100);
@@ -25,7 +27,7 @@ void loop() {
 
 #else
 
-Bitcraze_PMW3901 flow(12);
+// Bitcraze_PMW3901 flow(12);
 
 
 void setup() {
@@ -37,9 +39,7 @@ void setup() {
     USBSerial.printf("Start StampFly!\r\n");
 
     sensor_init();
-    while (!flow.begin()) {
-        USBSerial.printf("Initialization of the flow sensor failed\r\n");
-    }
+    flowdeck2Init();
 
     USBSerial.printf("Finish sensor init!\r\n");
     delay(100);
@@ -48,8 +48,8 @@ void setup() {
 void loop() 
 {
     int16_t deltaX,deltaY;
-    flow.readMotionCount(&deltaX, &deltaY);
-    imu_update();  // IMUの値を読む前に必ず実行
+    // read_optical_flow(&deltaX,&deltaY);
+    imu_update();
     float acc_x  = imu_get_acc_x();
     float acc_y  = imu_get_acc_y();
     float acc_z  = imu_get_acc_z();

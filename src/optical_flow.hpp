@@ -3,9 +3,10 @@
 
 #include <Arduino.h>
 #include "common.h"
+#include "Bitcraze_PMW3901.h"
 
 
 void read_optical_flow(int16_t *dx,int16_t *dy);
 void optical_flow_init(void);
-
+void read_optical_flow_motion(motionBurst_t *motion);
 #endif

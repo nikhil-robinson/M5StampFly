@@ -22,3 +22,8 @@ void read_optical_flow(int16_t *dx,int16_t *dy)
 {
     flow.readMotionCount(dx, dy);
 }
+
+void read_optical_flow_motion(motionBurst_t *motion)
+{
+    flow.readMotion(motion);
+}

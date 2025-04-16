@@ -31,21 +31,6 @@ Bitcraze_PMW3901::Bitcraze_PMW3901(uint8_t cspin)
 
 boolean Bitcraze_PMW3901::begin(void) {
   // Setup SPI port
-#if 0
-  SPI.begin(44,43,14,12);
-  SPI.beginTransaction(SPISettings(4000000, MSBFIRST, SPI_MODE3));
-  pinMode(_cs, OUTPUT);
-
-  // Make sure the SPI bus is reset
-  digitalWrite(_cs, HIGH);
-  delay(1);
-  digitalWrite(_cs, LOW);
-  delay(1);
-  digitalWrite(_cs, HIGH);
-  delay(1);
-
-  SPI.endTransaction();
-#endif
 
   // Power on reset
   registerWrite(0x3A, 0x5A);
@@ -53,6 +38,7 @@ boolean Bitcraze_PMW3901::begin(void) {
   // Test the SPI communication, checking chipId and inverse chipId
   uint8_t chipId = registerRead(0x00);
   uint8_t dIpihc = registerRead(0x5F);
+  USBSerial.printf("Motion chip id: 0x%x:0x%x\n", chipId, dIpihc);
 
   if (chipId != 0x49 && dIpihc != 0xB8) return false;
 
@@ -206,6 +192,8 @@ uint8_t Bitcraze_PMW3901::registerRead(uint8_t reg) {
 }
 
 
+
+
 // Performance optimisation registers
 void Bitcraze_PMW3901::initRegisters()
 {
@@ -251,11 +239,11 @@ void Bitcraze_PMW3901::initRegisters()
   registerWrite(0x64, 0xFF);
   registerWrite(0x65, 0x1F);
   registerWrite(0x7F, 0x14);
-  registerWrite(0x65, 0x60);
+  registerWrite(0x65, 0x67);
   registerWrite(0x66, 0x08);
-  registerWrite(0x63, 0x78);
+  registerWrite(0x63, 0x70);
   registerWrite(0x7F, 0x15);
-  registerWrite(0x48, 0x58);
+  registerWrite(0x48, 0x48);
   registerWrite(0x7F, 0x07);
   registerWrite(0x41, 0x0D);
   registerWrite(0x43, 0x14);
@@ -274,16 +262,20 @@ void Bitcraze_PMW3901::initRegisters()
   registerWrite(0x7F, 0x07);
   registerWrite(0x40, 0x40);
   registerWrite(0x7F, 0x06);
-  registerWrite(0x62, 0xf0);
+  registerWrite(0x62, 0xF0);
   registerWrite(0x63, 0x00);
   registerWrite(0x7F, 0x0D);
   registerWrite(0x48, 0xC0);
-  registerWrite(0x6F, 0xd5);
+  registerWrite(0x6F, 0xD5);
   registerWrite(0x7F, 0x00);
-  registerWrite(0x5B, 0xa0);
+  registerWrite(0x5B, 0xA0);
   registerWrite(0x4E, 0xA8);
   registerWrite(0x5A, 0x50);
   registerWrite(0x40, 0x80);
+
+  registerWrite(0x7F, 0x00);
+  registerWrite(0x5A, 0x10);
+  registerWrite(0x54, 0x00);
 }
 
 void Bitcraze_PMW3901::setLed(bool ledOn)
@@ -292,4 +284,16 @@ void Bitcraze_PMW3901::setLed(bool ledOn)
   registerWrite(0x7f, 0x14);
   registerWrite(0x6f, ledOn ? 0x1c : 0x00);
   registerWrite(0x7f, 0x00);
+}
+
+
+void Bitcraze_PMW3901::readMotion(motionBurst_t *motion)
+{
+    uint8_t address = 0x16;
+    spiExchange(1, 1, &address, &address);
+    delayMicroseconds(50);
+    spiExchange(sizeof(motionBurst_t), 0, (uint8_t *)motion, (uint8_t *)motion);
+    uint16_t realShutter = (motion->shutter >> 8) & 0x0FF;
+    realShutter |= (motion->shutter & 0x0ff) << 8;
+    motion->shutter = realShutter;
 }
