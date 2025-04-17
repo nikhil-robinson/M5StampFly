@@ -1,26 +1,28 @@
-#ifndef POSITION_KALMAN_HPP
-#define POSITION_KALMAN_HPP
+#ifndef POSITION_EKF_H
+#define POSITION_EKF_H
 
-#include "tiny_ekf.h"
+#include <cstdint>
 
-class PositionEKF : public TinyEKF {
+class PositionEKF {
 public:
     PositionEKF();
-    void set_dt(float dt);
-    void set_ax_ay(float ax, float ay);
-    void update_with_time(float current_time, double z[2]);
-    float get_x() { return static_cast<float>(x[0]); }
-    float get_y() { return static_cast<float>(x[1]); }
-    float get_vx() { return static_cast<float>(x[2]); }
-    float get_vy() { return static_cast<float>(x[3]); }
-    void reset();
+    void predict(float ax_body, float ay_body, float az_body, float roll, float pitch, float yaw, float dt);
+    void update(float dx, float dy, float height, float dt);
+    void get_state(float& x, float& y, float& vx, float& vy);
 
-protected:
-    float dt;
-    float ax_world, ay_world;
-    float last_time;
-
-    void model(double fx[4], double F[4][4], double hx[2], double H[2][4]);
+private:
+    // State vector: [x, y, vx, vy]
+    float state[4];
+    // Covariance matrix
+    float P[4][4];
+    // Process noise covariance
+    float Q[4][4];
+    // Measurement noise covariance
+    float R[2][2];
+    // Focal length in pixels (approximated for PMW3901)
+    static constexpr float FOCAL_LENGTH = 39.0f;
+    // Gravity constant
+    static constexpr float GRAVITY = 9.81f;
 };
 
-#endif
+#endif // POSITION_EKF_H

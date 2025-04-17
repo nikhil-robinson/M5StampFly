@@ -1,74 +1,166 @@
-#include "position_kalman.hpp"
+#include "pos_kalman.hpp"
+#include <cmath>
+#include <cstring>
 
-PositionEKF::PositionEKF() : TinyEKF(4, 2) {
-    last_time = 0.0f;
-    // Set process noise (Q)
-    setQ(0, 0, 0.01); // x
-    setQ(1, 1, 0.01); // y
-    setQ(2, 2, 0.1);  // vx
-    setQ(3, 3, 0.1);  // vy
-    // Set measurement noise (R)
-    setR(0, 0, 0.5);  // vx
-    setR(1, 1, 0.5);  // vy
-}
-
-void PositionEKF::set_dt(float dt) {
-    this->dt = dt;
-}
-
-void PositionEKF::set_ax_ay(float ax, float ay) {
-    ax_world = ax;
-    ay_world = ay;
-}
-
-void PositionEKF::update_with_time(float current_time, double z[2]) {
-    if (last_time == 0.0f) {
-        last_time = current_time;
-        return;
+PositionEKF::PositionEKF() {
+    std::memset(state, 0, sizeof(state));
+    std::memset(P, 0, sizeof(P));
+    for (int i = 0; i < 4; ++i) {
+        P[i][i] = 1000.0f;
     }
-    dt = current_time - last_time;
-    step(z);
-    last_time = current_time;
+    std::memset(Q, 0, sizeof(Q));
+    Q[2][2] = 0.1f;  // Variance for vx
+    Q[3][3] = 0.1f;  // Variance for vy
+    std::memset(R, 0, sizeof(R));
+    R[0][0] = 1.0f;  // Variance for dx
+    R[1][1] = 1.0f;  // Variance for dy
 }
 
-void PositionEKF::reset() {
-    x[0] = 0.0;
-    x[1] = 0.0;
-    x[2] = 0.0;
-    x[3] = 0.0;
-    // P is automatically reset in TinyEKF
-}
+void PositionEKF::predict(float ax_body, float ay_body, float az_body, float roll, float pitch, float yaw, float dt) {
+    float cr = cosf(roll);
+    float sr = sinf(roll);
+    float cp = cosf(pitch);
+    float sp = sinf(pitch);
+    float cy = cosf(yaw);
+    float sy = sinf(yaw);
 
-void PositionEKF::model(double fx[4], double F[4][4], double hx[2], double H[2][4]) {
-    // State transition
-    fx[0] = x[0] + x[2]*dt + 0.5*ax_world*dt*dt;
-    fx[1] = x[1] + x[3]*dt + 0.5*ay_world*dt*dt;
-    fx[2] = x[2] + ax_world*dt;
-    fx[3] = x[3] + ay_world*dt;
+    float R[3][3] = {{cy * cp, cy * sp * sr - sy * cr, cy * sp * cr + sy * sr},
+                     {sy * cp, sy * sp * sr + cy * cr, sy * sp * cr - cy * sr},
+                     {-sp, cp * sr, cp * cr}};
 
-    // F matrix
-    for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 4; j++) {
-            F[i][j] = 0.0;
+    float a_true[3] = {ax_body - R[2][0] * GRAVITY, ay_body - R[2][1] * GRAVITY, az_body - R[2][2] * GRAVITY};
+
+    float ax_world = R[0][0] * a_true[0] + R[0][1] * a_true[1] + R[0][2] * a_true[2];
+    float ay_world = R[1][0] * a_true[0] + R[1][1] * a_true[1] + R[1][2] * a_true[2];
+
+    float x  = state[0];
+    float y  = state[1];
+    float vx = state[2];
+    float vy = state[3];
+
+    state[0] = x + vx * dt + 0.5f * ax_world * dt * dt;
+    state[1] = y + vy * dt + 0.5f * ay_world * dt * dt;
+    state[2] = vx + ax_world * dt;
+    state[3] = vy + ay_world * dt;
+
+    float F[4][4] = {{1, 0, dt, 0}, {0, 1, 0, dt}, {0, 0, 1, 0}, {0, 0, 0, 1}};
+
+    float temp[4][4];
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            temp[i][j] = 0;
+            for (int k = 0; k < 4; ++k) {
+                temp[i][j] += F[i][k] * P[k][j];
+            }
         }
     }
-    F[0][0] = 1;
-    F[0][2] = dt;
-    F[1][1] = 1;
-    F[1][3] = dt;
-    F[2][2] = 1;
-    F[3][3] = 1;
-
-    // Measurement function
-    hx[0] = x[2]; // vx
-    hx[1] = x[3]; // vy
-
-    // H matrix
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 4; j++) {
-            H[i][j] = 0.0;
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            P[i][j] = 0;
+            for (int k = 0; k < 4; ++k) {
+                P[i][j] += temp[i][k] * F[j][k];
+            }
+            P[i][j] += Q[i][j];
         }
     }
-    H[0][2] = 1;
-    H[1][3] = 1;
+}
+
+void PositionEKF::update(float dx, float dy, float height, float dt) {
+    float h[2];
+    h[0] = -(FOCAL_LENGTH * state[2] * dt) / height;
+    h[1] = -(FOCAL_LENGTH * state[3] * dt) / height;
+
+    float y[2] = {dx - h[0], dy - h[1]};
+
+    float H[2][4] = {{0, 0, -(FOCAL_LENGTH * dt) / height, 0}, {0, 0, 0, -(FOCAL_LENGTH * dt) / height}};
+
+    float temp[2][4];
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            temp[i][j] = 0;
+            for (int k = 0; k < 4; ++k) {
+                temp[i][j] += H[i][k] * P[k][j];
+            }
+        }
+    }
+    float S[2][2];
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j < 2; ++j) {
+            S[i][j] = 0;
+            for (int k = 0; k < 4; ++k) {
+                S[i][j] += temp[i][k] * H[j][k];
+            }
+            S[i][j] += R[i][j];
+        }
+    }
+
+    float Ht[4][2];
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 2; ++j) {
+            Ht[i][j] = H[j][i];
+        }
+    }
+
+    float temp2[4][2];
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 2; ++j) {
+            temp2[i][j] = 0;
+            for (int k = 0; k < 4; ++k) {
+                temp2[i][j] += P[i][k] * Ht[k][j];
+            }
+        }
+    }
+
+    float det_S = S[0][0] * S[1][1] - S[0][1] * S[1][0];
+    if (fabs(det_S) < 1e-6) return;
+    float S_inv[2][2] = {{S[1][1] / det_S, -S[0][1] / det_S}, {-S[1][0] / det_S, S[0][0] / det_S}};
+
+    float K[4][2];
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 2; ++j) {
+            K[i][j] = 0;
+            for (int k = 0; k < 2; ++k) {
+                K[i][j] += temp2[i][k] * S_inv[k][j];
+            }
+        }
+    }
+
+    for (int i = 0; i < 4; ++i) {
+        state[i] += K[i][0] * y[0] + K[i][1] * y[1];
+    }
+
+    float KH[4][4];
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            KH[i][j] = 0;
+            for (int k = 0; k < 2; ++k) {
+                KH[i][j] += K[i][k] * H[k][j];
+            }
+        }
+    }
+
+    float I_KH[4][4];
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            I_KH[i][j] = (i == j ? 1.0f : 0.0f) - KH[i][j];
+        }
+    }
+
+    float new_P[4][4];
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            new_P[i][j] = 0;
+            for (int k = 0; k < 4; ++k) {
+                new_P[i][j] += I_KH[i][k] * P[k][j];
+            }
+        }
+    }
+    std::memcpy(P, new_P, sizeof(P));
+}
+
+void PositionEKF::get_state(float& x, float& y, float& vx, float& vy) {
+    x  = state[0];
+    y  = state[1];
+    vx = state[2];
+    vy = state[3];
 }
