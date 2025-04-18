@@ -34,6 +34,8 @@
 #define DPS10002RAD 17.4532925199
 
 void imu_init(void);
+void imu_setGyroRange(uint8_t range);
+void imu_setAccelRange(uint8_t range);
 void imu_test(void);
 void imu_update(void);
 float imu_get_acc_x(void);
