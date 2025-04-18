@@ -4,10 +4,10 @@
 // MAVLink communication
 #pragma once
 
-#if WIFI_ENABLED
 
 
 #include <MAVLink.h>
+#include "quaternion.h"
 
 #define SYSTEM_ID 1
 #define PERIOD_SLOW 1.0
@@ -32,4 +32,3 @@ void mavlinkPrint(const char* str);
 
 // Convert Forward-Left-Up to Forward-Right-Down quaternion
 inline Quaternion fluToFrd(const Quaternion &q);
-#endif

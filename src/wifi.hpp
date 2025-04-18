@@ -3,7 +3,7 @@
 
 // Wi-Fi support
 
-#if WIFI_ENABLED
+
 
 #include <WiFi.h>
 #include <WiFiAP.h>
@@ -19,5 +19,3 @@ void setupWiFi();
 void sendWiFi(const uint8_t *buf, int len);
 
 int receiveWiFi(uint8_t *buf, int len);
-
-#endif

@@ -3,8 +3,8 @@
 
 // MAVLink communication
 
-#if WIFI_ENABLED
 #include "variable.hpp"
+#if WIFI_ENABLED
 
 #include <MAVLink.h>
 #include "mavlink.hpp"

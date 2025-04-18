@@ -42,14 +42,16 @@ enum { MANUAL, ACRO, STAB, USER };
 enum { YAW, YAW_RATE };
 extern bool armed;
 
-extern PID rollRatePID(ROLLRATE_P, ROLLRATE_I, ROLLRATE_D, ROLLRATE_I_LIM, RATES_D_LPF_ALPHA);
-extern PID pitchRatePID(PITCHRATE_P, PITCHRATE_I, PITCHRATE_D, PITCHRATE_I_LIM, RATES_D_LPF_ALPHA);
-extern PID yawRatePID(YAWRATE_P, YAWRATE_I, YAWRATE_D);
-extern PID rollPID(ROLL_P, ROLL_I, ROLL_D);
-extern PID pitchPID(PITCH_P, PITCH_I, PITCH_D);
-extern PID yawPID(YAW_P, 0, 0);
-extern Vector maxRate(ROLLRATE_MAX, PITCHRATE_MAX, YAWRATE_MAX);
+extern PID rollRatePID;
+extern PID pitchRatePID;
+extern PID yawRatePID;
+extern PID rollPID;
+extern PID pitchPID;
+extern PID yawPID;
+extern Vector maxRate;
 extern float tiltMax;
+extern uint8_t mode;
+extern uint8_t yawMode;
 
 extern Quaternion attitudeTarget;
 extern Vector ratesTarget;

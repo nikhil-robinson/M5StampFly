@@ -4,6 +4,7 @@
 // Low pass filter implementation
 
 #pragma once
+#include "Arduino.h"
 
 template <typename T> // Using template to make the filter usable for scalar and vector values
 class LowPassFilter {

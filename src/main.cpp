@@ -8,34 +8,22 @@
 #include "util.h"
 #include "variable.hpp"
 
-#define SERIAL_BAUDRATE 115200
-#define WIFI_ENABLED 1
 
-double t = NAN; // current step time, s
-float dt; // time delta from previous step, s
-int16_t channels[16]; // raw rc channels
-float controls[16]; // normalized controls in range [-1..1] ([0..1] for throttle)
-Vector gyro; // gyroscope data
-Vector acc; // accelerometer data, m/s/s
-Vector rates; // filtered angular rates, rad/s
-Quaternion attitude; // estimated attitude
-bool landed; // are we landed and stationary
-float motors[4]; // normalized motors thrust in range [-1..1]
 
 void setup() {
 	USBSerial.begin(SERIAL_BAUDRATE);
 	print("Initializing flix");
 	disableBrownOut();
 	setupParameters();
-	setupLED();
+	// setupLED();
 	setupMotors();
-	setLED(true);
+	// setLED(true);
 #if WIFI_ENABLED
 	setupWiFi();
 #endif
 	setupIMU();
 	setupRC();
-	setLED(false);
+	// setLED(false);
 	print("Initializing complete");
 }
 

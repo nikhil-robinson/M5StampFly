@@ -4,6 +4,7 @@
 // Lightweight vector library
 
 #pragma once
+#include "Arduino.h"
 
 class Vector : public Printable {
 public:

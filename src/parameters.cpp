@@ -12,12 +12,6 @@ extern float mavlinkControlScale;
 
 Preferences storage;
 
-struct Parameter {
-	const char *name;
-	float *variable;
-	float value; // cache
-};
-
 Parameter parameters[] = {
 	// control
 	{"ROLLRATE_P", &rollRatePID.p},

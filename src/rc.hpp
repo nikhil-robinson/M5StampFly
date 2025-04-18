@@ -3,7 +3,7 @@
 
 // Work with the RC receiver
 
-#include <SBUS.h>
+#include <sbus.h>
 #include "util.h"
 
 // RC channels mapping:

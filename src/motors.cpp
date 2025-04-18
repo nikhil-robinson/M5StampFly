@@ -6,10 +6,17 @@
 
 #include "util.h"
 #include "variable.hpp"
+#include <driver/ledc.h>
+
 #define MOTOR_0_PIN 12 // rear left
 #define MOTOR_1_PIN 13 // rear right
 #define MOTOR_2_PIN 14 // front right
 #define MOTOR_3_PIN 15 // front left
+
+#define MOTOR_0_CHAN 0 // rear left
+#define MOTOR_1_CHAN 1 // rear right
+#define MOTOR_2_CHAN 2 // front right
+#define MOTOR_3_CHAN 3 // front left
 
 #define PWM_FREQUENCY 1000
 #define PWM_RESOLUTION 12
@@ -27,10 +34,19 @@ void setupMotors() {
 	print("Setup Motors\n");
 
 	// configure pins
-	ledcAttach(MOTOR_0_PIN, PWM_FREQUENCY, PWM_RESOLUTION);
-	ledcAttach(MOTOR_1_PIN, PWM_FREQUENCY, PWM_RESOLUTION);
-	ledcAttach(MOTOR_2_PIN, PWM_FREQUENCY, PWM_RESOLUTION);
-	ledcAttach(MOTOR_3_PIN, PWM_FREQUENCY, PWM_RESOLUTION);
+	// ledcAttach(MOTOR_0_PIN, PWM_FREQUENCY, PWM_RESOLUTION);
+	// ledcAttach(MOTOR_1_PIN, PWM_FREQUENCY, PWM_RESOLUTION);
+	// ledcAttach(MOTOR_2_PIN, PWM_FREQUENCY, PWM_RESOLUTION);
+	// ledcAttach(MOTOR_3_PIN, PWM_FREQUENCY, PWM_RESOLUTION);
+
+	ledcSetup(MOTOR_3_CHAN, PWM_FREQUENCY, PWM_RESOLUTION);
+    ledcSetup(MOTOR_2_CHAN, PWM_FREQUENCY, PWM_RESOLUTION);
+    ledcSetup(MOTOR_0_CHAN, PWM_FREQUENCY, PWM_RESOLUTION);
+    ledcSetup(MOTOR_1_CHAN, PWM_FREQUENCY, PWM_RESOLUTION);
+    ledcAttachPin(MOTOR_3_PIN, MOTOR_3_CHAN);
+    ledcAttachPin(MOTOR_2_PIN, MOTOR_2_CHAN);
+    ledcAttachPin(MOTOR_0_PIN, MOTOR_0_CHAN);
+    ledcAttachPin(MOTOR_1_PIN, MOTOR_1_CHAN);
 
 	sendMotors();
 	print("Motors initialized\n");
@@ -45,10 +61,10 @@ int getDutyCycle(float value) {
 }
 
 void sendMotors() {
-	ledcWrite(MOTOR_0_PIN, getDutyCycle(motors[0]));
-	ledcWrite(MOTOR_1_PIN, getDutyCycle(motors[1]));
-	ledcWrite(MOTOR_2_PIN, getDutyCycle(motors[2]));
-	ledcWrite(MOTOR_3_PIN, getDutyCycle(motors[3]));
+	ledcWrite(MOTOR_0_CHAN, getDutyCycle(motors[0]));
+	ledcWrite(MOTOR_1_CHAN, getDutyCycle(motors[1]));
+	ledcWrite(MOTOR_2_CHAN, getDutyCycle(motors[2]));
+	ledcWrite(MOTOR_3_CHAN, getDutyCycle(motors[3]));
 }
 
 bool motorsActive() {

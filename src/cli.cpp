@@ -68,7 +68,7 @@ void pause(float duration) {
 #endif
 }
 
-void doCommand(String str, bool echo = false) {
+void doCommand(String str, bool echo) {
 	// parse command
 	String command, arg0, arg1;
 	splitString(str, command, arg0, arg1);
@@ -104,7 +104,6 @@ void doCommand(String str, bool echo = false) {
 	} else if (command == "psq") {
 		print("qx: %f qy: %f qz: %f qw: %f\n", attitude.x, attitude.y, attitude.z, attitude.w);
 	} else if (command == "imu") {
-		printIMUInfo();
 		print("gyro: %f %f %f\n", rates.x, rates.y, rates.z);
 		print("acc: %f %f %f\n", acc.x, acc.y, acc.z);
 		printIMUCal();

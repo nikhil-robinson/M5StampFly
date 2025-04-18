@@ -2,7 +2,7 @@
 // Repository: https://github.com/okalachev/flix
 
 // Wi-Fi support
-
+#include "variable.hpp"
 #if WIFI_ENABLED
 
 #include <WiFi.h>
