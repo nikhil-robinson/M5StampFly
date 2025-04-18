@@ -8,21 +8,7 @@
 #include "variable.hpp"
 #include <driver/ledc.h>
 
-#define MOTOR_0_PIN 12 // rear left
-#define MOTOR_1_PIN 13 // rear right
-#define MOTOR_2_PIN 14 // front right
-#define MOTOR_3_PIN 15 // front left
 
-#define MOTOR_0_CHAN 0 // rear left
-#define MOTOR_1_CHAN 1 // rear right
-#define MOTOR_2_CHAN 2 // front right
-#define MOTOR_3_CHAN 3 // front left
-
-#define PWM_FREQUENCY 1000
-#define PWM_RESOLUTION 12
-#define PWM_STOP 0
-#define PWM_MIN 0
-#define PWM_MAX 1000000 / PWM_FREQUENCY
 
 // Motors array indexes:
 const int MOTOR_REAR_LEFT = 0;
