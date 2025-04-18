@@ -64,18 +64,16 @@ volatile float Altitude2       = 0.0f;
 volatile float Alt_velocity    = 0.0f;
 volatile float Az              = 0.0;
 volatile float Az_bias         = 0.0;
-volatile int16_t deltaX, deltaY;
-volatile float dx = 0.0f;  // Optical flow velocity (x-axis, pixels)
-volatile float dy = 0.0f;  // Optical flow velocity (y-axis, pixels)
+int16_t deltaX, deltaY;
 
 volatile uint16_t Offset_counter = 0;
 
 volatile float Voltage;
-volatile float Acc_norm = 0.0f;
+float Acc_norm = 0.0f;
 // quat_t Quat;
-volatile float Over_g = 0.0f, Over_rate = 0.0f;
-volatile uint8_t OverG_flag                  = 0;
-volatile uint8_t Range0flag                  = 0;
+float Over_g = 0.0f, Over_rate = 0.0f;
+uint8_t OverG_flag                  = 0;
+uint8_t Range0flag                  = 0;
 volatile uint8_t Under_voltage_flag = 0;
 // volatile uint8_t ToF_bottom_data_ready_flag;
 // volatile uint16_t Range=1000;
@@ -175,7 +173,6 @@ void sensor_init() {
 
 float sensor_read(void) {
     float acc_x, acc_y, acc_z, gyro_x, gyro_y, gyro_z;
-    int16_t opt_dx, opt_dy;
     float ax, ay, az, gx, gy, gz, acc_norm, rate_norm;
     float filterd_v;
     static float dp, dq, dr;
@@ -220,10 +217,6 @@ float sensor_read(void) {
     gyro_y = imu_get_gyro_y();
     gyro_z = imu_get_gyro_z();
 
-    // Get Optical flow data
-    read_optical_flow(&opt_dx, &opt_dy);
-    dx = (float)opt_dx;
-    dy = (float)opt_dy;
     // USBSerial.printf("%9.6f %9.6f %9.6f\n\r", Elapsed_time, sens_interval, acc_z);
 
     // Axis Transform

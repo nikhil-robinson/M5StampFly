@@ -129,16 +129,16 @@ void OnDataRecv(const uint8_t *mac_addr, const uint8_t *recv_data, int data_len)
     // if (check_sum!=recv_data[23])USBSerial.printf("checksum=%03d recv_sum=%03d\n\r", check_sum, recv_data[23]);
 
 #if 0
-   USBSerial.printf("%6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f  %6.3f\n\r", 
-                                             Stick[THROTTLE],
-                                             Stick[AILERON],
-                                             Stick[ELEVATOR],
-                                             Stick[RUDDER],
-                                             Stick[BUTTON_ARM],
-                                             Stick[BUTTON_FLIP],
-                                             Stick[CONTROLMODE],
-                                             Stick[ALTCONTROLMODE],
-                                             Stick[LOG]);
+  USBSerial.printf("%6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f  %6.3f\n\r", 
+                                            Stick[THROTTLE],
+                                            Stick[AILERON],
+                                            Stick[ELEVATOR],
+                                            Stick[RUDDER],
+                                            Stick[BUTTON_ARM],
+                                            Stick[BUTTON_FLIP],
+                                            Stick[CONTROLMODE],
+                                            Stick[ALTCONTROLMODE],
+                                            Stick[LOG]);
 #endif
 }
 
