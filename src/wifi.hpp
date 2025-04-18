@@ -9,8 +9,8 @@
 #include <WiFiAP.h>
 #include <WiFiUdp.h>
 
-#define WIFI_SSID "flix"
-#define WIFI_PASSWORD "flixwifi"
+#define WIFI_SSID "YUDU-DRONE"
+#define WIFI_PASSWORD "12345678"
 #define WIFI_UDP_IP "255.255.255.255"
 #define WIFI_UDP_PORT 14550
 
