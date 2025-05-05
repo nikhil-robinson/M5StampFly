@@ -6,7 +6,6 @@
 
 
 #include <WiFi.h>
-#include <WiFiAP.h>
 #include <WiFiUdp.h>
 
 #define WIFI_SSID "YUDU-DRONE"

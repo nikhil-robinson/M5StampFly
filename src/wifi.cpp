@@ -6,7 +6,6 @@
 #if WIFI_ENABLED
 
 #include <WiFi.h>
-#include <WiFiAP.h>
 #include <WiFiUdp.h>
 
 
