@@ -26,6 +26,7 @@
 #include "sensor.hpp"
 #include "imu.hpp"
 #include "tof.hpp"
+#include "opt.hpp"
 #include "flight_control.hpp"
 
 Madgwick Drone_ahrs;
@@ -136,8 +137,11 @@ void sensor_init() {
         while (1);
     }
 
+    USBSerial.printf("SPI Initilize status:%d\n\r", spi_init());
+
     tof_init();
     imu_init();
+    opt_init();
     Drone_ahrs.begin(400.0);
     ina3221.begin(&Wire1);
     ina3221.reset();
