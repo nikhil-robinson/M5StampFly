@@ -19,3 +19,5 @@ void enableFrameCaptureMode(void);
 void readImage(uint8_t *image);
 void opt_init();
 void opt_read();
+float getDeltaX();
+float getDeltaY();
