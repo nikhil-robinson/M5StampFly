@@ -730,10 +730,6 @@ void angle_control(void) {
         if (Control_mode == ANGLECONTROL) {
             Roll_angle_reference  = 0.5f * PI * (Roll_angle_command - Aileron_center);
             Pitch_angle_reference = 0.5f * PI * (Pitch_angle_command - Elevator_center);
-            if (Roll_angle_reference > (30.0f * PI / 180.0f)) Roll_angle_reference = 30.0f * PI / 180.0f;
-            if (Roll_angle_reference < -(30.0f * PI / 180.0f)) Roll_angle_reference = -30.0f * PI / 180.0f;
-            if (Pitch_angle_reference > (30.0f * PI / 180.0f)) Pitch_angle_reference = 30.0f * PI / 180.0f;
-            if (Pitch_angle_reference < -(30.0f * PI / 180.0f)) Pitch_angle_reference = -30.0f * PI / 180.0f;
             // Drift correction when altitude hold is stable
             if (Alt_flag == 1 && Throttle_control_mode == 1 && Flip_flag == 0) {
                 // Check if altitude is stable (within 5cm and velocity < 0.1 m/s)
@@ -746,13 +742,14 @@ void angle_control(void) {
                     // Apply corrections (inverted due to coordinate system)
                     Roll_angle_reference -= roll_correction;    // X-velocity affects roll
                     Pitch_angle_reference -= pitch_correction;  // Y-velocity affects pitch
-                    // Limit corrections to prevent excessive tilting
-                    if (Roll_angle_reference > (30.0f * PI / 180.0f)) Roll_angle_reference = 30.0f * PI / 180.0f;
-                    if (Roll_angle_reference < -(30.0f * PI / 180.0f)) Roll_angle_reference = -30.0f * PI / 180.0f;
-                    if (Pitch_angle_reference > (30.0f * PI / 180.0f)) Pitch_angle_reference = 30.0f * PI / 180.0f;
-                    if (Pitch_angle_reference < -(30.0f * PI / 180.0f)) Pitch_angle_reference = -30.0f * PI / 180.0f;
+                   
                 }
             }
+             // Limit corrections to prevent excessive tilting
+            if (Roll_angle_reference > (30.0f * PI / 180.0f)) Roll_angle_reference = 30.0f * PI / 180.0f;
+            if (Roll_angle_reference < -(30.0f * PI / 180.0f)) Roll_angle_reference = -30.0f * PI / 180.0f;
+            if (Pitch_angle_reference > (30.0f * PI / 180.0f)) Pitch_angle_reference = 30.0f * PI / 180.0f;
+            if (Pitch_angle_reference < -(30.0f * PI / 180.0f)) Pitch_angle_reference = -30.0f * PI / 180.0f;
             phi_err              = Roll_angle_reference - (Roll_angle - Roll_angle_offset);
             theta_err            = Pitch_angle_reference - (Pitch_angle - Pitch_angle_offset);
             Roll_rate_reference  = phi_pid.update(phi_err, Interval_time);
