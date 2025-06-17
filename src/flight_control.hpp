@@ -154,10 +154,4 @@ extern uint8_t Throttle_control_mode;
 
 extern uint8_t ahrs_reset_flag;
 extern uint8_t last_ahrs_reset_flag;
-
-// Drift correction variables
-extern volatile float X_velocity, Y_velocity; // Optical flow velocities in body frame (m/s)
-extern volatile float X_pos_ref, Y_pos_ref; // Position references (set to 0 for hover)
-// extern PID x_drift_pid, y_drift_pid; // PID controllers for drift correction
-
 #endif
